@@ -1,0 +1,222 @@
+[
+ {
+  "Content": "25% của 80 là:",
+  "OptionA": "25",
+  "OptionB": "20",
+  "OptionC": "40",
+  "OptionD": "32",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "80 × 0,25 = 20.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Một chiếc áo giá 200 000 đồng được giảm 15%. Giá sau khi giảm là:",
+  "OptionA": "185 000 đồng",
+  "OptionB": "170 000 đồng",
+  "OptionC": "175 000 đồng",
+  "OptionD": "150 000 đồng",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "200 000 × (1 − 0,15) = 170 000 đồng.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Giá một mặt hàng tăng từ 50 nghìn lên 60 nghìn đồng. Giá đã tăng:",
+  "OptionA": "20%",
+  "OptionB": "10%",
+  "OptionC": "25%",
+  "OptionD": "16,7%",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Toán",
+  "Explanation": "(60 − 50)/50 = 0,2 = 20%.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Ô tô đi 120 km trong 2 giờ. Vận tốc trung bình của ô tô là:",
+  "OptionA": "60 km/h",
+  "OptionB": "80 km/h",
+  "OptionC": "240 km/h",
+  "OptionD": "40 km/h",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Toán",
+  "Explanation": "v = s/t = 120/2 = 60 km/h.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Hai số có tỉ số 3 : 5 và tổng bằng 40. Số lớn là:",
+  "OptionA": "25",
+  "OptionB": "15",
+  "OptionC": "24",
+  "OptionD": "30",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Toán",
+  "Explanation": "Tổng số phần 8; mỗi phần 40/8 = 5; số lớn 5 × 5 = 25.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Gửi 10 triệu đồng với lãi đơn 6%/năm. Tiền lãi sau 2 năm là:",
+  "OptionA": "0,6 triệu đồng",
+  "OptionB": "1,2 triệu đồng",
+  "OptionC": "12 triệu đồng",
+  "OptionD": "1,236 triệu đồng",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "Lãi đơn: 10 × 0,06 × 2 = 1,2 triệu đồng.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Gửi 10 triệu đồng với lãi kép 10%/năm. Tổng số tiền sau 2 năm là:",
+  "OptionA": "11 triệu đồng",
+  "OptionB": "12,5 triệu đồng",
+  "OptionC": "12 triệu đồng",
+  "OptionD": "12,1 triệu đồng",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Toán",
+  "Explanation": "10 × 1,1² = 12,1 triệu đồng.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "3 công nhân làm xong một công việc trong 6 ngày. Với năng suất như nhau, 6 công nhân làm xong trong:",
+  "OptionA": "9 ngày",
+  "OptionB": "2 ngày",
+  "OptionC": "12 ngày",
+  "OptionD": "3 ngày",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Toán",
+  "Explanation": "Số người và thời gian tỉ lệ nghịch: 3 × 6 / 6 = 3 ngày.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "2,5 giờ bằng bao nhiêu phút?",
+  "OptionA": "90 phút",
+  "OptionB": "150 phút",
+  "OptionC": "250 phút",
+  "OptionD": "125 phút",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "2,5 × 60 = 150 phút.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Trên bản đồ tỉ lệ 1 : 100 000, đoạn 3 cm ứng với độ dài thực tế:",
+  "OptionA": "300 m",
+  "OptionB": "3 km",
+  "OptionC": "30 km",
+  "OptionD": "0,3 km",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "3 × 100 000 = 300 000 cm = 3 km.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Số tiếp theo của dãy 1, 4, 9, 16, … là:",
+  "OptionA": "36",
+  "OptionB": "25",
+  "OptionC": "20",
+  "OptionD": "24",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "Dãy các số chính phương 1², 2², 3², 4², 5² = 25.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Số tiếp theo của dãy 2, 6, 18, 54, … là:",
+  "OptionA": "108",
+  "OptionB": "162",
+  "OptionC": "216",
+  "OptionD": "72",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "Mỗi số gấp 3 lần số trước: 54 × 3 = 162.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Điểm ba bài kiểm tra là 7, 8 và x, điểm trung bình bằng 8. Giá trị của x là:",
+  "OptionA": "9",
+  "OptionB": "10",
+  "OptionC": "7",
+  "OptionD": "8",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Toán",
+  "Explanation": "7 + 8 + x = 24 nên x = 9.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Một lớp có 40 học sinh, trong đó 60% là nữ. Số học sinh nam là:",
+  "OptionA": "20",
+  "OptionB": "24",
+  "OptionC": "16",
+  "OptionD": "14",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Toán",
+  "Explanation": "Nam chiếm 40%: 40 × 0,4 = 16.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Hai xe đi ngược chiều từ hai địa điểm cách nhau 150 km với vận tốc 40 km/h và 35 km/h. Hai xe gặp nhau sau:",
+  "OptionA": "2,5 giờ",
+  "OptionB": "1,5 giờ",
+  "OptionC": "3 giờ",
+  "OptionD": "2 giờ",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Toán",
+  "Explanation": "t = 150/(40 + 35) = 2 giờ.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Chu vi hình chữ nhật có chiều dài 8 cm, chiều rộng 5 cm là:",
+  "OptionA": "26 cm",
+  "OptionB": "13 cm",
+  "OptionC": "30 cm",
+  "OptionD": "40 cm",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Toán",
+  "Explanation": "P = 2(8 + 5) = 26 cm.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Một bể chứa 50 m³ nước, vòi chảy vào 5 m³ mỗi giờ. Bể đầy sau:",
+  "OptionA": "25 giờ",
+  "OptionB": "250 giờ",
+  "OptionC": "10 giờ",
+  "OptionD": "5 giờ",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Toán",
+  "Explanation": "50/5 = 10 giờ.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "5 quyển vở giá 35 000 đồng. Mua 8 quyển như vậy hết:",
+  "OptionA": "56 000 đồng",
+  "OptionB": "40 000 đồng",
+  "OptionC": "63 000 đồng",
+  "OptionD": "48 000 đồng",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Toán",
+  "Explanation": "Mỗi quyển 7 000 đồng; 8 × 7 000 = 56 000 đồng.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Số thập phân 0,125 viết dưới dạng phân số tối giản là:",
+  "OptionA": "12/100",
+  "OptionB": "1/5",
+  "OptionC": "1/4",
+  "OptionD": "1/8",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Toán",
+  "Explanation": "0,125 = 125/1000 = 1/8.",
+  "ExamCode": "TOAN-CD20"
+ },
+ {
+  "Content": "Nghiệm của phương trình 2x + 7 = 19 là:",
+  "OptionA": "x = 7",
+  "OptionB": "x = 5",
+  "OptionC": "x = 13",
+  "OptionD": "x = 6",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Toán",
+  "Explanation": "2x = 12 nên x = 6.",
+  "ExamCode": "TOAN-CD20"
+ }
+]

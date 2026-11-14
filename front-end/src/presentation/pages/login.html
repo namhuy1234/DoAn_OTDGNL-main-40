@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập - Ôn Thi ĐGNL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23dc2626'/%3E%3Cpath fill='%23fff' d='M12 4l7 4.700-7 4.700-7-4.700zm0 6.700l7 4.300-7 4.700-7-4.300z'/%3E%3C/svg%3E">
+</head>
+<body data-page="login" class="bg-brand-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <div id="siteHeader"></div>
+
+    <main class="flex-1 py-10 px-4 flex items-center justify-center">
+        <div class="w-full max-w-md bg-white rounded-3xl shadow-xl overflow-hidden">
+            <div class="p-6 sm:p-10">
+            <div class="text-center mb-6">
+                <h1 class="text-2xl font-semibold">Đăng nhập</h1>
+                <p class="text-slate-500 text-sm mt-1">Chào mừng bạn quay trở lại hệ thống ôn thi ĐGNL.</p>
+            </div>
+
+            <form id="loginForm" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Tên đăng nhập</label>
+                    <input id="loginUsername" type="text" required placeholder="Nhập username..." class="field">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Mật khẩu</label>
+                    <input id="loginPassword" data-password type="password" required placeholder="Nhập mật khẩu..." class="field">
+                </div>
+                <button type="submit" class="w-full py-3 rounded-full text-white font-semibold bg-brand-600 hover:bg-brand-700 shadow-md transition">Đăng Nhập</button>
+            </form>
+
+            <p id="message" class="mt-4 text-center text-sm font-medium min-h-[20px]"></p>
+
+            <div class="mt-6 flex items-center justify-between text-sm">
+                <button id="forgotBtn" type="button" class="text-slate-500 hover:text-brand-600 transition">Quên mật khẩu?</button>
+                <button id="openChangePwd" type="button" class="text-brand-600 font-bold hover:underline transition">Đổi mật khẩu</button>
+            </div>
+
+            <div class="mt-4 text-center text-sm text-slate-500">
+                Chưa có tài khoản?
+                <a href="register.html" class="text-brand-600 font-bold hover:underline">Đăng ký ngay</a>
+            </div>
+            </div>
+        </div>
+    </main>
+    <div id="siteFooter"></div>
+
+    <!-- Modal đổi mật khẩu -->
+    <div id="changePwdModal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm">
+        <div class="w-full max-w-md bg-white rounded-2xl shadow-2xl border border-slate-100 p-6">
+            <h3 class="text-xl font-semibold mb-1">Đổi mật khẩu</h3>
+            <p class="text-sm text-slate-500 mb-4">Nhập thông tin tài khoản và mật khẩu mới (có số & ký tự đặc biệt).</p>
+            <div class="space-y-3">
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Tên đăng nhập</label>
+                    <input id="cpUsername" type="text" placeholder="Username của bạn" class="field">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Mật khẩu cũ</label>
+                    <input id="cpOldPassword" data-password type="password" placeholder="Mật khẩu hiện tại" class="field">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Mật khẩu mới</label>
+                    <input id="cpNewPassword" data-password type="password" placeholder="Mật khẩu mới" class="field">
+                </div>
+            </div>
+            <p id="cpMessage" class="mt-3 text-center text-sm font-medium min-h-[20px]"></p>
+            <div class="mt-4 flex gap-3">
+                <button id="closeChangePwd" type="button" class="flex-1 py-3 rounded-full border border-slate-200 bg-slate-50 text-slate-600 font-semibold hover:bg-slate-100 transition">Hủy</button>
+                <button id="submitChangePwd" type="button" class="flex-[2] py-3 rounded-full text-white font-semibold bg-brand-600 hover:bg-brand-700 shadow-md transition">Xác Nhận Đổi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/layout.js"></script>
+    <script>
+        const API_BASE_URL = "http://localhost:8000/api";
+
+        async function apiRequest(endpoint, method = "GET", data = null) {
+            const options = {
+                method: method,
+                headers: { "Content-Type": "application/json" }
+            };
+            if (data) options.body = JSON.stringify(data);
+
+            const response = await fetch(`${API_BASE_URL}/${endpoint}`, options);
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(errorText || "Đã có lỗi xảy ra từ máy chủ.");
+            }
+            const contentType = response.headers.get("content-type");
+            if (contentType && contentType.includes("application/json")) return await response.json();
+            return await response.text();
+        }
+
+        function setMessage(el, text, type) {
+            if (!el) return;
+            el.textContent = text;
+            el.className = "mt-4 text-center text-sm font-medium min-h-[20px] " +
+                (type === "error" ? "text-red-600" : type === "success" ? "text-emerald-600" : "text-brand-600");
+        }
+
+        const msg = document.getElementById('message');
+
+        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const username = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginPassword').value;
+
+            setMessage(msg, "Đang đăng nhập...", "info");
+
+            try {
+                const res = await apiRequest('Auth/login', 'POST', { username, password });
+                setMessage(msg, "Đăng nhập thành công! Đang chuyển hướng...", "success");
+                localStorage.setItem('user', JSON.stringify(res));
+                setTimeout(() => {
+                    if (String(res.Role || '').toLowerCase() === 'admin') {
+                        window.location.href = 'admin.html';
+                    } else {
+                        // Học sinh đăng nhập xong vào thẳng Kho đề thi để chọn bộ đề và làm bài
+                        window.location.href = 'kho-de-thi.html';
+                    }
+                }, 1000);
+            } catch (err) {
+                setMessage(msg, err.message || "Sai tên đăng nhập hoặc mật khẩu!", "error");
+            }
+        });
+
+        // modal change password
+        const changeModal = document.getElementById('changePwdModal');
+        const openModal = () => {
+            changeModal.classList.remove('hidden');
+            changeModal.classList.add('flex');
+        };
+        const closeModal = () => {
+            changeModal.classList.add('hidden');
+            changeModal.classList.remove('flex');
+        };
+
+        document.getElementById('openChangePwd').addEventListener('click', openModal);
+        document.getElementById('closeChangePwd').addEventListener('click', closeModal);
+        changeModal.addEventListener('click', (e) => {
+            if (e.target === changeModal) closeModal();
+        });
+
+        document.getElementById('submitChangePwd').addEventListener('click', async () => {
+            const cpMsg = document.getElementById('cpMessage');
+            const username = document.getElementById('cpUsername').value.trim();
+            const oldPassword = document.getElementById('cpOldPassword').value;
+            const newPassword = document.getElementById('cpNewPassword').value;
+
+            if (!username || !oldPassword || !newPassword) {
+                setMessage(cpMsg, "Vui lòng nhập đầy đủ thông tin.", "error");
+                return;
+            }
+
+            setMessage(cpMsg, "Đang xử lý...", "info");
+            try {
+                const res = await apiRequest('Auth/change-password', 'POST', { username, oldPassword, newPassword });
+                setMessage(cpMsg, (typeof res === "string" ? res : (res.Message || "Đổi mật khẩu thành công!")), "success");
+                setTimeout(closeModal, 1500);
+            } catch (err) {
+                setMessage(cpMsg, err.message || "Đổi mật khẩu thất bại!", "error");
+            }
+        });
+
+        document.getElementById('forgotBtn').addEventListener('click', () => {
+            alert('Vui lòng dùng chức năng "Đổi mật khẩu" nếu biết mật khẩu cũ.');
+        });
+    </script>
+</body>
+</html>

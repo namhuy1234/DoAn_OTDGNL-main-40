@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Đơn vị của vận tốc trong hệ SI là:",
+  "OptionA": "km/h",
+  "OptionB": "N",
+  "OptionC": "m/s²",
+  "OptionD": "m/s",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Trong hệ SI, vận tốc đo bằng mét trên giây (m/s).",
+  "ExamCode": "VATLY-DE01"
+ },
+ {
+  "Content": "Một vật chuyển động thẳng đều với vận tốc 10 m/s. Quãng đường vật đi được trong 5 s là:",
+  "OptionA": "15 m",
+  "OptionB": "500 m",
+  "OptionC": "2 m",
+  "OptionD": "50 m",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "s = v · t = 10 · 5 = 50 m.",
+  "ExamCode": "VATLY-DE01"
+ },
+ {
+  "Content": "Biểu thức của định luật II Newton là:",
+  "OptionA": "F = m/a",
+  "OptionB": "a = m·F",
+  "OptionC": "F = m + a",
+  "OptionD": "F = m·a",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Gia tốc tỉ lệ thuận với lực và tỉ lệ nghịch với khối lượng: F = m·a.",
+  "ExamCode": "VATLY-DE01"
+ },
+ {
+  "Content": "Vật khối lượng 2 kg chịu tác dụng của hợp lực 10 N. Gia tốc của vật là:",
+  "OptionA": "12 m/s²",
+  "OptionB": "0,2 m/s²",
+  "OptionC": "5 m/s²",
+  "OptionD": "20 m/s²",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "a = F/m = 10/2 = 5 m/s².",
+  "ExamCode": "VATLY-DE01"
+ },
+ {
+  "Content": "Trọng lượng của vật có khối lượng 5 kg (lấy g = 10 m/s²) là:",
+  "OptionA": "500 N",
+  "OptionB": "0,5 N",
+  "OptionC": "5 N",
+  "OptionD": "50 N",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "P = m · g = 5 · 10 = 50 N.",
+  "ExamCode": "VATLY-DE01"
+ },
+ {
+  "Content": "Đơn vị của công trong hệ SI là:",
+  "OptionA": "Pascal (Pa)",
+  "OptionB": "Oát (W)",
+  "OptionC": "Jun (J)",
+  "OptionD": "Niutơn (N)",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Công đo bằng jun; oát là đơn vị công suất.",
+  "ExamCode": "VATLY-DE01"
+ },
+ {
+  "Content": "Động năng của vật khối lượng m chuyển động với vận tốc v là:",
+  "OptionA": "½mv²",
+  "OptionB": "mv²",
+  "OptionC": "mv",
+  "OptionD": "mgh",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Wđ = ½mv²; mv là động lượng, mgh là thế năng trọng trường.",
+  "ExamCode": "VATLY-DE01"
+ },
+ {
+  "Content": "Thế năng trọng trường của vật 2 kg ở độ cao 5 m (g = 10 m/s², gốc thế năng tại mặt đất) là:",
+  "OptionA": "10 J",
+  "OptionB": "1000 J",
+  "OptionC": "50 J",
+  "OptionD": "100 J",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Wt = m·g·h = 2 · 10 · 5 = 100 J.",
+  "ExamCode": "VATLY-DE01"
+ },
+ {
+  "Content": "Đơn vị của công suất là:",
+  "OptionA": "Niutơn (N)",
+  "OptionB": "Jun (J)",
+  "OptionC": "Ampe (A)",
+  "OptionD": "Oát (W)",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Công suất P = A/t đo bằng oát (1 W = 1 J/s).",
+  "ExamCode": "VATLY-DE01"
+ },
+ {
+  "Content": "Áp suất được tính bằng công thức:",
+  "OptionA": "p = S/F",
+  "OptionB": "p = F + S",
+  "OptionC": "p = F·S",
+  "OptionD": "p = F/S",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Áp suất là độ lớn áp lực trên một đơn vị diện tích bị ép.",
+  "ExamCode": "VATLY-DE01"
+ },
+ {
+  "Content": "Cơ năng của một vật được bảo toàn khi:",
+  "OptionA": "Vật được kéo bởi một lực ngoài thay đổi",
+  "OptionB": "Vật chịu lực ma sát lớn",
+  "OptionC": "Vật chịu lực cản của không khí",
+  "OptionD": "Vật chỉ chịu tác dụng của trọng lực (bỏ qua ma sát, lực cản)",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Cơ năng chỉ bảo toàn khi vật chỉ chịu tác dụng của lực thế như trọng lực, lực đàn hồi.",
+  "ExamCode": "VATLY-DE01"
+ },
+ {
+  "Content": "Một vật rơi tự do từ độ cao 20 m (g = 10 m/s²). Thời gian rơi là:",
+  "OptionA": "1 s",
+  "OptionB": "2 s",
+  "OptionC": "20 s",
+  "OptionD": "4 s",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "h = ½gt² ⇒ t = √(2h/g) = √4 = 2 s.",
+  "ExamCode": "VATLY-DE01"
+ }
+]

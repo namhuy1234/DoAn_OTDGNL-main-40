@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Khối lượng mol của nước (H₂O) là:",
+  "OptionA": "20 g/mol",
+  "OptionB": "18 g/mol",
+  "OptionC": "16 g/mol",
+  "OptionD": "10 g/mol",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "M = 2·1 + 16 = 18 g/mol.",
+  "ExamCode": "HOAHOC-DE02"
+ },
+ {
+  "Content": "Số mol có trong 44 g khí CO₂ là:",
+  "OptionA": "1 mol",
+  "OptionB": "2 mol",
+  "OptionC": "0,5 mol",
+  "OptionD": "44 mol",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "M(CO₂) = 44 g/mol nên n = 44/44 = 1 mol.",
+  "ExamCode": "HOAHOC-DE02"
+ },
+ {
+  "Content": "Ở 0 °C và áp suất 1 atm, 1 mol khí bất kì chiếm thể tích khoảng:",
+  "OptionA": "11,2 lít",
+  "OptionB": "2,24 lít",
+  "OptionC": "44,8 lít",
+  "OptionD": "22,4 lít",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Thể tích mol khí ở 0 °C, 1 atm là 22,4 lít.",
+  "ExamCode": "HOAHOC-DE02"
+ },
+ {
+  "Content": "Phương trình hóa học nào đã được cân bằng đúng?",
+  "OptionA": "2H₂ + 2O₂ → 2H₂O",
+  "OptionB": "H₂ + 2O₂ → 2H₂O",
+  "OptionC": "H₂ + O₂ → H₂O",
+  "OptionD": "2H₂ + O₂ → 2H₂O",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Hai vế đều có 4 nguyên tử H và 2 nguyên tử O.",
+  "ExamCode": "HOAHOC-DE02"
+ },
+ {
+  "Content": "Dung dịch làm quỳ tím hóa đỏ là:",
+  "OptionA": "Nước cất",
+  "OptionB": "NaCl",
+  "OptionC": "NaOH",
+  "OptionD": "HCl",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Dung dịch axit làm quỳ tím hóa đỏ.",
+  "ExamCode": "HOAHOC-DE02"
+ },
+ {
+  "Content": "Dung dịch NaOH làm quỳ tím:",
+  "OptionA": "Không đổi màu",
+  "OptionB": "Hóa xanh",
+  "OptionC": "Mất màu",
+  "OptionD": "Hóa đỏ",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Dung dịch bazơ làm quỳ tím hóa xanh.",
+  "ExamCode": "HOAHOC-DE02"
+ },
+ {
+  "Content": "Phản ứng giữa axit và bazơ tạo thành muối và nước được gọi là phản ứng:",
+  "OptionA": "Phân hủy",
+  "OptionB": "Thế",
+  "OptionC": "Trung hòa",
+  "OptionD": "Hóa hợp",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Axit + bazơ → muối + nước là phản ứng trung hòa.",
+  "ExamCode": "HOAHOC-DE02"
+ },
+ {
+  "Content": "Hòa tan 20 g muối thu được 100 g dung dịch. Nồng độ phần trăm của dung dịch là:",
+  "OptionA": "25%",
+  "OptionB": "16,7%",
+  "OptionC": "80%",
+  "OptionD": "20%",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "C% = 20/100 × 100% = 20%.",
+  "ExamCode": "HOAHOC-DE02"
+ },
+ {
+  "Content": "Hòa tan 0,5 mol NaCl vào nước được 1 lít dung dịch. Nồng độ mol của dung dịch là:",
+  "OptionA": "2 M",
+  "OptionB": "0,5 M",
+  "OptionC": "1 M",
+  "OptionD": "0,25 M",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "C_M = n/V = 0,5/1 = 0,5 M.",
+  "ExamCode": "HOAHOC-DE02"
+ },
+ {
+  "Content": "Chất xúc tác là chất:",
+  "OptionA": "Bị tiêu hao hoàn toàn trong phản ứng",
+  "OptionB": "Làm giảm tốc độ phản ứng",
+  "OptionC": "Làm tăng tốc độ phản ứng và không bị tiêu hao sau phản ứng",
+  "OptionD": "Luôn là sản phẩm chính của phản ứng",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Đó là định nghĩa chất xúc tác.",
+  "ExamCode": "HOAHOC-DE02"
+ },
+ {
+  "Content": "Khí làm vẩn đục nước vôi trong là:",
+  "OptionA": "CO₂",
+  "OptionB": "O₂",
+  "OptionC": "H₂",
+  "OptionD": "N₂",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O.",
+  "ExamCode": "HOAHOC-DE02"
+ },
+ {
+  "Content": "Trong phản ứng Zn + 2HCl → ZnCl₂ + H₂, khí sinh ra là:",
+  "OptionA": "Hơi nước",
+  "OptionB": "Clo",
+  "OptionC": "Oxi",
+  "OptionD": "Hiđro",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Kim loại đứng trước H tác dụng với axit HCl giải phóng khí H₂.",
+  "ExamCode": "HOAHOC-DE02"
+ }
+]

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý người dùng - Ôn Thi ĐGNL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23dc2626'/%3E%3Cpath fill='%23fff' d='M12 4l7 4.700-7 4.700-7-4.700zm0 6.700l7 4.300-7 4.700-7-4.300z'/%3E%3C/svg%3E">
+</head>
+<body data-page="admin" data-admin-tab="nguoi-dung" class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+    <div id="siteHeader"></div>
+
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <nav class="text-sm text-slate-500 mb-6" aria-label="Đường dẫn"><a href="index.html" class="hover:text-brand-600">Trang chủ</a> <span class="mx-1">›</span> <a href="admin.html" class="hover:text-brand-600">Quản trị</a> <span class="mx-1">›</span> <span class="text-brand-600 font-medium">Người dùng</span></nav>
+        <div id="adminTabs"></div>
+        <h1 class="text-2xl font-semibold mb-1">Quản lý người dùng</h1>
+        <p class="text-slate-500 text-sm mb-6">Xem tài khoản, đổi vai trò, xóa tài khoản và theo dõi kết quả làm bài của học sinh. Mật khẩu được băm, không hiển thị ở đây.</p>
+
+        <div id="deniedBox" class="hidden bg-red-50 border border-red-200 text-red-700 rounded-2xl p-6 text-center">
+            <p class="font-bold">Bạn không có quyền admin.</p>
+            <a href="login.html" class="inline-block mt-3 px-4 py-2 rounded-lg text-sm font-bold text-white bg-brand-600 hover:bg-brand-700 transition">Đăng nhập</a>
+        </div>
+
+        <div id="content" class="hidden space-y-6">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+                <div class="card p-4 text-center"><div id="oUsers" class="text-2xl font-semibold text-brand-600">–</div><div class="text-xs text-slate-500">tài khoản</div></div>
+                <div class="card p-4 text-center"><div id="oStudents" class="text-2xl font-semibold text-brand-600">–</div><div class="text-xs text-slate-500">học sinh đã làm bài</div></div>
+                <div class="card p-4 text-center"><div id="oAttempts" class="text-2xl font-semibold text-brand-600">–</div><div class="text-xs text-slate-500">lượt làm bài</div></div>
+                <div class="card p-4 text-center"><div id="oAvg" class="text-2xl font-semibold text-brand-600">–</div><div class="text-xs text-slate-500">điểm trung bình</div></div>
+            </div>
+
+            <div class="card p-5">
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+                    <h2 class="font-semibold">Danh sách tài khoản</h2>
+                    <div class="flex gap-2">
+                        <input id="userSearch" type="search" placeholder="Tìm tên đăng nhập hoặc họ tên..." class="field !py-2 text-sm" aria-label="Tìm người dùng">
+                        <select id="roleFilter" class="field !w-auto !py-2 text-sm" aria-label="Lọc vai trò"><option value="">Tất cả</option><option>Student</option><option>Admin</option></select>
+                    </div>
+                </div>
+                <p id="userMsg" class="text-sm font-medium min-h-[20px] mb-2"></p>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="text-left text-slate-500 border-b border-slate-200">
+                                <th class="py-2 pr-3 font-medium">ID</th>
+                                <th class="py-2 pr-3 font-medium">Tên đăng nhập</th>
+                                <th class="py-2 pr-3 font-medium">Họ tên</th>
+                                <th class="py-2 pr-3 font-medium">Vai trò</th>
+                                <th class="py-2 pr-3 font-medium text-center">Lượt làm</th>
+                                <th class="py-2 pr-3 font-medium text-right">Điểm TB</th>
+                                <th class="py-2 pr-3 font-medium">Lần nộp gần nhất</th>
+                                <th class="py-2 font-medium"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="userBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card p-5">
+                <h2 class="font-semibold mb-3">Lượt nộp gần đây của toàn hệ thống</h2>
+                <ul id="recentList" class="space-y-2 text-sm"></ul>
+            </div>
+        </div>
+    </main>
+
+    <div id="siteFooter"></div>
+    <script src="../js/layout.js"></script>
+    <script>
+        const me = OT.user();
+        let users = [];
+        if (!me) window.location.href = 'login.html';
+        else if (!OT.isAdmin()) document.getElementById('deniedBox').classList.remove('hidden');
+        else { document.getElementById('content').classList.remove('hidden'); load(); }
+
+        function say(text, ok) {
+            const el = document.getElementById('userMsg');
+            el.textContent = text;
+            el.className = 'text-sm font-medium min-h-[20px] mb-2 ' + (ok ? 'text-emerald-600' : 'text-red-600');
+        }
+
+        function render() {
+            const kw = document.getElementById('userSearch').value.trim().toLowerCase();
+            const role = document.getElementById('roleFilter').value;
+            const rows = users.filter(u => (!role || u.Role === role) &&
+                (!kw || u.Username.toLowerCase().includes(kw) || (u.FullName || '').toLowerCase().includes(kw)));
+            document.getElementById('userBody').innerHTML = rows.map(u => {
+                const self = u.Id === me.UserId;
+                return `<tr class="border-b border-slate-100">
+                    <td class="py-2.5 pr-3 text-slate-500">${u.Id}</td>
+                    <td class="py-2.5 pr-3 font-medium">${OT.esc(u.Username)}${self ? ' <span class="text-xs text-brand-600">(bạn)</span>' : ''}</td>
+                    <td class="py-2.5 pr-3">${OT.esc(u.FullName || '')}</td>
+                    <td class="py-2.5 pr-3">
+                        <select data-role="${u.Id}" ${self ? 'disabled' : ''} class="field !w-auto !py-1 !px-2 text-xs" aria-label="Vai trò của ${OT.esc(u.Username)}">
+                            ${['Student', 'Admin'].map(r => `<option${r === u.Role ? ' selected' : ''}>${r}</option>`).join('')}
+                        </select>
+                    </td>
+                    <td class="py-2.5 pr-3 text-center">${u.Attempts}</td>
+                    <td class="py-2.5 pr-3 text-right font-semibold">${u.AverageScore == null ? '–' : u.AverageScore + '%'}</td>
+                    <td class="py-2.5 pr-3 whitespace-nowrap text-slate-500">${OT.esc(OT.fmtTime(u.LastSubmittedAt) || '–')}</td>
+                    <td class="py-2.5 text-right">${self ? '' : `<button type="button" data-del="${u.Id}" class="px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-red-500 hover:bg-red-600 transition">Xóa</button>`}</td>
+                </tr>`;
+            }).join('') || '<tr><td colspan="8" class="py-4 text-center text-slate-500">Không có tài khoản phù hợp.</td></tr>';
+
+            document.querySelectorAll('[data-role]').forEach(sel => sel.addEventListener('change', async () => {
+                const id = Number(sel.getAttribute('data-role'));
+                try {
+                    await OT.api(`/Users/${id}/role`, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ Role: sel.value }) });
+                    say(`Đã đổi vai trò tài khoản ID ${id} thành ${sel.value}.`, true);
+                    await load();
+                } catch (err) { say(err.message); await load(); }
+            }));
+            document.querySelectorAll('[data-del]').forEach(btn => btn.addEventListener('click', async () => {
+                const id = Number(btn.getAttribute('data-del'));
+                const u = users.find(x => x.Id === id);
+                if (!confirm(`Xóa tài khoản "${u.Username}" và toàn bộ ${u.Attempts} lượt làm bài của tài khoản này?`)) return;
+                try {
+                    await OT.api(`/Users/${id}`, { method: 'DELETE' });
+                    say(`Đã xóa tài khoản ${u.Username}.`, true);
+                    await load();
+                } catch (err) { say(err.message); }
+            }));
+        }
+
+        async function load() {
+            try {
+                const [list, o] = await Promise.all([OT.api('/Users'), OT.api('/Exam/overview')]);
+                users = list;
+                document.getElementById('oUsers').textContent = users.length;
+                document.getElementById('oStudents').textContent = o.Summary.Students;
+                document.getElementById('oAttempts').textContent = o.Summary.Attempts;
+                document.getElementById('oAvg').textContent = o.Summary.AverageScore + '%';
+                document.getElementById('recentList').innerHTML = o.Recent.map(r => `
+                    <li class="flex flex-wrap items-center justify-between gap-2 py-2 px-3 rounded-xl bg-slate-50 border border-slate-100">
+                        <span><b>${OT.esc(r.Name)}</b> · ${OT.esc(r.ExamCode)} <span class="text-slate-500">(${OT.esc(r.SubjectCategory)})</span></span>
+                        <span class="text-slate-500">${OT.esc(OT.fmtTime(r.SubmittedAt))} · <b class="text-brand-600">${r.ScorePercentage}%</b></span>
+                    </li>`).join('') || '<li class="text-slate-500">Chưa có lượt nộp nào.</li>';
+                render();
+            } catch (err) { say(err.message); }
+        }
+        document.getElementById('userSearch').addEventListener('input', render);
+        document.getElementById('roleFilter').addEventListener('change', render);
+    </script>
+</body>
+</html>

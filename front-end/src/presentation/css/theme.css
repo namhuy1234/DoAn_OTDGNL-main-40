@@ -1,0 +1,82 @@
+/* Giao diện dùng chung cho mọi trang. Màu chính vẫn là đỏ brand của hệ thống. */
+body { font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+
+/* Tiêu đề hai màu */
+.title-accent { color: #dc2626; }
+.title-blue { color: #0958d9; }
+.underline-accent {
+    background-image: linear-gradient(120deg, #fecaca 0%, #fecaca 100%);
+    background-repeat: no-repeat;
+    background-size: 100% .4em;
+    background-position: 0 88%;
+}
+
+/* Nền lượn sóng */
+.bg-wave { position: relative; background: #fef2f2; }
+.bg-wave::before {
+    content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 56px;
+    background: #fff no-repeat center / 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 56' preserveAspectRatio='none'%3E%3Cpath d='M0 28C240 64 480 64 720 34S1200-8 1440 24V56H0Z' fill='%23fef2f2'/%3E%3C/svg%3E");
+}
+
+/* Thẻ nội dung */
+.card { background: #fff; border: 1px solid #fee2e2; border-radius: 1.25rem; box-shadow: 0 1px 3px rgba(15, 23, 42, .05); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.card-hover:hover { transform: translateY(-4px); border-color: #fca5a5; box-shadow: 0 14px 30px rgba(220, 38, 38, .13); }
+
+/* Ô môn học viết tắt */
+.subject-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 3rem; height: 3rem; padding: 0 .5rem; border-radius: .9rem; font-weight: 800; font-size: .8rem; letter-spacing: .02em; background: #fff; color: #b91c1c; }
+
+/* Lựa chọn đáp án */
+.option-row:has(input:checked) { border-color: #dc2626; background: #fef2f2; box-shadow: inset 0 0 0 1px #dc2626; }
+.option-row:has(input:disabled) { cursor: default; }
+
+/* Ô số câu trên bảng câu hỏi */
+.q-dot { width: 2.4rem; height: 2.4rem; border-radius: .7rem; font-size: .85rem; font-weight: 700; color: #475569; background: #f1f5f9; transition: background .15s ease, color .15s ease; }
+.q-dot:hover { background: #fee2e2; color: #b91c1c; }
+.q-dot.is-done { background: #dc2626; color: #fff; }
+.q-dot.is-correct { background: #10b981; color: #fff; }
+.q-dot.is-wrong { background: #ef4444; color: #fff; }
+.q-dot.is-blank { background: #cbd5e1; color: #334155; }
+
+/* Vòng tròn điểm */
+.score-ring { --p: 0; width: 8.5rem; height: 8.5rem; border-radius: 50%; display: grid; place-items: center; background: conic-gradient(#dc2626 calc(var(--p) * 1%), #fee2e2 0); }
+.score-ring > div { width: 6.7rem; height: 6.7rem; border-radius: 50%; background: #fff; display: grid; place-items: center; }
+
+/* Hiện dần khi cuộn. Chỉ áp dụng cho phần dưới màn hình đầu, nên trang vừa mở không bị mờ. */
+.reveal-ready { opacity: 0; transform: translateY(18px); transition: opacity .5s ease, transform .5s ease; }
+.reveal-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal-ready { opacity: 1; transform: none; transition: none; }
+    .card-hover:hover { transform: none; }
+}
+
+/* Thanh lọc môn cuộn ngang trên điện thoại */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Khung ô nhập chung */
+.field { width: 100%; padding: .75rem 1rem; border-radius: .9rem; border: 1px solid #e2e8f0; background: #fff; outline: none; transition: border-color .15s ease, box-shadow .15s ease; }
+.field:focus { border-color: #ef4444; box-shadow: 0 0 0 4px #fee2e2; }
+
+/* Thẻ đề: nền trắng, viền nhạt, góc bo lớn */
+.set-card { display: flex; background: #fff; border: 2px solid #fecaca; border-radius: 1.5rem; padding: 1rem; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.set-card:hover { transform: translateY(-4px); border-color: #f87171; box-shadow: 0 14px 30px rgba(220, 38, 38, .12); }
+
+/* Ảnh bìa bộ đề vẽ bằng SVG, mỗi môn một màu và một ký hiệu */
+.set-img { display: flex; align-items: center; justify-content: center; height: 10rem; border-radius: .9rem; overflow: hidden; }
+.set-img svg { height: 8rem; width: auto; }
+
+/* Thẻ nổi bật đầu danh sách */
+.combo-top { flex: 1; padding: 1.5rem; color: #fff; background: linear-gradient(135deg, #ef4444, #991b1b); }
+
+/* Thẻ nền nhạt có biểu tượng tròn */
+.card-soft { background: #fef2f2; border: 2px solid #fecaca; border-radius: 1.5rem; padding: 2rem; }
+.icon-circle { width: 6rem; height: 6rem; border-radius: 50%; background: #fff; color: #dc2626; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; }
+
+/* Nền bảng thành tích: chấm trang trí nhẹ */
+.confetti-bg { background-color: #fff7f7; background-image: radial-gradient(#fecaca 2px, transparent 2px), radial-gradient(#bfdbfe 2px, transparent 2px); background-size: 46px 46px, 70px 70px; background-position: 0 0, 18px 30px; }
+
+/* Bo nut hien mat khau cua Edge, trang da co nut con mat rieng */
+input::-ms-reveal, input::-ms-clear { display: none; }

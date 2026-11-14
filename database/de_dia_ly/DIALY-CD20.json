@@ -1,0 +1,222 @@
+[
+ {
+  "Content": "Thủ đô Hà Nội thuộc vùng:",
+  "OptionA": "Đồng bằng sông Hồng",
+  "OptionB": "Đông Nam Bộ",
+  "OptionC": "Trung du và miền núi Bắc Bộ",
+  "OptionD": "Bắc Trung Bộ",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Hà Nội là trung tâm của vùng Đồng bằng sông Hồng.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "TP. Hồ Chí Minh thuộc vùng:",
+  "OptionA": "Tây Nguyên",
+  "OptionB": "Đồng bằng sông Cửu Long",
+  "OptionC": "Duyên hải Nam Trung Bộ",
+  "OptionD": "Đông Nam Bộ",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "TP. Hồ Chí Minh là trung tâm kinh tế của Đông Nam Bộ.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Thành phố Cần Thơ thuộc vùng:",
+  "OptionA": "Đồng bằng sông Cửu Long",
+  "OptionB": "Tây Nguyên",
+  "OptionC": "Đông Nam Bộ",
+  "OptionD": "Duyên hải Nam Trung Bộ",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Cần Thơ là thành phố trung tâm của Đồng bằng sông Cửu Long.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Sau khi sắp xếp đơn vị hành chính (từ ngày 1/7/2025), cả nước có bao nhiêu đơn vị hành chính cấp tỉnh?",
+  "OptionA": "63",
+  "OptionB": "28",
+  "OptionC": "54",
+  "OptionD": "34",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Theo Nghị quyết của Quốc hội năm 2025, cả nước có 34 đơn vị hành chính cấp tỉnh (28 tỉnh và 6 thành phố).",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Từ ngày 1/7/2025, số thành phố trực thuộc trung ương của nước ta là:",
+  "OptionA": "4",
+  "OptionB": "6",
+  "OptionC": "5",
+  "OptionD": "8",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Gồm Hà Nội, Huế, Hải Phòng, Đà Nẵng, TP. Hồ Chí Minh và Cần Thơ.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Vùng có diện tích trồng cao su lớn nhất nước ta là:",
+  "OptionA": "Trung du và miền núi Bắc Bộ",
+  "OptionB": "Đồng bằng sông Hồng",
+  "OptionC": "Bắc Trung Bộ",
+  "OptionD": "Đông Nam Bộ",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đất xám, đất badan và khí hậu cận xích đạo thích hợp cho cây cao su.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Vùng có sản lượng nuôi trồng thủy sản lớn nhất nước ta là:",
+  "OptionA": "Trung du và miền núi Bắc Bộ",
+  "OptionB": "Bắc Trung Bộ",
+  "OptionC": "Đồng bằng sông Hồng",
+  "OptionD": "Đồng bằng sông Cửu Long",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Mạng lưới sông ngòi, kênh rạch dày đặc và nhiều diện tích mặt nước.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Vùng có mật độ dân số cao nhất nước ta là:",
+  "OptionA": "Đồng bằng sông Cửu Long",
+  "OptionB": "Trung du và miền núi Bắc Bộ",
+  "OptionC": "Tây Nguyên",
+  "OptionD": "Đồng bằng sông Hồng",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đồng bằng sông Hồng có lịch sử khai thác lâu đời, dân cư rất đông đúc.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Vùng có tiềm năng thủy điện lớn nhất nước ta là:",
+  "OptionA": "Đồng bằng sông Hồng",
+  "OptionB": "Đông Nam Bộ",
+  "OptionC": "Đồng bằng sông Cửu Long",
+  "OptionD": "Trung du và miền núi Bắc Bộ",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Hệ thống sông Hồng (sông Đà) có độ dốc lớn, lưu lượng nước dồi dào.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Thế mạnh nổi bật của vùng ven biển Nam Trung Bộ là:",
+  "OptionA": "Trồng lúa nước quy mô lớn nhất cả nước",
+  "OptionB": "Kinh tế biển: du lịch biển, khai thác hải sản, làm muối",
+  "OptionC": "Trồng chè quy mô lớn",
+  "OptionD": "Khai thác than đá",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Vùng có đường bờ biển dài, nhiều bãi biển đẹp và ngư trường lớn.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Nghề làm muối phát triển mạnh ở ven biển Nam Trung Bộ chủ yếu nhờ:",
+  "OptionA": "Nhiệt độ cao, nhiều nắng, ít sông đổ ra biển",
+  "OptionB": "Mưa nhiều quanh năm",
+  "OptionC": "Có nhiều sông lớn đổ ra biển",
+  "OptionD": "Khí hậu lạnh, ít nắng",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Nước biển mặn, nhiều nắng giúp bốc hơi nhanh.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Đất phèn và đất mặn chiếm diện tích lớn ở vùng:",
+  "OptionA": "Đồng bằng sông Hồng",
+  "OptionB": "Trung du và miền núi Bắc Bộ",
+  "OptionC": "Đồng bằng sông Cửu Long",
+  "OptionD": "Tây Nguyên",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Địa hình thấp, chịu ảnh hưởng của thủy triều và nước biển.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Đất badan phân bố tập trung chủ yếu ở:",
+  "OptionA": "Ven biển Bắc Trung Bộ",
+  "OptionB": "Tây Nguyên và Đông Nam Bộ",
+  "OptionC": "Đồng bằng sông Cửu Long",
+  "OptionD": "Đồng bằng sông Hồng",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đất badan hình thành từ dung nham núi lửa ở các cao nguyên.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Thiên tai thường xuyên ảnh hưởng tới vùng Bắc Trung Bộ là:",
+  "OptionA": "Bão và gió phơn Tây Nam (gió Lào)",
+  "OptionB": "Núi lửa phun trào",
+  "OptionC": "Sóng thần xảy ra hằng năm",
+  "OptionD": "Băng tuyết kéo dài",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Bắc Trung Bộ chịu nhiều bão và gió Tây khô nóng vào đầu mùa hạ.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Khu vực có mùa đông lạnh nhất nước ta là:",
+  "OptionA": "Tây Nguyên",
+  "OptionB": "Đồng bằng sông Cửu Long",
+  "OptionC": "Trung du và miền núi Bắc Bộ",
+  "OptionD": "Đông Nam Bộ",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Vùng chịu ảnh hưởng mạnh nhất của gió mùa Đông Bắc, địa hình núi cao.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Hệ thống đê điều ven sông lớn và lâu đời nhất nước ta được xây dựng ở:",
+  "OptionA": "Tây Nguyên",
+  "OptionB": "Đồng bằng sông Hồng",
+  "OptionC": "Duyên hải Nam Trung Bộ",
+  "OptionD": "Đông Nam Bộ",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đê sông Hồng được đắp từ nhiều thế kỉ để chống lũ.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Vùng dẫn đầu cả nước về công nghiệp và dịch vụ là:",
+  "OptionA": "Tây Nguyên",
+  "OptionB": "Trung du và miền núi Bắc Bộ",
+  "OptionC": "Bắc Trung Bộ",
+  "OptionD": "Đông Nam Bộ",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đông Nam Bộ có cơ cấu kinh tế hiện đại, tập trung nhiều khu công nghiệp.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Vùng trồng cây ăn quả lớn nhất nước ta là:",
+  "OptionA": "Bắc Trung Bộ",
+  "OptionB": "Đồng bằng sông Cửu Long",
+  "OptionC": "Đồng bằng sông Hồng",
+  "OptionD": "Tây Nguyên",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Khí hậu cận xích đạo, đất phù sa màu mỡ thích hợp cây ăn quả nhiệt đới.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Tuyến đường sắt dài nhất nước ta là:",
+  "OptionA": "Hà Nội – Hải Phòng",
+  "OptionB": "Đường sắt Thống Nhất (Hà Nội – TP. Hồ Chí Minh)",
+  "OptionC": "Hà Nội – Lào Cai",
+  "OptionD": "Hà Nội – Lạng Sơn",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đường sắt Thống Nhất dài khoảng 1726 km.",
+  "ExamCode": "DIALY-CD20"
+ },
+ {
+  "Content": "Cảng hàng không quốc tế đang được xây dựng ở tỉnh Đồng Nai là:",
+  "OptionA": "Cam Ranh",
+  "OptionB": "Nội Bài",
+  "OptionC": "Long Thành",
+  "OptionD": "Tân Sơn Nhất",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Dự án Cảng hàng không quốc tế Long Thành tại Đồng Nai.",
+  "ExamCode": "DIALY-CD20"
+ }
+]

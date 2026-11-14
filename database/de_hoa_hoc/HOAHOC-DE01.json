@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Hạt mang điện tích âm trong nguyên tử là:",
+  "OptionA": "Neutron",
+  "OptionB": "Proton",
+  "OptionC": "Hạt nhân",
+  "OptionD": "Electron",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Electron mang điện âm; proton mang điện dương; neutron không mang điện.",
+  "ExamCode": "HOAHOC-DE01"
+ },
+ {
+  "Content": "Nguyên tử oxi (Z = 8) có số proton là:",
+  "OptionA": "8",
+  "OptionB": "16",
+  "OptionC": "18",
+  "OptionD": "6",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Số proton bằng số hiệu nguyên tử Z.",
+  "ExamCode": "HOAHOC-DE01"
+ },
+ {
+  "Content": "Nguyên tố có số hiệu nguyên tử Z = 11 là:",
+  "OptionA": "Kali (K)",
+  "OptionB": "Natri (Na)",
+  "OptionC": "Magie (Mg)",
+  "OptionD": "Nhôm (Al)",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Na có Z = 11; Mg 12; Al 13; K 19.",
+  "ExamCode": "HOAHOC-DE01"
+ },
+ {
+  "Content": "Kí hiệu hóa học của nguyên tố sắt là:",
+  "OptionA": "F",
+  "OptionB": "Fr",
+  "OptionC": "Fe",
+  "OptionD": "S",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Fe (ferrum) là sắt; S là lưu huỳnh, F là flo.",
+  "ExamCode": "HOAHOC-DE01"
+ },
+ {
+  "Content": "Các nguyên tố nhóm VIIA trong bảng tuần hoàn được gọi là:",
+  "OptionA": "Halogen",
+  "OptionB": "Khí hiếm",
+  "OptionC": "Kim loại kiềm",
+  "OptionD": "Kim loại kiềm thổ",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Nhóm VIIA gồm F, Cl, Br, I… gọi là halogen.",
+  "ExamCode": "HOAHOC-DE01"
+ },
+ {
+  "Content": "Chất nào sau đây là khí hiếm?",
+  "OptionA": "Nitơ (N₂)",
+  "OptionB": "Oxi (O₂)",
+  "OptionC": "Clo (Cl₂)",
+  "OptionD": "Neon (Ne)",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Ne thuộc nhóm VIIIA (khí hiếm).",
+  "ExamCode": "HOAHOC-DE01"
+ },
+ {
+  "Content": "Liên kết trong phân tử NaCl là:",
+  "OptionA": "Liên kết kim loại",
+  "OptionB": "Liên kết ion",
+  "OptionC": "Liên kết hiđro",
+  "OptionD": "Liên kết cộng hóa trị không cực",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Na nhường electron cho Cl tạo ion Na⁺ và Cl⁻ hút nhau.",
+  "ExamCode": "HOAHOC-DE01"
+ },
+ {
+  "Content": "Liên kết trong phân tử H₂ là:",
+  "OptionA": "Liên kết cộng hóa trị không cực",
+  "OptionB": "Liên kết kim loại",
+  "OptionC": "Liên kết cộng hóa trị có cực",
+  "OptionD": "Liên kết ion",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Hai nguyên tử giống nhau góp chung electron, cặp electron không lệch về bên nào.",
+  "ExamCode": "HOAHOC-DE01"
+ },
+ {
+  "Content": "Nguyên tử có 6 proton và 6 neutron có số khối là:",
+  "OptionA": "6",
+  "OptionB": "12",
+  "OptionC": "18",
+  "OptionD": "0",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "A = Z + N = 6 + 6 = 12.",
+  "ExamCode": "HOAHOC-DE01"
+ },
+ {
+  "Content": "Nguyên tử khối của cacbon xấp xỉ:",
+  "OptionA": "6",
+  "OptionB": "16",
+  "OptionC": "12",
+  "OptionD": "14",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "C có nguyên tử khối khoảng 12; N là 14, O là 16.",
+  "ExamCode": "HOAHOC-DE01"
+ },
+ {
+  "Content": "Nguyên tố nào sau đây là kim loại kiềm?",
+  "OptionA": "Sắt (Fe)",
+  "OptionB": "Nhôm (Al)",
+  "OptionC": "Canxi (Ca)",
+  "OptionD": "Kali (K)",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "K thuộc nhóm IA (kim loại kiềm); Ca thuộc nhóm IIA.",
+  "ExamCode": "HOAHOC-DE01"
+ },
+ {
+  "Content": "Trong một chu kì, theo chiều tăng điện tích hạt nhân, bán kính nguyên tử các nguyên tố nhóm A nhìn chung:",
+  "OptionA": "Giảm dần",
+  "OptionB": "Tăng dần",
+  "OptionC": "Không đổi",
+  "OptionD": "Tăng rồi giảm",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Số lớp electron không đổi, điện tích hạt nhân tăng làm lực hút electron mạnh hơn.",
+  "ExamCode": "HOAHOC-DE01"
+ }
+]

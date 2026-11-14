@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Đơn vị của điện trở là:",
+  "OptionA": "Oát (W)",
+  "OptionB": "Ôm (Ω)",
+  "OptionC": "Vôn (V)",
+  "OptionD": "Ampe (A)",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Điện trở đo bằng ôm.",
+  "ExamCode": "VATLY-DE03"
+ },
+ {
+  "Content": "Biểu thức định luật Ôm cho đoạn mạch là:",
+  "OptionA": "U = I/R",
+  "OptionB": "I = R/U",
+  "OptionC": "I = U/R",
+  "OptionD": "I = U·R",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Cường độ dòng điện tỉ lệ thuận với hiệu điện thế, tỉ lệ nghịch với điện trở.",
+  "ExamCode": "VATLY-DE03"
+ },
+ {
+  "Content": "Đặt hiệu điện thế 12 V vào hai đầu điện trở 4 Ω. Cường độ dòng điện là:",
+  "OptionA": "16 A",
+  "OptionB": "0,33 A",
+  "OptionC": "3 A",
+  "OptionD": "48 A",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "I = U/R = 12/4 = 3 A.",
+  "ExamCode": "VATLY-DE03"
+ },
+ {
+  "Content": "Hai điện trở 3 Ω và 6 Ω mắc nối tiếp. Điện trở tương đương là:",
+  "OptionA": "3 Ω",
+  "OptionB": "9 Ω",
+  "OptionC": "18 Ω",
+  "OptionD": "2 Ω",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Nối tiếp: R = R₁ + R₂ = 9 Ω.",
+  "ExamCode": "VATLY-DE03"
+ },
+ {
+  "Content": "Hai điện trở 3 Ω và 6 Ω mắc song song. Điện trở tương đương là:",
+  "OptionA": "4,5 Ω",
+  "OptionB": "18 Ω",
+  "OptionC": "9 Ω",
+  "OptionD": "2 Ω",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Song song: R = R₁R₂/(R₁ + R₂) = 18/9 = 2 Ω.",
+  "ExamCode": "VATLY-DE03"
+ },
+ {
+  "Content": "Một dụng cụ hoạt động ở hiệu điện thế 220 V, cường độ 2 A. Công suất tiêu thụ là:",
+  "OptionA": "222 W",
+  "OptionB": "440 W",
+  "OptionC": "110 W",
+  "OptionD": "0,009 W",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "P = U · I = 220 · 2 = 440 W.",
+  "ExamCode": "VATLY-DE03"
+ },
+ {
+  "Content": "Bóng đèn 100 W thắp sáng trong 10 giờ tiêu thụ điện năng:",
+  "OptionA": "1000 kWh",
+  "OptionB": "0,1 kWh",
+  "OptionC": "10 kWh",
+  "OptionD": "1 kWh",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "A = P · t = 0,1 kW · 10 h = 1 kWh.",
+  "ExamCode": "VATLY-DE03"
+ },
+ {
+  "Content": "Dòng điện là:",
+  "OptionA": "Chuyển động nhiệt hỗn loạn của các electron",
+  "OptionB": "Sự quay của nam châm",
+  "OptionC": "Dòng chuyển động của các nguyên tử trung hòa",
+  "OptionD": "Dòng chuyển dời có hướng của các hạt mang điện",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Đó là định nghĩa dòng điện.",
+  "ExamCode": "VATLY-DE03"
+ },
+ {
+  "Content": "Hai điện tích điểm cùng dấu đặt gần nhau thì:",
+  "OptionA": "Hút nhau",
+  "OptionB": "Đẩy nhau",
+  "OptionC": "Không tương tác",
+  "OptionD": "Lúc hút lúc đẩy",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Các điện tích cùng dấu đẩy nhau, trái dấu hút nhau.",
+  "ExamCode": "VATLY-DE03"
+ },
+ {
+  "Content": "Dụng cụ dùng để đo cường độ dòng điện là:",
+  "OptionA": "Vôn kế",
+  "OptionB": "Ôm kế",
+  "OptionC": "Ampe kế",
+  "OptionD": "Nhiệt kế",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Ampe kế mắc nối tiếp để đo cường độ dòng điện; vôn kế đo hiệu điện thế.",
+  "ExamCode": "VATLY-DE03"
+ },
+ {
+  "Content": "Máy biến áp hoạt động dựa trên hiện tượng:",
+  "OptionA": "Quang điện",
+  "OptionB": "Nhiệt điện",
+  "OptionC": "Cảm ứng điện từ",
+  "OptionD": "Phóng xạ",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Từ thông biến thiên trong lõi thép gây ra suất điện động cảm ứng ở cuộn thứ cấp.",
+  "ExamCode": "VATLY-DE03"
+ },
+ {
+  "Content": "Hiệu điện thế định mức của mạng điện sinh hoạt gia đình ở Việt Nam là:",
+  "OptionA": "110 V",
+  "OptionB": "380 V",
+  "OptionC": "12 V",
+  "OptionD": "220 V",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Mạng điện dân dụng một pha ở Việt Nam có hiệu điện thế 220 V.",
+  "ExamCode": "VATLY-DE03"
+ }
+]

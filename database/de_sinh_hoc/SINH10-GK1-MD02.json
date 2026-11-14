@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Hoạt động nào thể hiện ứng dụng Sinh học góp phần bảo vệ môi trường?",
+  "OptionA": "Khai thác không giới hạn các loài quý hiếm",
+  "OptionB": "Phá bỏ hoàn toàn khu vực cư trú tự nhiên",
+  "OptionC": "Dùng vi sinh vật phù hợp xử lí một số chất thải",
+  "OptionD": "Loại bỏ tất cả sinh vật phân giải trong đất",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của đề kiểm tra giữa học kì I Sinh học 10, mã đề 02 (câu 1).",
+  "ExamCode": "SINH10-GK1-MD02"
+ },
+ {
+  "Content": "Để nghiên cứu ảnh hưởng của ánh sáng đến sinh trưởng cây, hoạt động nào là một bước của phương pháp thực nghiệm?",
+  "OptionA": "Thay đổi ánh sáng và đồng thời thay mọi điều kiện khác",
+  "OptionB": "Bố trí các nhóm cây tương đồng, thay đổi mức chiếu sáng cần khảo sát",
+  "OptionC": "Chỉ lựa chọn kết quả đúng với dự đoán ban đầu",
+  "OptionD": "Bỏ qua việc ghi lại chiều cao cây theo thời gian",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án B theo hướng dẫn chấm của đề kiểm tra giữa học kì I Sinh học 10, mã đề 02 (câu 2).",
+  "ExamCode": "SINH10-GK1-MD02"
+ },
+ {
+  "Content": "Cấp tổ chức nào gồm các cá thể cùng loài sống trong một khu vực xác định ở cùng thời điểm?",
+  "OptionA": "Quần xã",
+  "OptionB": "Hệ sinh thái",
+  "OptionC": "Sinh quyển",
+  "OptionD": "Quần thể",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án D theo hướng dẫn chấm của đề kiểm tra giữa học kì I Sinh học 10, mã đề 02 (câu 3).",
+  "ExamCode": "SINH10-GK1-MD02"
+ },
+ {
+  "Content": "Một khu rừng gồm nhiều quần thể sinh vật và các thành phần vô sinh tương tác với nhau được xếp vào hệ sinh thái, không chỉ là quần xã, vì",
+  "OptionA": "hệ sinh thái bao gồm cả quần xã và các yếu tố vô sinh tương tác",
+  "OptionB": "hệ sinh thái chỉ gồm một loài sinh vật",
+  "OptionC": "quần xã bao gồm cả đất, nước và khí hậu còn hệ sinh thái thì không",
+  "OptionD": "quần xã không có tương tác giữa các loài",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án A theo hướng dẫn chấm của đề kiểm tra giữa học kì I Sinh học 10, mã đề 02 (câu 4).",
+  "ExamCode": "SINH10-GK1-MD02"
+ },
+ {
+  "Content": "Nguyên tố nào thường được xếp vào nhóm vi lượng trong tế bào?",
+  "OptionA": "Carbon",
+  "OptionB": "Oxygen",
+  "OptionC": "Zinc (Zn)",
+  "OptionD": "Hydrogen",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của đề kiểm tra giữa học kì I Sinh học 10, mã đề 02 (câu 5).",
+  "ExamCode": "SINH10-GK1-MD02"
+ },
+ {
+  "Content": "Trong một phân tử nước có bao nhiêu nguyên tử oxygen?",
+  "OptionA": "2",
+  "OptionB": "1",
+  "OptionC": "3",
+  "OptionD": "4",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án B theo hướng dẫn chấm của đề kiểm tra giữa học kì I Sinh học 10, mã đề 02 (câu 6).",
+  "ExamCode": "SINH10-GK1-MD02"
+ },
+ {
+  "Content": "Nước có nhiệt dung riêng tương đối cao, nhờ đó giúp cơ thể hạn chế biến động nhiệt độ nhanh. Đặc tính này liên quan nhiều đến",
+  "OptionA": "việc nước không thể bay hơi",
+  "OptionB": "việc phân tử nước không có cực",
+  "OptionC": "sự không tồn tại liên kết giữa các phân tử nước",
+  "OptionD": "mạng liên kết hydrogen giữa các phân tử nước",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án D theo hướng dẫn chấm của đề kiểm tra giữa học kì I Sinh học 10, mã đề 02 (câu 7).",
+  "ExamCode": "SINH10-GK1-MD02"
+ },
+ {
+  "Content": "Đơn phân của nucleic acid là",
+  "OptionA": "nucleotide",
+  "OptionB": "amino acid",
+  "OptionC": "glucose",
+  "OptionD": "glycerol",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án A theo hướng dẫn chấm của đề kiểm tra giữa học kì I Sinh học 10, mã đề 02 (câu 8).",
+  "ExamCode": "SINH10-GK1-MD02"
+ },
+ {
+  "Content": "Nhóm nào gồm toàn các lipid?",
+  "OptionA": "Glucose, glycogen, tinh bột",
+  "OptionB": "DNA, RNA, phospholipid",
+  "OptionC": "Triglyceride, phospholipid, steroid",
+  "OptionD": "Cellulose, cholesterol, protein",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của đề kiểm tra giữa học kì I Sinh học 10, mã đề 02 (câu 9).",
+  "ExamCode": "SINH10-GK1-MD02"
+ },
+ {
+  "Content": "Vì sao phospholipid thường hình thành lớp kép trong môi trường nước?",
+  "OptionA": "Toàn bộ phân tử phospholipid đều ưa nước",
+  "OptionB": "Đầu ưa nước hướng ra môi trường nước, còn đuôi kị nước quay vào phía trong",
+  "OptionC": "Các đuôi kị nước hướng ra ngoài tiếp xúc trực tiếp với nước",
+  "OptionD": "Phospholipid có cấu tạo là chuỗi amino acid",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án B theo hướng dẫn chấm của đề kiểm tra giữa học kì I Sinh học 10, mã đề 02 (câu 10).",
+  "ExamCode": "SINH10-GK1-MD02"
+ },
+ {
+  "Content": "Khi muốn nhận biết glucose là đường khử trong mẫu dịch, phép thử phù hợp là",
+  "OptionA": "Benedict, kết hợp đun nóng theo quy trình",
+  "OptionB": "Biuret, quan sát màu tím",
+  "OptionC": "Iodine, quan sát màu xanh tím",
+  "OptionD": "Nhũ tương ethanol–nước, quan sát màu trắng đục",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án A theo hướng dẫn chấm của đề kiểm tra giữa học kì I Sinh học 10, mã đề 02 (câu 11).",
+  "ExamCode": "SINH10-GK1-MD02"
+ },
+ {
+  "Content": "Một loại vi khuẩn có vùng nhân và ribosome. Nhận xét nào đúng về chức năng của hai thành phần này?",
+  "OptionA": "Vùng nhân tổng hợp protein, ribosome lưu giữ phần lớn DNA",
+  "OptionB": "Cả hai đều được bao bọc bởi màng nhân",
+  "OptionC": "Ribosome chứa DNA chính còn vùng nhân chủ yếu chứa enzyme tiêu hóa",
+  "OptionD": "Vùng nhân chứa phần lớn DNA, còn ribosome tham gia tổng hợp protein",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án D theo hướng dẫn chấm của đề kiểm tra giữa học kì I Sinh học 10, mã đề 02 (câu 12).",
+  "ExamCode": "SINH10-GK1-MD02"
+ }
+]

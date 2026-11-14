@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Làm Đề Thi - Ôn Thi ĐGNL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23dc2626'/%3E%3Cpath fill='%23fff' d='M12 4l7 4.700-7 4.700-7-4.700zm0 6.700l7 4.300-7 4.700-7-4.300z'/%3E%3C/svg%3E">
+</head>
+<body data-page="kho" class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+    <div id="siteHeader"></div>
+
+    <!-- Tiến độ trên điện thoại -->
+    <div id="mobileProgress" class="lg:hidden sticky top-[72px] z-40 bg-white border-b border-brand-100 px-4 py-2 text-sm font-medium flex items-center gap-3">
+        <span class="progressText shrink-0">0/0 câu</span>
+        <div class="flex-1 h-2 rounded-full bg-brand-100 overflow-hidden"><div class="progressBar h-full bg-brand-600 transition-all" style="width:0"></div></div>
+        <span class="timerText hidden shrink-0 font-semibold tabular-nums text-brand-600"></span>
+    </div>
+
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex items-center justify-between gap-3 mb-6">
+            <nav class="text-sm text-slate-500 min-w-0 truncate" aria-label="Đường dẫn">
+                <a href="index.html" class="hover:text-brand-600">Trang chủ</a> <span class="mx-1">›</span>
+                <a href="kho-de-thi.html" class="hover:text-brand-600">Kho đề thi</a> <span class="mx-1">›</span>
+                <span id="crumbExam" class="text-brand-600 font-medium">Làm bài</span>
+            </nav>
+            <button id="backBtn" type="button" class="shrink-0 px-4 py-2 rounded-full text-sm font-semibold text-brand-600 border border-brand-300 bg-white hover:bg-brand-50 transition">← Quay lại</button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_300px] gap-6 items-start">
+            <section id="examSection" class="min-w-0 space-y-6">
+                <!-- Kết quả -->
+                <div id="resultBox" class="hidden card p-5 sm:p-6">
+                    <div class="flex flex-col sm:flex-row items-center gap-6 mb-6">
+                        <div id="scoreRing" class="score-ring shrink-0"><div><span id="scoreText" class="text-2xl font-semibold text-brand-600"></span></div></div>
+                        <div class="text-center sm:text-left">
+                            <h3 class="text-xl font-semibold mb-1">Kết quả</h3>
+                            <p id="resultSummary" class="text-slate-700 font-semibold"></p>
+                            <div class="flex flex-wrap justify-center sm:justify-start gap-2 mt-3 text-xs font-semibold">
+                                <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">Đúng: <span id="countCorrect"></span></span>
+                                <span class="px-3 py-1 rounded-full bg-red-50 text-red-700">Sai: <span id="countWrong"></span></span>
+                                <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-600">Bỏ trống: <span id="countBlank"></span></span>
+                            </div>
+                            <button id="retryBtn" type="button" class="mt-4 px-5 py-2 rounded-full text-sm font-semibold text-brand-600 border border-brand-300 hover:bg-brand-50 transition">Làm lại bộ đề</button>
+                            <a id="historyLink" href="lich-su.html" class="hidden mt-4 ml-2 inline-block px-5 py-2 rounded-full text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 transition">Xem lịch sử &amp; thống kê</a>
+                        </div>
+                    </div>
+                    <div id="resultDetails" class="space-y-3"></div>
+                </div>
+
+                <div id="questionContainer" class="space-y-4">
+                    <p class="text-slate-500">Đang tải danh sách câu hỏi từ cơ sở dữ liệu...</p>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <button id="submitExamBtn" type="button" class="px-8 py-3 rounded-full text-white font-semibold bg-brand-600 hover:bg-brand-700 shadow-md transition">Nộp bài</button>
+                    <span id="submitMsg" class="text-sm text-slate-500"></span>
+                </div>
+                <p id="reviewSummary" class="hidden text-sm font-medium text-slate-700"></p>
+            </section>
+
+            <!-- Bảng số câu -->
+            <aside class="card p-5 lg:sticky lg:top-24 order-first lg:order-none">
+                <h2 id="examTitle" class="font-bold break-words"></h2>
+                <p id="examSubject" class="text-sm text-slate-500 mb-3"></p>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                    <span id="modeBadge" class="px-3 py-1 rounded-full text-xs font-semibold bg-brand-50 text-brand-700"></span>
+                    <span id="timerBox" class="hidden text-sm font-semibold" aria-live="polite">Còn lại <span class="timerText tabular-nums text-brand-600"></span></span>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="flex justify-between text-sm font-medium mb-1"><span>Đã làm</span><span class="progressText">0/0 câu</span></div>
+                    <div class="h-2 rounded-full bg-brand-100 overflow-hidden mb-4"><div class="progressBar h-full bg-brand-600 transition-all" style="width:0"></div></div>
+                </div>
+                <div id="questionDots" class="flex flex-wrap gap-2"></div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Xác nhận khi còn câu chưa làm -->
+    <div id="confirmBlank" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm">
+        <div class="w-full max-w-sm bg-white rounded-2xl shadow-2xl p-6 text-center">
+            <h3 class="text-lg font-semibold mb-2">Còn câu chưa làm</h3>
+            <p class="text-sm text-slate-600 mb-5">Bạn còn <b id="blankCount"></b> câu chưa chọn đáp án. Bạn vẫn muốn nộp bài?</p>
+            <div class="flex gap-3">
+                <button id="blankCancel" type="button" class="flex-1 py-2.5 rounded-full border border-slate-200 text-slate-600 font-semibold hover:bg-slate-50 transition">Làm tiếp</button>
+                <button id="blankOk" type="button" class="flex-1 py-2.5 rounded-full text-white font-semibold bg-brand-600 hover:bg-brand-700 transition">Vẫn nộp</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="siteFooter"></div>
+    <script src="../js/layout.js"></script>
+    <script>
+        if (!localStorage.getItem('user')) { window.location.href = 'login.html'; }
+        const API_BASE_URL = "http://localhost:8000/api";
+
+        let allQuestions = [];
+        const escapeHtml = OT.esc;
+
+        const startedAt = Date.now();
+
+        async function fetchQuestions() {
+            // API trả đề không kèm đáp án; đáp án và lời giải chỉ có trong kết quả chấm sau khi nộp.
+            const res = await fetch(`${API_BASE_URL}/Questions`);
+            if (!res.ok) throw new Error("Không thể tải câu hỏi từ cơ sở dữ liệu.");
+            return await res.json();
+        }
+
+        // Ảnh minh họa lưu trên Cloudinary; chỉ nhận đường dẫn https để tránh chèn mã lạ.
+        function imageHtml(url) {
+            if (!url || !/^https:\/\//i.test(url)) return '';
+            return `<img src="${escapeHtml(url)}" alt="Hình minh họa câu hỏi" loading="lazy" class="mb-3 max-h-72 w-auto max-w-full rounded-xl border border-slate-200 bg-white">`;
+        }
+
+        function renderQuestions(questions) {
+            const container = document.getElementById('questionContainer');
+            if (!questions.length) {
+                container.innerHTML = '<p class="text-slate-500">Chưa có câu hỏi trong hệ thống.</p>';
+                return;
+            }
+            container.innerHTML = questions.map((q, index) => `
+                <div id="cau-${index + 1}" class="card p-5">
+                    <p class="font-semibold text-slate-800 mb-3">Câu ${index + 1}: ${escapeHtml(q.Content || '')}</p>
+                    ${imageHtml(q.ImageUrl)}
+                    <div class="space-y-2">
+                        ${['A','B','C','D'].map(key => `
+                            <label class="option-row flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200 hover:border-brand-300 cursor-pointer transition">
+                                <input type="radio" name="q_${q.Id}" value="${key}" class="accent-brand-600 shrink-0">
+                                <span class="text-sm sm:text-base text-slate-700">${key}. ${escapeHtml(q['Option' + key] || '')}</span>
+                            </label>
+                        `).join('')}
+                    </div>
+                </div>
+            `).join('');
+
+            document.getElementById('questionDots').innerHTML = questions.map((q, index) =>
+                `<button type="button" data-jump="${index + 1}" class="q-dot" aria-label="Tới câu ${index + 1}">${index + 1}</button>`).join('');
+            document.querySelectorAll('[data-jump]').forEach(b => b.addEventListener('click', () => {
+                const n = b.getAttribute('data-jump');
+                (document.getElementById('kq-' + n) || document.getElementById('cau-' + n)).scrollIntoView({ block: 'start' });
+            }));
+            container.addEventListener('change', updateProgress);
+            if (reviewMode) container.addEventListener('change', checkNow);
+            updateProgress();
+        }
+
+        // ----- Chế độ ôn tập: chọn đáp án là chấm ngay câu đó, hiện đáp án đúng và lời giải -----
+        const reviewMode = new URLSearchParams(window.location.search).get('mode') === 'on-tap';
+        const reviewed = {};
+        async function checkNow(e) {
+            const input = e.target;
+            if (input.type !== 'radio') return;
+            const qid = Number(input.name.slice(2));
+            const box = input.closest('.card');
+            box.querySelectorAll('input').forEach(x => x.disabled = true);
+            try {
+                const r = await OT.api('/Exam/check', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ questionId: qid, selectedAnswer: input.value }) });
+                reviewed[qid] = r.IsCorrect;
+                box.querySelectorAll('label.option-row').forEach(l => {
+                    const v = l.querySelector('input').value;
+                    if (v === r.CorrectAnswer) l.classList.add('!border-emerald-400', '!bg-emerald-50');
+                    else if (v === input.value) l.classList.add('!border-red-300', '!bg-red-50');
+                });
+                box.insertAdjacentHTML('beforeend', `<div class="mt-3 rounded-xl p-3 text-sm ${r.IsCorrect ? 'bg-emerald-50 text-emerald-800' : 'bg-red-50 text-red-800'}">
+                    <b>${r.IsCorrect ? 'Chính xác!' : 'Chưa đúng. Đáp án đúng: ' + escapeHtml(r.CorrectAnswer)}</b>
+                    ${r.Explanation ? `<p class="mt-1 text-slate-700">${escapeHtml(r.Explanation)}</p>` : ''}</div>`);
+                const i = allQuestions.findIndex(q => q.Id === qid);
+                const dot = document.querySelectorAll('.q-dot')[i];
+                if (dot) { dot.classList.remove('is-done'); dot.classList.add(r.IsCorrect ? 'is-correct' : 'is-wrong'); }
+                const done = Object.keys(reviewed).length, ok = Object.values(reviewed).filter(Boolean).length;
+                const sum = document.getElementById('reviewSummary');
+                sum.classList.remove('hidden');
+                sum.textContent = `Ôn tập: đúng ${ok}/${done} câu đã làm (còn ${allQuestions.length - done} câu). Chế độ ôn tập không tính điểm vào lịch sử; muốn tính điểm hãy chọn Thi thử.`;
+            } catch (err) {
+                box.querySelectorAll('input').forEach(x => x.disabled = false);
+                input.checked = false;
+                alert(err.message || 'Không kiểm tra được đáp án.');
+            }
+        }
+
+        // ----- Chế độ thi thử: đếm ngược theo thời gian của bộ đề, hết giờ tự nộp -----
+        let timer = null;
+        function startTimer(minutes) {
+            const end = Date.now() + minutes * 60000;
+            document.getElementById('timerBox').classList.remove('hidden');
+            document.querySelectorAll('.timerText').forEach(el => el.classList.remove('hidden'));
+            const tick = () => {
+                const left = Math.max(0, Math.round((end - Date.now()) / 1000));
+                const text = String(Math.floor(left / 60)).padStart(2, '0') + ':' + String(left % 60).padStart(2, '0');
+                document.querySelectorAll('.timerText').forEach(el => {
+                    el.textContent = text;
+                    el.classList.toggle('!text-red-600', left <= 60);
+                });
+                if (left === 0) {
+                    stopTimer();
+                    closeConfirm();
+                    document.getElementById('submitMsg').textContent = 'Hết giờ, hệ thống tự nộp bài.';
+                    submitExam();
+                }
+            };
+            tick();
+            timer = setInterval(tick, 1000);
+        }
+        function stopTimer() { if (timer) { clearInterval(timer); timer = null; } }
+
+        function selectedOf(q) {
+            const el = document.querySelector(`input[name="q_${q.Id}"]:checked`);
+            return el ? el.value : "";
+        }
+
+        function updateProgress() {
+            const dots = document.querySelectorAll('.q-dot');
+            let done = 0;
+            allQuestions.forEach((q, i) => {
+                const has = !!selectedOf(q);
+                if (has) done++;
+                if (dots[i]) dots[i].classList.toggle('is-done', has);
+            });
+            const total = allQuestions.length;
+            document.querySelectorAll('.progressText').forEach(el => el.textContent = `${done}/${total} câu`);
+            document.querySelectorAll('.progressBar').forEach(el => el.style.width = (total ? done / total * 100 : 0) + '%');
+        }
+
+        async function submitExam() {
+            const btn = document.getElementById('submitExamBtn');
+            const msg = document.getElementById('submitMsg');
+            const answers = allQuestions.map(q => ({ questionId: q.Id, selectedAnswer: selectedOf(q) }));
+
+            msg.textContent = "Đang chấm bài...";
+            msg.className = "text-sm text-brand-600 font-medium";
+            btn.disabled = true;
+
+            try {
+                // Gửi kèm token để máy chủ lưu lượt làm bài vào lịch sử (bảng ExamResults).
+                const data = await OT.api('/Exam/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        answers: answers,
+                        examCode: selectedExamCode || '',
+                        durationSeconds: Math.round((Date.now() - startedAt) / 1000)
+                    })
+                });
+                stopTimer();
+                showResult(data);
+                msg.textContent = data.Saved ? "Đã nộp bài và lưu vào lịch sử làm bài." : "Đã nộp bài thành công.";
+                msg.className = "text-sm text-emerald-600 font-medium";
+                btn.classList.add('hidden');
+            } catch (err) {
+                msg.textContent = err.message || "Nộp bài thất bại.";
+                msg.className = "text-sm text-red-600 font-medium";
+                btn.disabled = false;
+            }
+        }
+
+        function showResult(data) {
+            const details = data.Details || [];
+            const blank = data.BlankCount != null ? data.BlankCount : details.filter(d => !d.selectedAnswer).length;
+            document.getElementById('resultBox').classList.remove('hidden');
+            document.getElementById('resultSummary').textContent = `Kết quả: ${data.CorrectCount}/${data.TotalQuestions} câu đúng — ${data.ScorePercentage}%`;
+            document.getElementById('scoreRing').style.setProperty('--p', data.ScorePercentage);
+            document.getElementById('scoreText').textContent = data.ScorePercentage + '%';
+            document.getElementById('countCorrect').textContent = data.CorrectCount;
+            document.getElementById('countWrong').textContent = data.TotalQuestions - data.CorrectCount - blank;
+            document.getElementById('countBlank').textContent = blank;
+
+            document.getElementById('resultDetails').innerHTML = details.map((d, index) => {
+                const label = d.isCorrect ? 'Đúng' : d.selectedAnswer ? 'Sai' : 'Bỏ trống';
+                return `
+                <div id="kq-${index + 1}" class="rounded-xl border ${d.isCorrect ? 'border-emerald-200 bg-emerald-50' : d.selectedAnswer ? 'border-red-200 bg-red-50' : 'border-slate-200 bg-slate-50'} p-4">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="font-bold text-slate-800">Câu ${index + 1}</span>
+                        <span class="text-xs font-bold ${d.isCorrect ? 'text-emerald-600' : d.selectedAnswer ? 'text-red-600' : 'text-slate-500'}">${label}</span>
+                    </div>
+                    <p class="text-sm text-slate-700 mb-2">${escapeHtml(d.content || '')}</p>
+                    ${imageHtml(d.imageUrl)}
+                    <p class="text-xs text-slate-600">Bạn chọn: <span class="font-bold">${escapeHtml(d.selectedAnswer || 'Chưa chọn')}</span> • Đáp án đúng: <span class="font-bold">${escapeHtml(d.correctAnswer)}</span></p>
+                    <p class="text-xs text-slate-500 mt-1">${escapeHtml(d.explanation || '')}</p>
+                </div>`;
+            }).join('');
+
+            // Tô màu bảng số câu theo kết quả; bài đã nộp thì ẩn phần câu hỏi, chỉ còn phần kết quả
+            const dots = document.querySelectorAll('.q-dot');
+            details.forEach((d, i) => {
+                if (!dots[i]) return;
+                dots[i].classList.remove('is-done');
+                dots[i].classList.add(d.isCorrect ? 'is-correct' : d.selectedAnswer ? 'is-wrong' : 'is-blank');
+            });
+            document.getElementById('questionContainer').classList.add('hidden');
+            document.getElementById('mobileProgress').classList.add('hidden');
+            document.getElementById('resultBox').scrollIntoView({ block: 'start' });
+            document.getElementById('historyLink').classList.toggle('hidden', !data.Saved);
+        }
+
+        const confirmBox = document.getElementById('confirmBlank');
+        function closeConfirm() { confirmBox.classList.add('hidden'); confirmBox.classList.remove('flex'); }
+
+        document.getElementById('submitExamBtn').addEventListener('click', () => {
+            const msg = document.getElementById('submitMsg');
+            if (!allQuestions.length) {
+                msg.textContent = "Chưa có câu hỏi để nộp.";
+                msg.className = "text-sm text-red-600 font-medium";
+                return;
+            }
+            const blank = allQuestions.filter(q => !selectedOf(q)).length;
+            if (blank) {
+                document.getElementById('blankCount').textContent = blank;
+                confirmBox.classList.remove('hidden'); confirmBox.classList.add('flex');
+                return;
+            }
+            submitExam();
+        });
+        document.getElementById('blankCancel').addEventListener('click', closeConfirm);
+        document.getElementById('blankOk').addEventListener('click', () => { closeConfirm(); submitExam(); });
+        document.getElementById('retryBtn').addEventListener('click', () => window.location.reload());
+
+        // "Quay lại" chỉ quay về Kho đề thi, không xóa phiên đăng nhập (trước đây nút này làm học sinh bị đăng xuất)
+        document.getElementById('backBtn').addEventListener('click', () => {
+            window.location.href = 'kho-de-thi.html';
+        });
+
+        const selectedSubject = new URLSearchParams(window.location.search).get('subject');
+        const selectedExamCode = new URLSearchParams(window.location.search).get('examCode');
+
+        async function init() {
+            try {
+                const questions = await fetchQuestions();
+                let filtered = selectedSubject
+                    ? questions.filter(q => (q.SubjectCategory || '').toLowerCase() === selectedSubject.toLowerCase())
+                    : questions;
+                if (selectedExamCode) {
+                    filtered = filtered.filter(q => (q.ExamCode || '').trim().toLowerCase() === selectedExamCode.trim().toLowerCase());
+                }
+                if (!filtered.length) {
+                    document.getElementById('questionContainer').innerHTML = '<p class="text-red-600 text-sm">Không tìm thấy câu hỏi phù hợp với bộ đề đã chọn.</p>';
+                    return;
+                }
+                allQuestions = filtered;
+                const title = selectedExamCode || 'Bộ đề tổng hợp';
+                document.getElementById('examTitle').textContent = title;
+                document.getElementById('crumbExam').textContent = title;
+                document.getElementById('examSubject').textContent = (selectedSubject ? 'Môn ' + selectedSubject + ' · ' : '') + filtered.length + ' câu hỏi';
+                renderQuestions(filtered);
+                document.getElementById('modeBadge').textContent = reviewMode ? 'Chế độ ôn tập' : 'Chế độ thi thử';
+                if (reviewMode) {
+                    document.getElementById('submitExamBtn').parentElement.classList.add('hidden');
+                } else {
+                    // Thời gian làm bài lấy từ bảng Exams; đề không có trong bảng thì tính 1,25 phút/câu.
+                    let minutes = Math.ceil(filtered.length * 1.25);
+                    if (selectedExamCode) {
+                        try {
+                            const exam = await OT.api('/Exams/' + encodeURIComponent(selectedExamCode));
+                            minutes = exam.DurationMinutes;
+                            if (exam.Title && exam.Title !== exam.ExamCode) document.getElementById('examTitle').textContent = exam.ExamCode + ' – ' + exam.Title;
+                        } catch (e) { /* giữ thời gian mặc định */ }
+                    }
+                    document.getElementById('examSubject').textContent += ' · ' + minutes + ' phút';
+                    startTimer(minutes);
+                }
+            } catch (err) {
+                document.getElementById('questionContainer').innerHTML = `<p class="text-red-600 text-sm">${escapeHtml(err.message)}</p>`;
+            }
+        }
+
+        init();
+    </script>
+</body>
+</html>

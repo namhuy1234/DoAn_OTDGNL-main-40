@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "A: “How are you?” – B: “___”",
+  "OptionA": "I'm a student.",
+  "OptionB": "I'm from Hanoi.",
+  "OptionC": "I'm 18 years old.",
+  "OptionD": "I'm fine, thank you.",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "The usual reply to “How are you?” is about your health or feelings.",
+  "ExamCode": "TIENGANH-DE03"
+ },
+ {
+  "Content": "A: “Would you like a cup of tea?” – B: “___”",
+  "OptionA": "Good luck.",
+  "OptionB": "Never mind.",
+  "OptionC": "Yes, please.",
+  "OptionD": "You're welcome.",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“Yes, please” accepts an offer politely.",
+  "ExamCode": "TIENGANH-DE03"
+ },
+ {
+  "Content": "A: “Thank you for your help.” – B: “___”",
+  "OptionA": "Yes, please.",
+  "OptionB": "You're welcome.",
+  "OptionC": "Good luck.",
+  "OptionD": "Same to you.",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“You're welcome” is the reply to thanks.",
+  "ExamCode": "TIENGANH-DE03"
+ },
+ {
+  "Content": "A: “Can I borrow your pen?” – B: “___”",
+  "OptionA": "I'm sorry to hear that.",
+  "OptionB": "Sure, here you are.",
+  "OptionC": "Bless you.",
+  "OptionD": "Congratulations!",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Agreeing to lend something: “Sure, here you are.”",
+  "ExamCode": "TIENGANH-DE03"
+ },
+ {
+  "Content": "A: “I passed the exam!” – B: “___”",
+  "OptionA": "Same to you.",
+  "OptionB": "Bless you.",
+  "OptionC": "Never mind.",
+  "OptionD": "Congratulations!",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "We congratulate someone on good news.",
+  "ExamCode": "TIENGANH-DE03"
+ },
+ {
+  "Content": "The question “What does she look like?” asks about her ___.",
+  "OptionA": "address",
+  "OptionB": "appearance",
+  "OptionC": "hobbies",
+  "OptionD": "job",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“What does … look like?” asks about physical appearance.",
+  "ExamCode": "TIENGANH-DE03"
+ },
+ {
+  "Content": "A: “How often do you go swimming?” – B: “___”",
+  "OptionA": "By bus.",
+  "OptionB": "For two hours.",
+  "OptionC": "Since 2020.",
+  "OptionD": "Twice a week.",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“How often” asks about frequency.",
+  "ExamCode": "TIENGANH-DE03"
+ },
+ {
+  "Content": "A: “How long have you lived here?” – B: “___”",
+  "OptionA": "By car.",
+  "OptionB": "For three years.",
+  "OptionC": "Three kilometres.",
+  "OptionD": "Twice a year.",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“How long” with the present perfect asks about duration.",
+  "ExamCode": "TIENGANH-DE03"
+ },
+ {
+  "Content": "A: “Excuse me, where is the post office?” – B: “___”",
+  "OptionA": "It costs 10 dollars.",
+  "OptionB": "It's at 8 o'clock.",
+  "OptionC": "It's sunny today.",
+  "OptionD": "It's next to the bank.",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "The answer gives a place (location).",
+  "ExamCode": "TIENGANH-DE03"
+ },
+ {
+  "Content": "A: “Let's go for a walk.” – B: “___”",
+  "OptionA": "I'm sorry to hear that.",
+  "OptionB": "Congratulations!",
+  "OptionC": "You're welcome.",
+  "OptionD": "That's a good idea.",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Agreeing with a suggestion.",
+  "ExamCode": "TIENGANH-DE03"
+ },
+ {
+  "Content": "Read: “Tom gets up at 6 a.m., has breakfast at 6.30 and goes to school at 7.” What time does Tom have breakfast?",
+  "OptionA": "At 6.30",
+  "OptionB": "At 6.00",
+  "OptionC": "At 7.00",
+  "OptionD": "At 7.30",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "The text says he has breakfast at 6.30.",
+  "ExamCode": "TIENGANH-DE03"
+ },
+ {
+  "Content": "Read: “Mai has two brothers and one sister.” How many siblings does Mai have?",
+  "OptionA": "One",
+  "OptionB": "Two",
+  "OptionC": "Three",
+  "OptionD": "Four",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Two brothers + one sister = three siblings.",
+  "ExamCode": "TIENGANH-DE03"
+ }
+]

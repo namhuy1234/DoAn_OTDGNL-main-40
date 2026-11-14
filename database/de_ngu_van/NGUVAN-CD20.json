@@ -1,0 +1,222 @@
+[
+ {
+  "Content": "Bài thơ “Đồng chí” là của nhà thơ:",
+  "OptionA": "Phạm Tiến Duật",
+  "OptionB": "Quang Dũng",
+  "OptionC": "Chính Hữu",
+  "OptionD": "Tố Hữu",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Chính Hữu viết “Đồng chí” năm 1948.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "“Bài thơ về tiểu đội xe không kính” là của nhà thơ:",
+  "OptionA": "Phạm Tiến Duật",
+  "OptionB": "Huy Cận",
+  "OptionC": "Nguyễn Duy",
+  "OptionD": "Chính Hữu",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Phạm Tiến Duật viết về người lính lái xe Trường Sơn.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Bài thơ “Đoàn thuyền đánh cá” là của nhà thơ:",
+  "OptionA": "Tố Hữu",
+  "OptionB": "Huy Cận",
+  "OptionC": "Xuân Diệu",
+  "OptionD": "Tế Hanh",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Huy Cận sáng tác năm 1958 ở vùng mỏ Quảng Ninh.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Bài thơ “Ánh trăng” là của nhà thơ:",
+  "OptionA": "Viễn Phương",
+  "OptionB": "Nguyễn Duy",
+  "OptionC": "Nguyễn Khoa Điềm",
+  "OptionD": "Thanh Hải",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Nguyễn Duy viết năm 1978.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Bài thơ “Mùa xuân nho nhỏ” là của nhà thơ:",
+  "OptionA": "Hữu Thỉnh",
+  "OptionB": "Y Phương",
+  "OptionC": "Viễn Phương",
+  "OptionD": "Thanh Hải",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Thanh Hải viết bài thơ không lâu trước khi mất (1980).",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Bài thơ “Viếng lăng Bác” là của nhà thơ:",
+  "OptionA": "Thanh Hải",
+  "OptionB": "Tố Hữu",
+  "OptionC": "Chế Lan Viên",
+  "OptionD": "Viễn Phương",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Viễn Phương viết năm 1976 khi ra thăm lăng Bác.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Bài thơ “Sang thu” là của nhà thơ:",
+  "OptionA": "Hữu Thỉnh",
+  "OptionB": "Y Phương",
+  "OptionC": "Xuân Quỳnh",
+  "OptionD": "Nguyễn Duy",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Hữu Thỉnh viết về khoảnh khắc giao mùa hạ – thu.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Bài thơ “Nói với con” là của nhà thơ:",
+  "OptionA": "Nguyễn Khoa Điềm",
+  "OptionB": "Y Phương",
+  "OptionC": "Hữu Thỉnh",
+  "OptionD": "Bằng Việt",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Y Phương, nhà thơ dân tộc Tày.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Bài thơ “Bếp lửa” là của nhà thơ:",
+  "OptionA": "Bằng Việt",
+  "OptionB": "Y Phương",
+  "OptionC": "Nguyễn Duy",
+  "OptionD": "Tế Hanh",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Bằng Việt viết năm 1963 khi đang học ở Liên Xô.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Bài thơ “Khúc hát ru những em bé lớn trên lưng mẹ” là của nhà thơ:",
+  "OptionA": "Thanh Hải",
+  "OptionB": "Bằng Việt",
+  "OptionC": "Nguyễn Khoa Điềm",
+  "OptionD": "Chính Hữu",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Nguyễn Khoa Điềm viết năm 1971 ở chiến khu Trị – Thiên.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Truyện ngắn “Làng” là của nhà văn:",
+  "OptionA": "Nguyễn Quang Sáng",
+  "OptionB": "Nguyễn Thành Long",
+  "OptionC": "Kim Lân",
+  "OptionD": "Nam Cao",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Truyện về nhân vật ông Hai của Kim Lân.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Truyện ngắn “Lặng lẽ Sa Pa” là của nhà văn:",
+  "OptionA": "Kim Lân",
+  "OptionB": "Nguyễn Thành Long",
+  "OptionC": "Lê Minh Khuê",
+  "OptionD": "Nguyễn Minh Châu",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Nguyễn Thành Long viết năm 1970.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Truyện ngắn “Chiếc lược ngà” là của nhà văn:",
+  "OptionA": "Nguyễn Quang Sáng",
+  "OptionB": "Nguyễn Thành Long",
+  "OptionC": "Lê Minh Khuê",
+  "OptionD": "Kim Lân",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Truyện về tình cha con ông Sáu và bé Thu.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Truyện ngắn “Những ngôi sao xa xôi” là của nhà văn:",
+  "OptionA": "Bảo Ninh",
+  "OptionB": "Lê Minh Khuê",
+  "OptionC": "Nguyễn Minh Châu",
+  "OptionD": "Nguyễn Quang Sáng",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Truyện về ba cô gái thanh niên xung phong trên tuyến đường Trường Sơn.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Truyện ngắn “Bến quê” là của nhà văn:",
+  "OptionA": "Kim Lân",
+  "OptionB": "Lê Minh Khuê",
+  "OptionC": "Nguyễn Khải",
+  "OptionD": "Nguyễn Minh Châu",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Truyện in trong tập “Bến quê” (1985) của Nguyễn Minh Châu.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Đoạn trích “Đất Nước” (trường ca “Mặt đường khát vọng”) là của nhà thơ:",
+  "OptionA": "Nguyễn Khoa Điềm",
+  "OptionB": "Chế Lan Viên",
+  "OptionC": "Nguyễn Đình Thi",
+  "OptionD": "Tố Hữu",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Trường ca “Mặt đường khát vọng” viết năm 1971.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Truyện ngắn “Rừng xà nu” là của nhà văn:",
+  "OptionA": "Nguyễn Minh Châu",
+  "OptionB": "Nguyễn Thi",
+  "OptionC": "Anh Đức",
+  "OptionD": "Nguyễn Trung Thành",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Nguyễn Trung Thành (Nguyên Ngọc) viết năm 1965.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "Truyện ngắn “Những đứa con trong gia đình” là của nhà văn:",
+  "OptionA": "Nguyễn Thi",
+  "OptionB": "Nguyễn Quang Sáng",
+  "OptionC": "Anh Đức",
+  "OptionD": "Nguyễn Trung Thành",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Truyện về chị em Chiến và Việt của Nguyễn Thi.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "“Người lái đò sông Đà” của Nguyễn Tuân thuộc thể loại:",
+  "OptionA": "Tiểu thuyết",
+  "OptionB": "Thơ",
+  "OptionC": "Tùy bút",
+  "OptionD": "Truyện ngắn",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Đây là bài tùy bút trong tập “Sông Đà”.",
+  "ExamCode": "NGUVAN-CD20"
+ },
+ {
+  "Content": "“Hồn Trương Ba, da hàng thịt” của Lưu Quang Vũ thuộc thể loại:",
+  "OptionA": "Tùy bút",
+  "OptionB": "Kịch",
+  "OptionC": "Thơ",
+  "OptionD": "Truyện ngắn",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Đây là vở kịch nổi tiếng của Lưu Quang Vũ.",
+  "ExamCode": "NGUVAN-CD20"
+ }
+]

@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "I ___ to the cinema last night.",
+  "OptionA": "am going",
+  "OptionB": "go",
+  "OptionC": "went",
+  "OptionD": "have gone",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“Last night” → past simple: went.",
+  "ExamCode": "TIENGANH-DE01"
+ },
+ {
+  "Content": "They ___ football at the moment.",
+  "OptionA": "play",
+  "OptionB": "played",
+  "OptionC": "are playing",
+  "OptionD": "have played",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“At the moment” → present continuous.",
+  "ExamCode": "TIENGANH-DE01"
+ },
+ {
+  "Content": "She has worked here ___ five years.",
+  "OptionA": "for",
+  "OptionB": "in",
+  "OptionC": "ago",
+  "OptionD": "since",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“For” + a period of time with the present perfect.",
+  "ExamCode": "TIENGANH-DE01"
+ },
+ {
+  "Content": "Water ___ at 100 degrees Celsius.",
+  "OptionA": "is boiling",
+  "OptionB": "boils",
+  "OptionC": "has boiled",
+  "OptionD": "boiled",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "A general truth → present simple.",
+  "ExamCode": "TIENGANH-DE01"
+ },
+ {
+  "Content": "By the time we arrived, the film ___.",
+  "OptionA": "has started",
+  "OptionB": "is starting",
+  "OptionC": "starts",
+  "OptionD": "had started",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "An action before another past action → past perfect.",
+  "ExamCode": "TIENGANH-DE01"
+ },
+ {
+  "Content": "I will call you when I ___ home.",
+  "OptionA": "got",
+  "OptionB": "am getting",
+  "OptionC": "get",
+  "OptionD": "will get",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Time clauses with “when” use the present simple for the future.",
+  "ExamCode": "TIENGANH-DE01"
+ },
+ {
+  "Content": "If it rains tomorrow, we ___ at home.",
+  "OptionA": "stay",
+  "OptionB": "would stay",
+  "OptionC": "stayed",
+  "OptionD": "will stay",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "First conditional: If + present simple, will + V.",
+  "ExamCode": "TIENGANH-DE01"
+ },
+ {
+  "Content": "If I were you, I ___ harder.",
+  "OptionA": "will study",
+  "OptionB": "would study",
+  "OptionC": "studied",
+  "OptionD": "study",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Second conditional: If + past (were), would + V.",
+  "ExamCode": "TIENGANH-DE01"
+ },
+ {
+  "Content": "The letter ___ yesterday.",
+  "OptionA": "has sent",
+  "OptionB": "is sent",
+  "OptionC": "was sent",
+  "OptionD": "sent",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Passive voice, past simple: was + V3.",
+  "ExamCode": "TIENGANH-DE01"
+ },
+ {
+  "Content": "English ___ all over the world.",
+  "OptionA": "spoke",
+  "OptionB": "is speaking",
+  "OptionC": "is spoken",
+  "OptionD": "speaks",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Passive voice, present simple: is + V3.",
+  "ExamCode": "TIENGANH-DE01"
+ },
+ {
+  "Content": "He asked me where I ___.",
+  "OptionA": "lived",
+  "OptionB": "live",
+  "OptionC": "living",
+  "OptionD": "lives",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Reported question: the tense moves back (live → lived).",
+  "ExamCode": "TIENGANH-DE01"
+ },
+ {
+  "Content": "I'm looking forward to ___ you.",
+  "OptionA": "be seen",
+  "OptionB": "see",
+  "OptionC": "seeing",
+  "OptionD": "saw",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“Look forward to” + V-ing.",
+  "ExamCode": "TIENGANH-DE01"
+ }
+]

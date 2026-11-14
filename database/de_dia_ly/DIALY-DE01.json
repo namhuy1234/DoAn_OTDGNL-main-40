@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Đường bờ biển nước ta (từ Móng Cái đến Hà Tiên) dài khoảng:",
+  "OptionA": "4550 km",
+  "OptionB": "3260 km",
+  "OptionC": "1650 km",
+  "OptionD": "2360 km",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đường bờ biển Việt Nam dài khoảng 3260 km, không tính các đảo.",
+  "ExamCode": "DIALY-DE01"
+ },
+ {
+  "Content": "Tổng diện tích lãnh thổ (đất liền và các đảo) của nước ta khoảng:",
+  "OptionA": "131 nghìn km²",
+  "OptionB": "431 nghìn km²",
+  "OptionC": "231 nghìn km²",
+  "OptionD": "331 nghìn km²",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Diện tích nước ta khoảng 331 nghìn km².",
+  "ExamCode": "DIALY-DE01"
+ },
+ {
+  "Content": "Hai quần đảo xa bờ của Việt Nam trên Biển Đông là:",
+  "OptionA": "Côn Đảo và Phú Quốc",
+  "OptionB": "Cát Bà và Bạch Long Vĩ",
+  "OptionC": "Hoàng Sa và Trường Sa",
+  "OptionD": "Thổ Chu và Lý Sơn",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Quần đảo Hoàng Sa và Trường Sa nằm xa bờ trên Biển Đông.",
+  "ExamCode": "DIALY-DE01"
+ },
+ {
+  "Content": "Khí hậu Việt Nam mang tính chất:",
+  "OptionA": "Hoang mạc khô hạn",
+  "OptionB": "Nhiệt đới ẩm gió mùa",
+  "OptionC": "Cận cực",
+  "OptionD": "Ôn đới lục địa",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Nước ta nằm trong vùng nội chí tuyến, chịu ảnh hưởng của gió mùa.",
+  "ExamCode": "DIALY-DE01"
+ },
+ {
+  "Content": "Đồng bằng có diện tích lớn nhất nước ta là:",
+  "OptionA": "Đồng bằng Thanh – Nghệ – Tĩnh",
+  "OptionB": "Đồng bằng sông Cửu Long",
+  "OptionC": "Đồng bằng sông Hồng",
+  "OptionD": "Đồng bằng duyên hải miền Trung",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đồng bằng sông Cửu Long rộng khoảng 40 nghìn km².",
+  "ExamCode": "DIALY-DE01"
+ },
+ {
+  "Content": "Sông nào sau đây là hệ thống sông lớn nhất chảy qua lãnh thổ nước ta?",
+  "OptionA": "Sông Mê Công (Cửu Long)",
+  "OptionB": "Sông Mã",
+  "OptionC": "Sông Thu Bồn",
+  "OptionD": "Sông Cả",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Sông Mê Công là một trong những sông lớn nhất châu Á, hạ lưu chảy qua Nam Bộ.",
+  "ExamCode": "DIALY-DE01"
+ },
+ {
+  "Content": "Gió mùa mùa đông ở miền Bắc nước ta có hướng chủ yếu là:",
+  "OptionA": "Tây nam",
+  "OptionB": "Đông bắc",
+  "OptionC": "Tây bắc",
+  "OptionD": "Đông nam",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Gió mùa Đông Bắc hoạt động từ khoảng tháng 11 đến tháng 4.",
+  "ExamCode": "DIALY-DE01"
+ },
+ {
+  "Content": "Dãy núi có hướng tây bắc – đông nam và có đỉnh Phan-xi-păng là:",
+  "OptionA": "Đông Triều",
+  "OptionB": "Hoàng Liên Sơn",
+  "OptionC": "Ngân Sơn",
+  "OptionD": "Bạch Mã",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đỉnh Phan-xi-păng (3143 m) nằm trên dãy Hoàng Liên Sơn.",
+  "ExamCode": "DIALY-DE01"
+ },
+ {
+  "Content": "Đèo Hải Vân nằm giữa hai thành phố:",
+  "OptionA": "Hà Nội và Hải Phòng",
+  "OptionB": "Huế và Đà Nẵng",
+  "OptionC": "Nha Trang và Đà Lạt",
+  "OptionD": "Cần Thơ và TP. Hồ Chí Minh",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đèo Hải Vân trên dãy Bạch Mã, ranh giới giữa Huế và Đà Nẵng.",
+  "ExamCode": "DIALY-DE01"
+ },
+ {
+  "Content": "Hồ thủy điện Hòa Bình được xây dựng trên sông:",
+  "OptionA": "Sông Lô",
+  "OptionB": "Sông Chảy",
+  "OptionC": "Sông Đà",
+  "OptionD": "Sông Hồng",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Nhà máy thủy điện Hòa Bình khai thác nguồn nước sông Đà.",
+  "ExamCode": "DIALY-DE01"
+ },
+ {
+  "Content": "Vịnh Hạ Long – di sản thiên nhiên thế giới thuộc tỉnh:",
+  "OptionA": "Ninh Bình",
+  "OptionB": "Quảng Ninh",
+  "OptionC": "Hải Phòng",
+  "OptionD": "Thái Bình",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Vịnh Hạ Long nằm ở tỉnh Quảng Ninh.",
+  "ExamCode": "DIALY-DE01"
+ },
+ {
+  "Content": "Cao nguyên Lâm Viên (nơi có thành phố Đà Lạt) thuộc vùng:",
+  "OptionA": "Bắc Trung Bộ",
+  "OptionB": "Tây Bắc",
+  "OptionC": "Đông Nam Bộ",
+  "OptionD": "Tây Nguyên",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Lâm Viên là cao nguyên ở phía nam Tây Nguyên.",
+  "ExamCode": "DIALY-DE01"
+ }
+]

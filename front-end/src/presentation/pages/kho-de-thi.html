@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kho Đề Thi - Ôn Thi ĐGNL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23dc2626'/%3E%3Cpath fill='%23fff' d='M12 4l7 4.700-7 4.700-7-4.700zm0 6.700l7 4.300-7 4.700-7-4.300z'/%3E%3C/svg%3E">
+</head>
+<body data-page="kho" class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+    <div id="siteHeader"></div>
+
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex items-center justify-between gap-3 mb-6">
+            <nav class="text-sm text-slate-500" aria-label="Đường dẫn">
+                <a href="index.html" class="hover:text-brand-600">Trang chủ</a> <span class="mx-1">›</span> <span class="text-brand-600 font-medium">Kho đề thi</span>
+            </nav>
+            <button id="backBtn" type="button" class="shrink-0 px-4 py-2 rounded-full text-sm font-semibold text-brand-600 border border-brand-300 bg-white hover:bg-brand-50 transition">← Quay lại</button>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-[250px_minmax(0,1fr)] gap-6 items-start">
+            <!-- Danh mục môn: cột trái trên máy tính, thanh cuộn ngang trên điện thoại -->
+            <aside class="min-w-0 lg:sticky lg:top-24 lg:bg-white lg:rounded-2xl lg:border lg:border-brand-100 lg:p-3">
+                <h2 class="hidden lg:flex items-center gap-2 font-semibold px-3 py-2 text-sm">Danh mục môn</h2>
+                <div id="subjectFilters" class="flex lg:flex-col gap-1 overflow-x-auto no-scrollbar pb-1 lg:pb-0"></div>
+            </aside>
+
+            <div class="min-w-0">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-5">
+                    <h1 class="text-xl sm:text-2xl font-semibold">Kho đề thi <span id="setCount" class="text-sm font-medium text-slate-500"></span></h1>
+                    <div class="relative sm:w-72">
+                        <input id="searchBox" type="search" placeholder="Tìm theo mã đề..." class="field !py-2 !pl-10 text-sm" aria-label="Tìm theo mã đề">
+                        <svg viewBox="0 0 24 24" class="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                    </div>
+                </div>
+                <section id="setList" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+                    <p class="text-slate-500 text-sm">Đang tải danh sách bộ đề...</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div id="siteFooter"></div>
+    <script src="../js/layout.js"></script>
+    <script>
+        if (!localStorage.getItem('user')) { window.location.href = 'login.html'; }
+        const API_BASE_URL = "http://localhost:8000/api";
+
+        let allQuestions = [];
+        const examInfo = {};
+        const params = new URLSearchParams(window.location.search);
+        let activeSubject = params.get('subject') || 'Tất cả';
+        let keyword = '';
+
+        function subjectOf(q) {
+            return (q.SubjectCategory || '').trim() || 'Chung';
+        }
+
+        function setsOf(subject) {
+            const qs = subject === 'Tất cả' ? allQuestions : allQuestions.filter(q => subjectOf(q) === subject);
+            return OT.groupSets(qs);
+        }
+
+        function renderFilters() {
+            const container = document.getElementById('subjectFilters');
+            const subjects = ['Tất cả'].concat(OT.SUBJECTS.map(s => s[0]));
+            container.innerHTML = subjects.map(s => {
+                const active = s === activeSubject;
+                return `<button type="button" data-subject="${OT.esc(s)}" class="subject-btn shrink-0 flex items-center justify-between gap-3 px-4 lg:px-3 py-2 rounded-full lg:rounded-xl text-sm font-medium text-left transition ${active ? 'bg-brand-600 text-white' : 'bg-white lg:bg-transparent text-slate-600 border border-slate-200 lg:border-0 hover:bg-brand-50 hover:text-brand-600'}"><span>${OT.esc(s)}</span><span class="text-xs ${active ? 'text-brand-100' : 'text-slate-400'}">${setsOf(s).length}</span></button>`;
+            }).join('');
+            container.querySelectorAll('.subject-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    activeSubject = btn.getAttribute('data-subject');
+                    renderFilters();
+                    renderSetList();
+                });
+            });
+        }
+
+        function renderSetList() {
+            const container = document.getElementById('setList');
+            const sets = setsOf(activeSubject).filter(s => s.code.toLowerCase().includes(keyword));
+            document.getElementById('setCount').textContent = '(' + sets.length + ' bộ đề)';
+
+            if (!sets.length) {
+                container.innerHTML = `<div class="card p-6 sm:col-span-2 xl:col-span-3 text-center"><p class="text-slate-500 text-sm">${keyword ? 'Không tìm thấy bộ đề phù hợp.' : 'Môn này chưa có đề thi. Quản trị viên sẽ cập nhật đề sau.'}</p></div>`;
+                return;
+            }
+
+            container.innerHTML = sets.map(s => {
+                const isCommon = s.code === 'Bộ đề chung';
+                const query = new URLSearchParams();
+                if (activeSubject !== 'Tất cả') query.set('subject', activeSubject);
+                if (!isCommon) query.set('examCode', s.code);
+                const qs = query.toString();
+                const best = OT.bestOf(s.code);
+                const info = examInfo[s.code.toLowerCase()];
+                const title = info && info.Title && info.Title !== s.code ? info.Title : '';
+                return `
+                    <div class="set-card flex-col">
+                        ${OT.cover(s.subject)}
+                        <h3 class="font-semibold text-lg mt-4 mb-1 break-words">${OT.esc(s.code)}</h3>
+                        ${title ? `<p class="text-sm font-medium text-slate-700 -mt-0.5 mb-1">${OT.esc(title)}</p>` : ''}
+                        <p class="text-sm text-slate-600 mb-4">Môn ${OT.esc(info && activeSubject === 'Tất cả' ? info.SubjectCategory : s.subject)} · ${s.count} câu${info ? ' · ' + info.DurationMinutes + ' phút' : ''}${best ? `<br><span class="text-brand-600 font-medium">Điểm cao nhất của bạn: ${best.score}% (${best.times} lần làm)</span>` : ''}</p>
+                        <div class="mt-auto grid grid-cols-2 gap-2">
+                            <a href="exam.html${qs ? '?' + qs : ''}" title="Tính giờ, nộp bài để chấm điểm và lưu lịch sử" class="text-center px-3 py-2 rounded-full text-sm text-white font-semibold bg-brand-600 hover:bg-brand-700 transition">Thi thử</a>
+                            <a href="exam.html?${qs ? qs + '&' : ''}mode=on-tap" title="Chọn đáp án là biết đúng sai và xem lời giải ngay" class="text-center px-3 py-2 rounded-full text-sm font-semibold text-brand-600 border border-brand-300 hover:bg-brand-50 transition">Ôn tập</a>
+                        </div>
+                    </div>`;
+            }).join('');
+        }
+
+        document.getElementById('searchBox').addEventListener('input', e => {
+            keyword = e.target.value.trim().toLowerCase();
+            renderSetList();
+        });
+        if (params.get('focus') === 'search') document.getElementById('searchBox').focus();
+
+        async function init() {
+            try {
+                const res = await fetch(`${API_BASE_URL}/Questions`);
+                if (!res.ok) throw new Error("Không thể tải danh sách đề thi.");
+                allQuestions = await res.json();
+                // Thông tin bộ đề (tên, thời gian làm bài) lấy từ bảng Exams.
+                try { (await OT.api('/Exams')).forEach(e => { examInfo[e.ExamCode.toLowerCase()] = e; }); } catch (e) { /* vẫn hiện bộ đề theo câu hỏi */ }
+                await OT.loadHistory();
+                renderFilters();
+                renderSetList();
+            } catch (err) {
+                document.getElementById('setList').innerHTML = `<p class="text-red-600 text-sm">${OT.esc(err.message)}</p>`;
+            }
+        }
+
+        document.getElementById('backBtn').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+
+        init();
+    </script>
+</body>
+</html>

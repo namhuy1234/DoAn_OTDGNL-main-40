@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Nhà nước đầu tiên của người Việt là:",
+  "OptionA": "Âu Lạc",
+  "OptionB": "Văn Lang",
+  "OptionC": "Đại Việt",
+  "OptionD": "Đại Cồ Việt",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Nhà nước Văn Lang do các vua Hùng đứng đầu.",
+  "ExamCode": "LICHSU-DE01"
+ },
+ {
+  "Content": "Kinh đô của nước Âu Lạc là:",
+  "OptionA": "Thăng Long",
+  "OptionB": "Phong Châu",
+  "OptionC": "Cổ Loa",
+  "OptionD": "Hoa Lư",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "An Dương Vương đóng đô ở Cổ Loa.",
+  "ExamCode": "LICHSU-DE01"
+ },
+ {
+  "Content": "Chiến thắng Bạch Đằng năm 938 gắn với tên tuổi của:",
+  "OptionA": "Lê Hoàn",
+  "OptionB": "Lý Thường Kiệt",
+  "OptionC": "Ngô Quyền",
+  "OptionD": "Trần Hưng Đạo",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Ngô Quyền đánh tan quân Nam Hán trên sông Bạch Đằng năm 938.",
+  "ExamCode": "LICHSU-DE01"
+ },
+ {
+  "Content": "Năm 1010, Lý Công Uẩn dời đô từ Hoa Lư về:",
+  "OptionA": "Cổ Loa",
+  "OptionB": "Tây Đô",
+  "OptionC": "Đại La (đổi tên là Thăng Long)",
+  "OptionD": "Phú Xuân",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Chiếu dời đô năm 1010, Đại La đổi tên là Thăng Long.",
+  "ExamCode": "LICHSU-DE01"
+ },
+ {
+  "Content": "Ba lần kháng chiến chống quân Mông – Nguyên diễn ra dưới triều đại:",
+  "OptionA": "Nhà Lê sơ",
+  "OptionB": "Nhà Hồ",
+  "OptionC": "Nhà Lý",
+  "OptionD": "Nhà Trần",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Nhà Trần ba lần đánh thắng Mông – Nguyên (1258, 1285, 1287–1288).",
+  "ExamCode": "LICHSU-DE01"
+ },
+ {
+  "Content": "Bài thơ “Nam quốc sơn hà” gắn với cuộc kháng chiến chống quân:",
+  "OptionA": "Nguyên",
+  "OptionB": "Tống (thời Lý)",
+  "OptionC": "Thanh",
+  "OptionD": "Minh",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Bài thơ gắn với trận phòng tuyến sông Như Nguyệt năm 1077.",
+  "ExamCode": "LICHSU-DE01"
+ },
+ {
+  "Content": "Cuộc khởi nghĩa Lam Sơn (1418–1427) do ai lãnh đạo?",
+  "OptionA": "Lê Lợi",
+  "OptionB": "Nguyễn Huệ",
+  "OptionC": "Trần Quốc Tuấn",
+  "OptionD": "Lê Hoàn",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Lê Lợi lãnh đạo khởi nghĩa Lam Sơn chống quân Minh.",
+  "ExamCode": "LICHSU-DE01"
+ },
+ {
+  "Content": "Quang Trung đại phá quân Thanh vào năm:",
+  "OptionA": "1789",
+  "OptionB": "1858",
+  "OptionC": "1771",
+  "OptionD": "1802",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Chiến thắng Ngọc Hồi – Đống Đa đầu xuân Kỷ Dậu 1789.",
+  "ExamCode": "LICHSU-DE01"
+ },
+ {
+  "Content": "Người đặt quốc hiệu Đại Cồ Việt là:",
+  "OptionA": "Lý Công Uẩn",
+  "OptionB": "Lê Hoàn",
+  "OptionC": "Đinh Bộ Lĩnh",
+  "OptionD": "Ngô Quyền",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Năm 968 Đinh Bộ Lĩnh lên ngôi, đặt quốc hiệu Đại Cồ Việt.",
+  "ExamCode": "LICHSU-DE01"
+ },
+ {
+  "Content": "Văn Miếu ở Thăng Long được xây dựng năm 1070 dưới triều:",
+  "OptionA": "Nhà Lý",
+  "OptionB": "Nhà Trần",
+  "OptionC": "Nhà Lê sơ",
+  "OptionD": "Nhà Nguyễn",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Vua Lý Thánh Tông cho xây Văn Miếu năm 1070.",
+  "ExamCode": "LICHSU-DE01"
+ },
+ {
+  "Content": "Khởi nghĩa Hai Bà Trưng năm 40 chống lại ách đô hộ của:",
+  "OptionA": "Nhà Đường",
+  "OptionB": "Nhà Hán",
+  "OptionC": "Nhà Minh",
+  "OptionD": "Nhà Tống",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Hai Bà Trưng khởi nghĩa chống nhà Đông Hán.",
+  "ExamCode": "LICHSU-DE01"
+ },
+ {
+  "Content": "Kinh đô của triều Nguyễn là:",
+  "OptionA": "Gia Định",
+  "OptionB": "Thăng Long",
+  "OptionC": "Hoa Lư",
+  "OptionD": "Phú Xuân (Huế)",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Năm 1802 Gia Long đóng đô ở Phú Xuân.",
+  "ExamCode": "LICHSU-DE01"
+ }
+]

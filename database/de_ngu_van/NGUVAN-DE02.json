@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Câu thơ “Mặt trời xuống biển như hòn lửa” sử dụng biện pháp tu từ:",
+  "OptionA": "Nhân hóa",
+  "OptionB": "So sánh",
+  "OptionC": "Ẩn dụ",
+  "OptionD": "Hoán dụ",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Có từ so sánh “như”.",
+  "ExamCode": "NGUVAN-DE02"
+ },
+ {
+  "Content": "Trong câu “Áo chàm đưa buổi phân li”, cụm từ “áo chàm” là biện pháp:",
+  "OptionA": "So sánh",
+  "OptionB": "Nhân hóa",
+  "OptionC": "Nói quá",
+  "OptionD": "Hoán dụ",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "“Áo chàm” chỉ người dân Việt Bắc (lấy trang phục để gọi người).",
+  "ExamCode": "NGUVAN-DE02"
+ },
+ {
+  "Content": "Câu ca dao “Trâu ơi, ta bảo trâu này” sử dụng biện pháp tu từ:",
+  "OptionA": "Liệt kê",
+  "OptionB": "Hoán dụ",
+  "OptionC": "So sánh",
+  "OptionD": "Nhân hóa",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Trò chuyện với con trâu như với người.",
+  "ExamCode": "NGUVAN-DE02"
+ },
+ {
+  "Content": "Trong câu ca dao “Thuyền về có nhớ bến chăng / Bến thì một dạ khăng khăng đợi thuyền”, hình ảnh “thuyền”, “bến” là:",
+  "OptionA": "Ẩn dụ",
+  "OptionB": "Hoán dụ",
+  "OptionC": "So sánh",
+  "OptionD": "Điệp ngữ",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "“Thuyền” chỉ người con trai, “bến” chỉ người con gái dựa trên nét tương đồng.",
+  "ExamCode": "NGUVAN-DE02"
+ },
+ {
+  "Content": "Câu “Lỗ mũi mười tám gánh lông” sử dụng biện pháp tu từ:",
+  "OptionA": "Hoán dụ",
+  "OptionB": "Nói giảm nói tránh",
+  "OptionC": "So sánh",
+  "OptionD": "Nói quá",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Phóng đại mức độ để gây ấn tượng, tạo tiếng cười.",
+  "ExamCode": "NGUVAN-DE02"
+ },
+ {
+  "Content": "Trong câu “Bác đã đi rồi sao Bác ơi”, từ “đi” thể hiện biện pháp:",
+  "OptionA": "Nói giảm nói tránh",
+  "OptionB": "Ẩn dụ",
+  "OptionC": "So sánh",
+  "OptionD": "Nói quá",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Dùng “đi” thay cho “mất” để giảm đau thương.",
+  "ExamCode": "NGUVAN-DE02"
+ },
+ {
+  "Content": "Từ “xanh xanh” thuộc loại:",
+  "OptionA": "Thành ngữ",
+  "OptionB": "Từ ghép",
+  "OptionC": "Từ đơn",
+  "OptionD": "Từ láy",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Từ láy toàn bộ, lặp lại cả tiếng gốc.",
+  "ExamCode": "NGUVAN-DE02"
+ },
+ {
+  "Content": "Từ nào sau đây là từ ghép?",
+  "OptionA": "Quần áo",
+  "OptionB": "Xinh xắn",
+  "OptionC": "Lấp lánh",
+  "OptionD": "Lung linh",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "“Quần áo” ghép hai tiếng có nghĩa; các từ còn lại là từ láy.",
+  "ExamCode": "NGUVAN-DE02"
+ },
+ {
+  "Content": "Câu “Trời mưa.” xét theo cấu tạo là:",
+  "OptionA": "Câu rút gọn",
+  "OptionB": "Câu ghép",
+  "OptionC": "Câu đặc biệt",
+  "OptionD": "Câu đơn",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Câu có một cụm chủ ngữ – vị ngữ (“Trời” – “mưa”).",
+  "ExamCode": "NGUVAN-DE02"
+ },
+ {
+  "Content": "Phương thức biểu đạt chính của bài văn nghị luận là:",
+  "OptionA": "Nghị luận",
+  "OptionB": "Tự sự",
+  "OptionC": "Miêu tả",
+  "OptionD": "Biểu cảm",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Văn nghị luận dùng lí lẽ, dẫn chứng để thuyết phục.",
+  "ExamCode": "NGUVAN-DE02"
+ },
+ {
+  "Content": "“Truyện Kiều” của Nguyễn Du được viết bằng thể thơ:",
+  "OptionA": "Song thất lục bát",
+  "OptionB": "Tự do",
+  "OptionC": "Lục bát",
+  "OptionD": "Thất ngôn bát cú",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "Truyện Kiều gồm 3254 câu thơ lục bát.",
+  "ExamCode": "NGUVAN-DE02"
+ },
+ {
+  "Content": "Bài thơ thất ngôn bát cú Đường luật có số câu là:",
+  "OptionA": "6",
+  "OptionB": "8",
+  "OptionC": "12",
+  "OptionD": "4",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Ngữ văn",
+  "Explanation": "“Bát cú” là tám câu, mỗi câu bảy chữ.",
+  "ExamCode": "NGUVAN-DE02"
+ }
+]

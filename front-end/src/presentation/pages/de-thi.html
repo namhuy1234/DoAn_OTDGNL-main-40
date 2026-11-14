@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý bộ đề - Ôn Thi ĐGNL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23dc2626'/%3E%3Cpath fill='%23fff' d='M12 4l7 4.700-7 4.700-7-4.700zm0 6.700l7 4.300-7 4.700-7-4.300z'/%3E%3C/svg%3E">
+</head>
+<body data-page="admin" data-admin-tab="de-thi" class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+    <div id="siteHeader"></div>
+
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <nav class="text-sm text-slate-500 mb-6" aria-label="Đường dẫn"><a href="index.html" class="hover:text-brand-600">Trang chủ</a> <span class="mx-1">›</span> <a href="admin.html" class="hover:text-brand-600">Quản trị</a> <span class="mx-1">›</span> <span class="text-brand-600 font-medium">Bộ đề</span></nav>
+        <div id="adminTabs"></div>
+        <h1 class="text-2xl font-semibold mb-1">Quản lý bộ đề</h1>
+        <p class="text-slate-500 text-sm mb-6">Đặt tên, môn, thời gian làm bài (dùng cho đồng hồ đếm ngược ở chế độ thi thử) và mô tả của từng bộ đề. Câu hỏi được gắn vào bộ đề qua mã đề ở trang Câu hỏi.</p>
+
+        <div id="deniedBox" class="hidden bg-red-50 border border-red-200 text-red-700 rounded-2xl p-6 text-center">
+            <p class="font-bold">Bạn không có quyền admin.</p>
+            <a href="login.html" class="inline-block mt-3 px-4 py-2 rounded-lg text-sm font-bold text-white bg-brand-600 hover:bg-brand-700 transition">Đăng nhập</a>
+        </div>
+
+        <div id="content" class="hidden grid grid-cols-1 lg:grid-cols-[340px_minmax(0,1fr)] gap-6 items-start">
+            <form id="examForm" class="card p-5 space-y-3">
+                <h2 id="formTitle" class="font-semibold">Thêm bộ đề mới</h2>
+                <div><label for="fCode" class="block text-sm font-semibold text-slate-700 mb-1">Mã đề</label><input id="fCode" required maxlength="100" class="field" placeholder="VD: TOAN-DE05"></div>
+                <div><label for="fTitle" class="block text-sm font-semibold text-slate-700 mb-1">Tên bộ đề</label><input id="fTitle" required maxlength="200" class="field" placeholder="VD: Đề luyện tập Toán số 5"></div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div><label for="fSubject" class="block text-sm font-semibold text-slate-700 mb-1">Môn</label><select id="fSubject" class="field"></select></div>
+                    <div><label for="fMinutes" class="block text-sm font-semibold text-slate-700 mb-1">Thời gian (phút)</label><input id="fMinutes" type="number" min="1" max="300" value="15" required class="field"></div>
+                </div>
+                <div><label for="fDesc" class="block text-sm font-semibold text-slate-700 mb-1">Mô tả (tùy chọn)</label><textarea id="fDesc" rows="2" maxlength="500" class="field"></textarea></div>
+                <div class="flex gap-2">
+                    <button type="submit" id="fSave" class="flex-1 py-2.5 rounded-full text-white font-semibold bg-brand-600 hover:bg-brand-700 transition">Thêm bộ đề</button>
+                    <button type="button" id="fCancel" class="hidden px-4 py-2.5 rounded-full font-semibold text-slate-600 border border-slate-200 hover:bg-slate-50 transition">Hủy</button>
+                </div>
+                <p id="formMsg" class="text-sm font-medium min-h-[20px]"></p>
+            </form>
+
+            <div class="card p-5">
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+                    <h2 class="font-semibold">Danh sách bộ đề <span id="examCount" class="text-slate-500 font-normal"></span></h2>
+                    <input id="examSearch" type="search" placeholder="Tìm mã đề, tên hoặc môn..." class="field !w-auto !py-2 text-sm" aria-label="Tìm bộ đề">
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead><tr class="text-left text-slate-500 border-b border-slate-200">
+                            <th class="py-2 pr-3 font-medium">Mã đề</th><th class="py-2 pr-3 font-medium">Tên</th><th class="py-2 pr-3 font-medium">Môn</th>
+                            <th class="py-2 pr-3 font-medium text-center">Số câu</th><th class="py-2 pr-3 font-medium text-center">Thời gian</th><th class="py-2 font-medium"></th>
+                        </tr></thead>
+                        <tbody id="examBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="siteFooter"></div>
+    <script src="../js/layout.js"></script>
+    <script>
+        let exams = [];
+        let editing = null;
+        if (!OT.user()) window.location.href = 'login.html';
+        else if (!OT.isAdmin()) document.getElementById('deniedBox').classList.remove('hidden');
+        else { document.getElementById('content').classList.remove('hidden'); load(); }
+
+        document.getElementById('fSubject').innerHTML = OT.SUBJECTS.map(s => `<option>${OT.esc(s[0])}</option>`).join('') + '<option>Khác</option>';
+
+        function say(text, ok) {
+            const el = document.getElementById('formMsg');
+            el.textContent = text;
+            el.className = 'text-sm font-medium min-h-[20px] ' + (ok ? 'text-emerald-600' : 'text-red-600');
+        }
+
+        function resetForm() {
+            editing = null;
+            document.getElementById('examForm').reset();
+            document.getElementById('fCode').disabled = false;
+            document.getElementById('formTitle').textContent = 'Thêm bộ đề mới';
+            document.getElementById('fSave').textContent = 'Thêm bộ đề';
+            document.getElementById('fCancel').classList.add('hidden');
+        }
+
+        function render() {
+            const kw = document.getElementById('examSearch').value.trim().toLowerCase();
+            const rows = exams.filter(e => !kw || [e.ExamCode, e.Title, e.SubjectCategory].some(x => (x || '').toLowerCase().includes(kw)));
+            document.getElementById('examCount').textContent = `(${rows.length})`;
+            document.getElementById('examBody').innerHTML = rows.map(e => `
+                <tr class="border-b border-slate-100">
+                    <td class="py-2.5 pr-3 font-medium break-all">${OT.esc(e.ExamCode)}</td>
+                    <td class="py-2.5 pr-3">${OT.esc(e.Title)}${e.Description ? `<p class="text-xs text-slate-500">${OT.esc(e.Description)}</p>` : ''}</td>
+                    <td class="py-2.5 pr-3 whitespace-nowrap">${OT.esc(e.SubjectCategory)}</td>
+                    <td class="py-2.5 pr-3 text-center">${e.QuestionCount}</td>
+                    <td class="py-2.5 pr-3 text-center whitespace-nowrap">${e.DurationMinutes} phút</td>
+                    <td class="py-2.5 text-right whitespace-nowrap">
+                        <button type="button" data-edit="${e.Id}" class="px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-amber-500 hover:bg-amber-600 transition">Sửa</button>
+                        <button type="button" data-del="${e.Id}" ${e.QuestionCount ? 'disabled title="Bộ đề còn câu hỏi"' : ''} class="px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-red-500 hover:bg-red-600 disabled:opacity-40 disabled:cursor-not-allowed transition">Xóa</button>
+                    </td>
+                </tr>`).join('') || '<tr><td colspan="6" class="py-4 text-center text-slate-500">Không có bộ đề phù hợp.</td></tr>';
+            document.querySelectorAll('[data-edit]').forEach(b => b.addEventListener('click', () => {
+                const e = exams.find(x => x.Id === Number(b.getAttribute('data-edit')));
+                editing = e.Id;
+                document.getElementById('fCode').value = e.ExamCode;
+                document.getElementById('fCode').disabled = true;
+                document.getElementById('fTitle').value = e.Title;
+                document.getElementById('fSubject').value = e.SubjectCategory || 'Khác';
+                document.getElementById('fMinutes').value = e.DurationMinutes;
+                document.getElementById('fDesc').value = e.Description || '';
+                document.getElementById('formTitle').textContent = 'Sửa bộ đề ' + e.ExamCode;
+                document.getElementById('fSave').textContent = 'Lưu thay đổi';
+                document.getElementById('fCancel').classList.remove('hidden');
+                say('', true);
+            }));
+            document.querySelectorAll('[data-del]').forEach(b => b.addEventListener('click', async () => {
+                const e = exams.find(x => x.Id === Number(b.getAttribute('data-del')));
+                if (!confirm(`Xóa bộ đề ${e.ExamCode}?`)) return;
+                try { await OT.api('/Exams/' + e.Id, { method: 'DELETE' }); say('Đã xóa bộ đề ' + e.ExamCode, true); await load(); }
+                catch (err) { say(err.message); }
+            }));
+        }
+
+        async function load() {
+            try { exams = await OT.api('/Exams'); render(); } catch (err) { say(err.message); }
+        }
+
+        document.getElementById('examForm').addEventListener('submit', async ev => {
+            ev.preventDefault();
+            const body = {
+                ExamCode: document.getElementById('fCode').value.trim(),
+                Title: document.getElementById('fTitle').value.trim(),
+                SubjectCategory: document.getElementById('fSubject').value,
+                DurationMinutes: Number(document.getElementById('fMinutes').value),
+                Description: document.getElementById('fDesc').value.trim()
+            };
+            try {
+                await OT.api(editing ? '/Exams/' + editing : '/Exams', { method: editing ? 'PUT' : 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+                say(editing ? 'Đã lưu bộ đề ' + body.ExamCode : 'Đã thêm bộ đề ' + body.ExamCode + '. Hãy thêm câu hỏi với mã đề này ở trang Câu hỏi.', true);
+                resetForm();
+                await load();
+            } catch (err) { say(err.message); }
+        });
+        document.getElementById('fCancel').addEventListener('click', resetForm);
+        document.getElementById('examSearch').addEventListener('input', render);
+    </script>
+</body>
+</html>

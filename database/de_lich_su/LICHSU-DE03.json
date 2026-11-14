@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Chiến tranh thế giới thứ nhất diễn ra trong khoảng thời gian:",
+  "OptionA": "1939 – 1945",
+  "OptionB": "1905 – 1910",
+  "OptionC": "1914 – 1918",
+  "OptionD": "1920 – 1925",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Chiến tranh thế giới thứ nhất kéo dài từ 1914 đến 1918.",
+  "ExamCode": "LICHSU-DE03"
+ },
+ {
+  "Content": "Chiến tranh thế giới thứ hai kết thúc vào năm:",
+  "OptionA": "1950",
+  "OptionB": "1945",
+  "OptionC": "1939",
+  "OptionD": "1918",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Nhật Bản đầu hàng tháng 8/1945.",
+  "ExamCode": "LICHSU-DE03"
+ },
+ {
+  "Content": "Tổ chức Liên hợp quốc được thành lập năm:",
+  "OptionA": "1945",
+  "OptionB": "1967",
+  "OptionC": "1949",
+  "OptionD": "1919",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Hiến chương Liên hợp quốc có hiệu lực ngày 24/10/1945.",
+  "ExamCode": "LICHSU-DE03"
+ },
+ {
+  "Content": "Hiệp hội các quốc gia Đông Nam Á (ASEAN) được thành lập năm:",
+  "OptionA": "1975",
+  "OptionB": "1995",
+  "OptionC": "1945",
+  "OptionD": "1967",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Tuyên bố Băng Cốc ngày 8/8/1967.",
+  "ExamCode": "LICHSU-DE03"
+ },
+ {
+  "Content": "Cách mạng tháng Mười Nga thành công năm:",
+  "OptionA": "1789",
+  "OptionB": "1905",
+  "OptionC": "1945",
+  "OptionD": "1917",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Cách mạng tháng Mười Nga năm 1917.",
+  "ExamCode": "LICHSU-DE03"
+ },
+ {
+  "Content": "Cách mạng tư sản Pháp bùng nổ năm:",
+  "OptionA": "1917",
+  "OptionB": "1640",
+  "OptionC": "1776",
+  "OptionD": "1789",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Ngày 14/7/1789 nhân dân Pa-ri tấn công ngục Ba-xti.",
+  "ExamCode": "LICHSU-DE03"
+ },
+ {
+  "Content": "Bức tường Béc-lin sụp đổ năm:",
+  "OptionA": "1961",
+  "OptionB": "1991",
+  "OptionC": "1989",
+  "OptionD": "1975",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Bức tường Béc-lin bị phá bỏ tháng 11/1989.",
+  "ExamCode": "LICHSU-DE03"
+ },
+ {
+  "Content": "Liên bang Xô viết tan rã vào năm:",
+  "OptionA": "2000",
+  "OptionB": "1991",
+  "OptionC": "1989",
+  "OptionD": "1985",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Liên Xô chấm dứt tồn tại cuối năm 1991.",
+  "ExamCode": "LICHSU-DE03"
+ },
+ {
+  "Content": "Người đầu tiên bay vào vũ trụ là:",
+  "OptionA": "I-u-ri Ga-ga-rin",
+  "OptionB": "Valentina Tereshkova",
+  "OptionC": "Neil Armstrong",
+  "OptionD": "Phạm Tuân",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Ngày 12/4/1961 Gagarin bay vào vũ trụ trên tàu Phương Đông.",
+  "ExamCode": "LICHSU-DE03"
+ },
+ {
+  "Content": "Con người lần đầu tiên đặt chân lên Mặt Trăng vào năm:",
+  "OptionA": "1961",
+  "OptionB": "1957",
+  "OptionC": "1969",
+  "OptionD": "1975",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Tàu Apollo 11 đưa con người lên Mặt Trăng năm 1969.",
+  "ExamCode": "LICHSU-DE03"
+ },
+ {
+  "Content": "Cách mạng công nghiệp lần thứ nhất bắt đầu ở nước:",
+  "OptionA": "Anh",
+  "OptionB": "Đức",
+  "OptionC": "Pháp",
+  "OptionD": "Mỹ",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Cách mạng công nghiệp bắt đầu ở Anh từ nửa sau thế kỉ XVIII.",
+  "ExamCode": "LICHSU-DE03"
+ },
+ {
+  "Content": "Bản Tuyên ngôn Độc lập của Mỹ được công bố năm:",
+  "OptionA": "1789",
+  "OptionB": "1917",
+  "OptionC": "1865",
+  "OptionD": "1776",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Lịch sử",
+  "Explanation": "Tuyên ngôn Độc lập Hoa Kỳ ngày 4/7/1776.",
+  "ExamCode": "LICHSU-DE03"
+ }
+]

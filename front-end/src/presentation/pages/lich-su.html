@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch sử & thống kê - Ôn Thi ĐGNL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/theme.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23dc2626'/%3E%3Cpath fill='%23fff' d='M12 4l7 4.700-7 4.700-7-4.700zm0 6.700l7 4.300-7 4.700-7-4.300z'/%3E%3C/svg%3E">
+</head>
+<body data-page="lich-su" class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+    <div id="siteHeader"></div>
+
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <nav class="text-sm text-slate-500 mb-6" aria-label="Đường dẫn"><a href="index.html" class="hover:text-brand-600">Trang chủ</a> <span class="mx-1">›</span> <span class="text-brand-600 font-medium">Lịch sử &amp; thống kê</span></nav>
+        <h1 class="text-2xl font-semibold mb-1">Lịch sử làm bài &amp; thống kê học tập</h1>
+        <p id="subTitle" class="text-slate-500 text-sm mb-6">Mỗi lần nộp bài được lưu vào cơ sở dữ liệu để bạn theo dõi tiến độ ôn tập.</p>
+
+        <div id="emptyBox" class="hidden card p-8 text-center">
+            <p class="text-slate-600 mb-4">Bạn chưa làm bộ đề nào. Hãy làm bộ đề đầu tiên để xem thống kê.</p>
+            <a href="kho-de-thi.html" class="inline-block px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 transition">Vào kho đề thi</a>
+        </div>
+        <p id="errorBox" class="hidden text-red-600 text-sm"></p>
+
+        <div id="content" class="hidden space-y-6">
+            <!-- Tổng quan -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+                <div class="card p-4 text-center"><div id="sAttempts" class="text-2xl font-semibold text-brand-600">–</div><div class="text-xs text-slate-500">lượt làm bài</div></div>
+                <div class="card p-4 text-center"><div id="sExams" class="text-2xl font-semibold text-brand-600">–</div><div class="text-xs text-slate-500">bộ đề đã làm</div></div>
+                <div class="card p-4 text-center"><div id="sAvg" class="text-2xl font-semibold text-brand-600">–</div><div class="text-xs text-slate-500">điểm trung bình</div></div>
+                <div class="card p-4 text-center"><div id="sBest" class="text-2xl font-semibold text-brand-600">–</div><div class="text-xs text-slate-500">điểm cao nhất</div></div>
+            </div>
+
+            <!-- Gợi ý ôn tập -->
+            <div id="suggestBox" class="card p-5 border-l-4 !border-l-amber-400">
+                <h2 class="font-semibold mb-1">Gợi ý ôn tập</h2>
+                <p id="suggestText" class="text-sm text-slate-600"></p>
+                <div id="suggestLinks" class="flex flex-wrap gap-2 mt-3"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-6">
+                <div class="card p-5">
+                    <h2 class="font-semibold mb-3">Điểm trung bình theo môn</h2>
+                    <div class="h-64"><canvas id="chartSubject" aria-label="Biểu đồ điểm trung bình theo môn" role="img"></canvas></div>
+                </div>
+                <div class="card p-5">
+                    <h2 class="font-semibold mb-3">Tiến bộ qua các lượt gần nhất</h2>
+                    <div class="h-64"><canvas id="chartRecent" aria-label="Biểu đồ điểm các lượt làm bài gần nhất" role="img"></canvas></div>
+                </div>
+            </div>
+
+            <!-- Bảng lịch sử -->
+            <div class="card p-5">
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+                    <h2 class="font-semibold">Các lượt đã nộp</h2>
+                    <select id="filterSubject" class="field !w-auto !py-2 text-sm" aria-label="Lọc theo môn"><option value="">Tất cả môn</option></select>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="text-left text-slate-500 border-b border-slate-200">
+                                <th class="py-2 pr-3 font-medium">Thời gian nộp</th>
+                                <th class="py-2 pr-3 font-medium">Bộ đề</th>
+                                <th class="py-2 pr-3 font-medium">Môn</th>
+                                <th class="py-2 pr-3 font-medium text-center">Đúng / Sai / Trống</th>
+                                <th class="py-2 pr-3 font-medium">Thời gian làm</th>
+                                <th class="py-2 pr-3 font-medium text-right">Điểm</th>
+                                <th class="py-2 font-medium"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="historyBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="siteFooter"></div>
+    <script src="../js/layout.js"></script>
+    <script>
+        if (!OT.user()) { window.location.href = 'login.html'; }
+        let history = [];
+
+        function examUrl(r) {
+            return 'exam.html?subject=' + encodeURIComponent(r.SubjectCategory) + '&examCode=' + encodeURIComponent(r.ExamCode);
+        }
+        const scoreClass = s => s >= 80 ? 'text-emerald-600' : s >= 50 ? 'text-amber-600' : 'text-red-600';
+
+        function renderTable() {
+            const sub = document.getElementById('filterSubject').value;
+            const rows = history.filter(r => !sub || r.SubjectCategory === sub);
+            document.getElementById('historyBody').innerHTML = rows.map(r => `
+                <tr class="border-b border-slate-100">
+                    <td class="py-2.5 pr-3 whitespace-nowrap">${OT.esc(OT.fmtTime(r.SubmittedAt))}</td>
+                    <td class="py-2.5 pr-3 font-medium break-all">${OT.esc(r.ExamCode || 'Bộ đề chung')}</td>
+                    <td class="py-2.5 pr-3 whitespace-nowrap">${OT.esc(r.SubjectCategory)}</td>
+                    <td class="py-2.5 pr-3 text-center whitespace-nowrap"><span class="text-emerald-600 font-semibold">${r.CorrectCount}</span> / <span class="text-red-600">${r.WrongCount}</span> / <span class="text-slate-500">${r.BlankCount}</span></td>
+                    <td class="py-2.5 pr-3 whitespace-nowrap">${OT.esc(OT.fmtDuration(r.DurationSeconds))}</td>
+                    <td class="py-2.5 pr-3 text-right font-semibold ${scoreClass(r.ScorePercentage)}">${r.ScorePercentage}%</td>
+                    <td class="py-2.5 text-right whitespace-nowrap"><a href="xem-lai.html?id=${r.Id}" class="text-blue-700 hover:underline">Xem lại</a> · <a href="${examUrl(r)}" class="text-brand-600 hover:underline">Làm lại</a></td>
+                </tr>`).join('') || '<tr><td colspan="7" class="py-4 text-center text-slate-500">Không có lượt nào.</td></tr>';
+        }
+
+        // Gợi ý: môn có điểm trung bình thấp nhất và các bộ đề đã làm dưới 50%.
+        function renderSuggest(stats) {
+            const weak = stats.BySubject.slice().sort((a, b) => a.AverageScore - b.AverageScore)[0];
+            const best = {};
+            history.forEach(r => { if (!(r.ExamCode in best) || r.ScorePercentage > best[r.ExamCode].ScorePercentage) best[r.ExamCode] = r; });
+            const low = Object.values(best).filter(r => r.ScorePercentage < 50).slice(0, 4);
+            document.getElementById('suggestText').textContent = weak
+                ? `Môn cần ôn thêm: ${weak.Subject} (điểm trung bình ${weak.AverageScore}% sau ${weak.Attempts} lượt). ` +
+                  (low.length ? 'Nên làm lại các bộ đề dưới 50% và đọc kỹ lời giải sau khi nộp.' : 'Các bộ đề đã làm đều từ 50% trở lên, hãy thử bộ đề mới.')
+                : '';
+            document.getElementById('suggestLinks').innerHTML = low.map(r =>
+                `<a href="${examUrl(r)}" class="px-3 py-1.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200 hover:bg-amber-100">${OT.esc(r.ExamCode)} · ${r.ScorePercentage}%</a>`).join('') +
+                (weak ? `<a href="kho-de-thi.html?subject=${encodeURIComponent(weak.Subject)}" class="px-3 py-1.5 rounded-full text-xs font-semibold text-white bg-brand-600 hover:bg-brand-700">Đề môn ${OT.esc(weak.Subject)}</a>` : '');
+        }
+
+        function renderCharts(stats) {
+            if (!window.Chart) return;
+            Chart.defaults.font.family = 'Poppins, sans-serif';
+            new Chart(document.getElementById('chartSubject'), {
+                type: 'bar',
+                data: { labels: stats.BySubject.map(s => s.Subject), datasets: [{ label: 'Điểm TB (%)', data: stats.BySubject.map(s => s.AverageScore), backgroundColor: '#dc2626', borderRadius: 6, maxBarThickness: 42 }] },
+                options: { maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { min: 0, max: 100, ticks: { callback: v => v + '%' } } } }
+            });
+            new Chart(document.getElementById('chartRecent'), {
+                type: 'line',
+                data: { labels: stats.Recent.map((r, i) => i + 1), datasets: [{ label: 'Điểm (%)', data: stats.Recent.map(r => r.ScorePercentage), borderColor: '#0958d9', backgroundColor: 'rgba(9,88,217,.12)', fill: true, tension: .3, pointRadius: 4 }] },
+                options: { maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { title: it => stats.Recent[it[0].dataIndex].ExamCode } } },
+                    scales: { y: { min: 0, max: 100, ticks: { callback: v => v + '%' } }, x: { title: { display: true, text: 'Lượt làm (cũ → mới)' } } } }
+            });
+        }
+
+        async function init() {
+            try {
+                const [h, stats] = await Promise.all([OT.api('/Exam/history'), OT.api('/Exam/statistics')]);
+                history = h;
+                if (!history.length) { document.getElementById('emptyBox').classList.remove('hidden'); return; }
+                document.getElementById('content').classList.remove('hidden');
+                const s = stats.Summary;
+                document.getElementById('sAttempts').textContent = s.Attempts;
+                document.getElementById('sExams').textContent = s.ExamsDone;
+                document.getElementById('sAvg').textContent = s.AverageScore + '%';
+                document.getElementById('sBest').textContent = s.BestScore + '%';
+                const sel = document.getElementById('filterSubject');
+                sel.innerHTML += stats.BySubject.map(x => `<option>${OT.esc(x.Subject)}</option>`).join('');
+                sel.addEventListener('change', renderTable);
+                renderTable();
+                renderSuggest(stats);
+                renderCharts(stats);
+            } catch (err) {
+                const box = document.getElementById('errorBox');
+                box.textContent = err.message || 'Không tải được lịch sử làm bài.';
+                box.classList.remove('hidden');
+            }
+        }
+        init();
+    </script>
+</body>
+</html>

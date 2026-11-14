@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Đại dương có diện tích lớn nhất thế giới là:",
+  "OptionA": "Đại Tây Dương",
+  "OptionB": "Ấn Độ Dương",
+  "OptionC": "Thái Bình Dương",
+  "OptionD": "Bắc Băng Dương",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Thái Bình Dương chiếm khoảng một phần ba diện tích bề mặt Trái Đất.",
+  "ExamCode": "DIALY-DE03"
+ },
+ {
+  "Content": "Châu lục có diện tích lớn nhất là:",
+  "OptionA": "Châu Mỹ",
+  "OptionB": "Châu Âu",
+  "OptionC": "Châu Phi",
+  "OptionD": "Châu Á",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Châu Á rộng khoảng 44 triệu km².",
+  "ExamCode": "DIALY-DE03"
+ },
+ {
+  "Content": "Đỉnh núi cao nhất thế giới là:",
+  "OptionA": "Kilimanjaro",
+  "OptionB": "Mont Blanc",
+  "OptionC": "Phan-xi-păng",
+  "OptionD": "Everest",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đỉnh Everest (dãy Himalaya) cao khoảng 8849 m.",
+  "ExamCode": "DIALY-DE03"
+ },
+ {
+  "Content": "Hoang mạc nhiệt đới lớn nhất thế giới là:",
+  "OptionA": "Gô-bi (Gobi)",
+  "OptionB": "Xa-ha-ra (Sahara)",
+  "OptionC": "A-ta-ca-ma (Atacama)",
+  "OptionD": "Ca-la-ha-ri (Kalahari)",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Sahara ở Bắc Phi là hoang mạc nhiệt đới lớn nhất.",
+  "ExamCode": "DIALY-DE03"
+ },
+ {
+  "Content": "Theo ước tính của Liên hợp quốc năm 2023, quốc gia đông dân nhất thế giới là:",
+  "OptionA": "Hoa Kỳ",
+  "OptionB": "In-đô-nê-xi-a",
+  "OptionC": "Trung Quốc",
+  "OptionD": "Ấn Độ",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Báo cáo Dân số thế giới 2023 của UNFPA ước tính Ấn Độ vượt Trung Quốc.",
+  "ExamCode": "DIALY-DE03"
+ },
+ {
+  "Content": "Việt Nam trở thành thành viên của ASEAN vào năm:",
+  "OptionA": "1995",
+  "OptionB": "1975",
+  "OptionC": "2007",
+  "OptionD": "1967",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Việt Nam gia nhập ASEAN ngày 28/7/1995.",
+  "ExamCode": "DIALY-DE03"
+ },
+ {
+  "Content": "Trái Đất tự quay quanh trục một vòng mất khoảng:",
+  "OptionA": "24 giờ",
+  "OptionB": "12 giờ",
+  "OptionC": "365 ngày",
+  "OptionD": "30 ngày",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Một ngày đêm khoảng 24 giờ.",
+  "ExamCode": "DIALY-DE03"
+ },
+ {
+  "Content": "Hiện tượng ngày và đêm luân phiên nhau trên Trái Đất là do:",
+  "OptionA": "Trái Đất chuyển động quanh Mặt Trời",
+  "OptionB": "Trục Trái Đất thẳng đứng",
+  "OptionC": "Mặt Trăng quay quanh Trái Đất",
+  "OptionD": "Trái Đất tự quay quanh trục",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Trái Đất hình cầu và tự quay nên các nơi lần lượt được chiếu sáng.",
+  "ExamCode": "DIALY-DE03"
+ },
+ {
+  "Content": "Đường Xích đạo chia Trái Đất thành:",
+  "OptionA": "Châu Á và châu Âu",
+  "OptionB": "Nửa cầu Bắc và nửa cầu Nam",
+  "OptionC": "Lục địa và đại dương",
+  "OptionD": "Nửa cầu Đông và nửa cầu Tây",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Xích đạo là vĩ tuyến 0°; kinh tuyến gốc chia nửa cầu Đông và Tây.",
+  "ExamCode": "DIALY-DE03"
+ },
+ {
+  "Content": "Trên bản đồ tỉ lệ 1 : 1 000 000, 1 cm ứng với khoảng cách thực tế:",
+  "OptionA": "1 km",
+  "OptionB": "10 km",
+  "OptionC": "100 m",
+  "OptionD": "100 km",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "1 000 000 cm = 10 km.",
+  "ExamCode": "DIALY-DE03"
+ },
+ {
+  "Content": "Dạng biểu đồ thích hợp nhất để thể hiện cơ cấu (tỉ trọng các thành phần) của một đối tượng trong một năm là:",
+  "OptionA": "Biểu đồ kết hợp cột – đường",
+  "OptionB": "Biểu đồ cột đơn",
+  "OptionC": "Biểu đồ tròn",
+  "OptionD": "Biểu đồ đường",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Biểu đồ tròn thể hiện tỉ trọng các thành phần trong tổng thể.",
+  "ExamCode": "DIALY-DE03"
+ },
+ {
+  "Content": "Dạng biểu đồ thích hợp nhất để thể hiện tốc độ tăng trưởng của một đối tượng qua nhiều năm là:",
+  "OptionA": "Biểu đồ tròn",
+  "OptionB": "Biểu đồ đường",
+  "OptionC": "Biểu đồ miền",
+  "OptionD": "Biểu đồ cột chồng",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Biểu đồ đường thể hiện tốt xu hướng, tốc độ thay đổi theo thời gian.",
+  "ExamCode": "DIALY-DE03"
+ }
+]

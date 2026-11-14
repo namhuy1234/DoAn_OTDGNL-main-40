@@ -1,0 +1,222 @@
+[
+ {
+  "Content": "Nguồn năng lượng nào sau đây là năng lượng tái tạo?",
+  "OptionA": "Năng lượng mặt trời",
+  "OptionB": "Khí tự nhiên",
+  "OptionC": "Than đá",
+  "OptionD": "Dầu mỏ",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Năng lượng mặt trời được bổ sung liên tục; than, dầu, khí là nhiên liệu hóa thạch.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Pin mặt trời biến đổi:",
+  "OptionA": "Hóa năng thành nhiệt năng",
+  "OptionB": "Quang năng thành điện năng",
+  "OptionC": "Nhiệt năng thành cơ năng",
+  "OptionD": "Điện năng thành quang năng",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Pin quang điện chuyển năng lượng ánh sáng thành điện năng.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Nhà máy thủy điện biến đổi:",
+  "OptionA": "Hóa năng thành điện năng",
+  "OptionB": "Cơ năng của dòng nước thành điện năng",
+  "OptionC": "Điện năng thành cơ năng",
+  "OptionD": "Quang năng thành điện năng",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Nước từ hồ chứa làm quay tua-bin gắn với máy phát điện.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Động cơ điện biến đổi:",
+  "OptionA": "Quang năng thành nhiệt năng",
+  "OptionB": "Nhiệt năng thành điện năng",
+  "OptionC": "Điện năng thành cơ năng",
+  "OptionD": "Cơ năng thành điện năng",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Động cơ điện nhận điện năng và sinh công cơ học; máy phát điện làm điều ngược lại.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Đèn LED tiết kiệm điện hơn đèn sợi đốt vì:",
+  "OptionA": "Dùng hiệu điện thế cao hơn",
+  "OptionB": "Phần lớn điện năng chuyển thành quang năng, ít tỏa nhiệt",
+  "OptionC": "Tỏa nhiều nhiệt hơn",
+  "OptionD": "Không cần dòng điện",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Đèn sợi đốt biến phần lớn điện năng thành nhiệt, đèn LED có hiệu suất phát sáng cao hơn.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Một máy nhận năng lượng 1000 J và sinh ra công có ích 800 J. Hiệu suất của máy là:",
+  "OptionA": "125%",
+  "OptionB": "8%",
+  "OptionC": "20%",
+  "OptionD": "80%",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "H = A_có ích / A_toàn phần = 800/1000 = 80%.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Đơn vị kWh (ki-lô-oát giờ) dùng để đo:",
+  "OptionA": "Công suất",
+  "OptionB": "Điện năng tiêu thụ",
+  "OptionC": "Cường độ dòng điện",
+  "OptionD": "Hiệu điện thế",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "kWh là đơn vị năng lượng, dùng trên công tơ điện.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "1 kWh bằng:",
+  "OptionA": "3600 J",
+  "OptionB": "36 000 J",
+  "OptionC": "1000 J",
+  "OptionD": "3,6·10⁶ J",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "1 kWh = 1000 W · 3600 s = 3 600 000 J.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Ấm điện công suất 1000 W hoạt động trong 30 phút tiêu thụ điện năng:",
+  "OptionA": "500 kWh",
+  "OptionB": "30 kWh",
+  "OptionC": "0,03 kWh",
+  "OptionD": "0,5 kWh",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "A = 1 kW · 0,5 h = 0,5 kWh.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Khi có ma sát, cơ năng của vật:",
+  "OptionA": "Một phần chuyển hóa thành nhiệt năng",
+  "OptionB": "Được bảo toàn hoàn toàn",
+  "OptionC": "Tăng lên",
+  "OptionD": "Biến mất hoàn toàn không chuyển thành dạng nào",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Công của lực ma sát làm một phần cơ năng chuyển thành nhiệt năng.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Định luật bảo toàn năng lượng phát biểu:",
+  "OptionA": "Năng lượng luôn mất dần theo thời gian",
+  "OptionB": "Năng lượng luôn tự sinh ra",
+  "OptionC": "Năng lượng không tự sinh ra, không tự mất đi, chỉ chuyển hóa từ dạng này sang dạng khác",
+  "OptionD": "Năng lượng chỉ tồn tại ở dạng điện năng",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Đó là nội dung định luật bảo toàn và chuyển hóa năng lượng.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Vật liệu dẫn nhiệt tốt nhất trong các vật liệu sau là:",
+  "OptionA": "Đồng",
+  "OptionB": "Không khí",
+  "OptionC": "Nhựa",
+  "OptionD": "Gỗ",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Kim loại dẫn nhiệt tốt; gỗ, nhựa, không khí là vật cách nhiệt.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Mùa hè nên mặc áo màu sáng vì:",
+  "OptionA": "Màu sáng dẫn nhiệt tốt",
+  "OptionB": "Màu sáng hấp thụ nhiều bức xạ nhiệt",
+  "OptionC": "Màu sáng hấp thụ ít bức xạ nhiệt",
+  "OptionD": "Màu sáng ngăn cản đối lưu",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Vật màu sáng phản xạ nhiều, hấp thụ ít bức xạ nhiệt từ Mặt Trời.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Nhiệt từ Mặt Trời truyền tới Trái Đất chủ yếu bằng hình thức:",
+  "OptionA": "Bức xạ nhiệt",
+  "OptionB": "Đối lưu",
+  "OptionC": "Dẫn nhiệt",
+  "OptionD": "Cọ xát",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Giữa Mặt Trời và Trái Đất là khoảng chân không, chỉ bức xạ nhiệt truyền được.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Pin và ắc quy dự trữ năng lượng dưới dạng:",
+  "OptionA": "Năng lượng âm",
+  "OptionB": "Quang năng",
+  "OptionC": "Hóa năng",
+  "OptionD": "Năng lượng hạt nhân",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Pin, ắc quy biến hóa năng thành điện năng khi sử dụng.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Nhà máy điện hạt nhân sử dụng năng lượng tỏa ra từ:",
+  "OptionA": "Phản ứng phân hạch hạt nhân",
+  "OptionB": "Thủy triều",
+  "OptionC": "Gió",
+  "OptionD": "Phản ứng đốt cháy than",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Phân hạch urani tỏa nhiệt, làm nóng nước tạo hơi quay tua-bin.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Cầu chì trong mạch điện có tác dụng:",
+  "OptionA": "Tiết kiệm điện năng",
+  "OptionB": "Tự ngắt mạch khi dòng điện quá lớn",
+  "OptionC": "Tăng hiệu điện thế",
+  "OptionD": "Đổi chiều dòng điện",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Dây chì nóng chảy khi dòng quá lớn, bảo vệ mạch điện.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Biện pháp nào giúp tiết kiệm điện năng?",
+  "OptionA": "Mở cửa tủ lạnh thường xuyên",
+  "OptionB": "Để tivi ở chế độ chờ suốt đêm",
+  "OptionC": "Thay đèn LED bằng đèn sợi đốt",
+  "OptionD": "Tắt thiết bị điện khi không sử dụng",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Tắt thiết bị không dùng giúp giảm điện năng tiêu thụ.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Quạt điện 50 W hoạt động trong 4 giờ tiêu thụ điện năng:",
+  "OptionA": "0,2 kWh",
+  "OptionB": "0,02 kWh",
+  "OptionC": "2 kWh",
+  "OptionD": "200 kWh",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "A = 0,05 kW · 4 h = 0,2 kWh.",
+  "ExamCode": "VATLY-CD20"
+ },
+ {
+  "Content": "Năng lượng gió được chuyển thành điện năng nhờ:",
+  "OptionA": "Ắc quy",
+  "OptionB": "Pin mặt trời",
+  "OptionC": "Tua-bin gió và máy phát điện",
+  "OptionD": "Lò phản ứng hạt nhân",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Gió làm quay cánh tua-bin gắn với máy phát điện.",
+  "ExamCode": "VATLY-CD20"
+ }
+]

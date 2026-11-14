@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Giá trị của sin 30° là:",
+  "OptionA": "1",
+  "OptionB": "1/2",
+  "OptionC": "√3/2",
+  "OptionD": "√2/2",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "Giá trị lượng giác đặc biệt: sin 30° = 1/2.",
+  "ExamCode": "TOAN-DE02"
+ },
+ {
+  "Content": "Giá trị của cos 60° là:",
+  "OptionA": "1/2",
+  "OptionB": "1",
+  "OptionC": "√3/2",
+  "OptionD": "0",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Toán",
+  "Explanation": "Giá trị lượng giác đặc biệt: cos 60° = 1/2.",
+  "ExamCode": "TOAN-DE02"
+ },
+ {
+  "Content": "Tam giác vuông có hai cạnh góc vuông dài 3 cm và 4 cm. Cạnh huyền dài:",
+  "OptionA": "25 cm",
+  "OptionB": "7 cm",
+  "OptionC": "5 cm",
+  "OptionD": "6 cm",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Toán",
+  "Explanation": "Định lí Py-ta-go: √(3² + 4²) = √25 = 5.",
+  "ExamCode": "TOAN-DE02"
+ },
+ {
+  "Content": "Diện tích tam giác có đáy 10 cm và chiều cao tương ứng 6 cm là:",
+  "OptionA": "16 cm²",
+  "OptionB": "60 cm²",
+  "OptionC": "15 cm²",
+  "OptionD": "30 cm²",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Toán",
+  "Explanation": "S = ½ · 10 · 6 = 30 cm².",
+  "ExamCode": "TOAN-DE02"
+ },
+ {
+  "Content": "Thể tích khối lập phương cạnh 3 cm là:",
+  "OptionA": "27 cm³",
+  "OptionB": "18 cm³",
+  "OptionC": "81 cm³",
+  "OptionD": "9 cm³",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Toán",
+  "Explanation": "V = a³ = 3³ = 27 cm³.",
+  "ExamCode": "TOAN-DE02"
+ },
+ {
+  "Content": "Thể tích khối cầu bán kính R là:",
+  "OptionA": "(1/3)πR³",
+  "OptionB": "(4/3)πR³",
+  "OptionC": "4πR²",
+  "OptionD": "πR³",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "Công thức thể tích khối cầu V = (4/3)πR³; 4πR² là diện tích mặt cầu.",
+  "ExamCode": "TOAN-DE02"
+ },
+ {
+  "Content": "Khoảng cách giữa hai điểm A(1; 2) và B(4; 6) là:",
+  "OptionA": "7",
+  "OptionB": "5",
+  "OptionC": "√7",
+  "OptionD": "25",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "AB = √((4 − 1)² + (6 − 2)²) = √(9 + 16) = 5.",
+  "ExamCode": "TOAN-DE02"
+ },
+ {
+  "Content": "Hệ số góc của đường thẳng y = 2x + 1 là:",
+  "OptionA": "−2",
+  "OptionB": "1",
+  "OptionC": "1/2",
+  "OptionD": "2",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Toán",
+  "Explanation": "Đường thẳng y = ax + b có hệ số góc a = 2.",
+  "ExamCode": "TOAN-DE02"
+ },
+ {
+  "Content": "Phương trình đường tròn tâm O(0; 0), bán kính 3 là:",
+  "OptionA": "x² + y² = 9",
+  "OptionB": "x² + y² = 6",
+  "OptionC": "x² + y² = 3",
+  "OptionD": "(x − 3)² + y² = 9",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Toán",
+  "Explanation": "Đường tròn tâm (0; 0) bán kính R có phương trình x² + y² = R² = 9.",
+  "ExamCode": "TOAN-DE02"
+ },
+ {
+  "Content": "Giá trị của tan 45° là:",
+  "OptionA": "Không xác định",
+  "OptionB": "√3",
+  "OptionC": "1",
+  "OptionD": "0",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Toán",
+  "Explanation": "tan 45° = sin 45°/cos 45° = 1.",
+  "ExamCode": "TOAN-DE02"
+ },
+ {
+  "Content": "Tổng các góc trong của một tứ giác lồi bằng:",
+  "OptionA": "360°",
+  "OptionB": "270°",
+  "OptionC": "540°",
+  "OptionD": "180°",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Toán",
+  "Explanation": "Tứ giác chia được thành hai tam giác nên tổng các góc là 2 · 180° = 360°.",
+  "ExamCode": "TOAN-DE02"
+ },
+ {
+  "Content": "Thể tích khối trụ có bán kính đáy r và chiều cao h là:",
+  "OptionA": "πrh",
+  "OptionB": "πr²h",
+  "OptionC": "2πrh",
+  "OptionD": "(1/3)πr²h",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "V = diện tích đáy × chiều cao = πr²h; (1/3)πr²h là thể tích khối nón.",
+  "ExamCode": "TOAN-DE02"
+ }
+]

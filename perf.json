@@ -1,0 +1,23 @@
+{
+ "GET /api/questions": {
+  "n": 50,
+  "avg": 22.4,
+  "med": 22.3,
+  "p95": 25.3,
+  "mx": 28.3
+ },
+ "POST /api/auth/login": {
+  "n": 50,
+  "avg": 4.5,
+  "med": 4.4,
+  "p95": 6.2,
+  "mx": 7.3
+ },
+ "POST /api/exam/submit (4 câu)": {
+  "n": 50,
+  "avg": 4.2,
+  "med": 3.8,
+  "p95": 6.3,
+  "mx": 7.0
+ }
+}

@@ -1,0 +1,521 @@
+{
+ "info": {
+  "name": "OnThiDGNL - Kiem thu API (V8)",
+  "description": "Bo request kiem thu API he thong on thi DGNL ban V8: dang nhap, cau hoi (an dap an voi hoc sinh), bo de, nop bai, on tap, bang thanh tich, lich su, nguoi dung, Cloudinary. Mo bang Postman (Import) hoac chay bang Newman: npx newman run tests/postman/OnThiDGNL.postman_collection.json. Can back-end chay o cong 8000. Cau hoi va bo de tam KT-POSTMAN duoc xoa o cuoi.",
+  "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+ },
+ "variable": [
+  {
+   "key": "base",
+   "value": "http://localhost:8000/api"
+  },
+  {
+   "key": "token",
+   "value": ""
+  },
+  {
+   "key": "qid",
+   "value": ""
+  },
+  {
+   "key": "cau1",
+   "value": ""
+  },
+  {
+   "key": "dapan1",
+   "value": ""
+  },
+  {
+   "key": "examId",
+   "value": ""
+  }
+ ],
+ "item": [
+  {
+   "name": "PM01 Lay danh sach cau hoi (cong khai)",
+   "request": {
+    "method": "GET",
+    "url": "{{base}}/Questions",
+    "header": []
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 200', () => pm.response.to.have.status(200));",
+       "const ds = pm.response.json();",
+       "pm.test('Co du 478 cau hoi', () => pm.expect(ds.length).to.be.at.least(478));",
+       "pm.test('Moi cau co 4 phuong an', () => pm.expect(ds[0]).to.include.keys('OptionA','OptionB','OptionC','OptionD'));",
+       "pm.test('Khong lo dap an va loi giai', () => pm.expect(ds.every(q => !q.CorrectAnswer && !q.Explanation)).to.be.true);"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM02 Dang nhap admin dung mat khau",
+   "request": {
+    "method": "POST",
+    "url": "{{base}}/Auth/login",
+    "header": [
+     {
+      "key": "Content-Type",
+      "value": "application/json"
+     }
+    ],
+    "body": {
+     "mode": "raw",
+     "raw": "{\"Username\": \"admin\", \"Password\": \"Admin@123\"}"
+    }
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 200', () => pm.response.to.have.status(200));",
+       "const j = pm.response.json();",
+       "pm.test('Tra ve AccessToken va vai tro Admin', () => { pm.expect(j.AccessToken).to.be.a('string'); pm.expect(j.Role).to.eql('Admin'); });",
+       "pm.collectionVariables.set('token', j.AccessToken);"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM03 Dang nhap sai mat khau",
+   "request": {
+    "method": "POST",
+    "url": "{{base}}/Auth/login",
+    "header": [
+     {
+      "key": "Content-Type",
+      "value": "application/json"
+     }
+    ],
+    "body": {
+     "mode": "raw",
+     "raw": "{\"Username\": \"admin\", \"Password\": \"SaiMatKhau@1\"}"
+    }
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 401', () => pm.response.to.have.status(401));"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM04 Dang ky mat khau yeu",
+   "request": {
+    "method": "POST",
+    "url": "{{base}}/Auth/register",
+    "header": [
+     {
+      "key": "Content-Type",
+      "value": "application/json"
+     }
+    ],
+    "body": {
+     "mode": "raw",
+     "raw": "{\"Username\": \"pm_khongtao\", \"Password\": \"matkhauyeu\", \"FullName\": \"Postman\"}"
+    }
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 400', () => pm.response.to.have.status(400));"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM05 Lay cau hoi kem dap an (token admin)",
+   "request": {
+    "method": "GET",
+    "url": "{{base}}/Questions",
+    "header": [
+     {
+      "key": "Authorization",
+      "value": "Bearer {{token}}"
+     }
+    ]
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 200', () => pm.response.to.have.status(200));",
+       "const ds = pm.response.json();",
+       "pm.test('Admin nhan duoc dap an', () => pm.expect(ds.every(q => ['A','B','C','D'].includes(q.CorrectAnswer))).to.be.true);",
+       "pm.collectionVariables.set('cau1', ds[0].Id); pm.collectionVariables.set('dapan1', ds[0].CorrectAnswer);"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM06 Them cau hoi khong co token",
+   "request": {
+    "method": "POST",
+    "url": "{{base}}/Questions",
+    "header": [
+     {
+      "key": "Content-Type",
+      "value": "application/json"
+     }
+    ],
+    "body": {
+     "mode": "raw",
+     "raw": "{\"Content\": \"Cau Postman\", \"OptionA\": \"a\", \"OptionB\": \"b\", \"OptionC\": \"c\", \"OptionD\": \"d\", \"CorrectAnswer\": \"A\", \"SubjectCategory\": \"Sinh học\", \"Explanation\": \"ban dau\", \"ExamCode\": \"KT-POSTMAN\"}"
+    }
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 401', () => pm.response.to.have.status(401));"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM07 Them cau hoi thieu phuong an (admin)",
+   "request": {
+    "method": "POST",
+    "url": "{{base}}/Questions",
+    "header": [
+     {
+      "key": "Content-Type",
+      "value": "application/json"
+     },
+     {
+      "key": "Authorization",
+      "value": "Bearer {{token}}"
+     }
+    ],
+    "body": {
+     "mode": "raw",
+     "raw": "{\"Content\": \"Cau Postman\", \"OptionA\": \"a\", \"OptionB\": \"b\", \"OptionC\": \"c\", \"OptionD\": \"\", \"CorrectAnswer\": \"A\", \"SubjectCategory\": \"Sinh học\", \"Explanation\": \"ban dau\", \"ExamCode\": \"KT-POSTMAN\"}"
+    }
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 400', () => pm.response.to.have.status(400));"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM08 Them cau hoi bang token admin",
+   "request": {
+    "method": "POST",
+    "url": "{{base}}/Questions",
+    "header": [
+     {
+      "key": "Content-Type",
+      "value": "application/json"
+     },
+     {
+      "key": "Authorization",
+      "value": "Bearer {{token}}"
+     }
+    ],
+    "body": {
+     "mode": "raw",
+     "raw": "{\"Content\": \"Cau Postman\", \"OptionA\": \"a\", \"OptionB\": \"b\", \"OptionC\": \"c\", \"OptionD\": \"d\", \"CorrectAnswer\": \"A\", \"SubjectCategory\": \"Sinh học\", \"Explanation\": \"ban dau\", \"ExamCode\": \"KT-POSTMAN\"}"
+    }
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 201', () => pm.response.to.have.status(201));",
+       "pm.collectionVariables.set('qid', pm.response.json().Id);"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM09 Sua cau hoi",
+   "request": {
+    "method": "PUT",
+    "url": "{{base}}/Questions/{{qid}}",
+    "header": [
+     {
+      "key": "Content-Type",
+      "value": "application/json"
+     },
+     {
+      "key": "Authorization",
+      "value": "Bearer {{token}}"
+     }
+    ],
+    "body": {
+     "mode": "raw",
+     "raw": "{\"Content\": \"Cau Postman\", \"OptionA\": \"a\", \"OptionB\": \"b\", \"OptionC\": \"c\", \"OptionD\": \"d\", \"CorrectAnswer\": \"B\", \"SubjectCategory\": \"Sinh học\", \"Explanation\": \"da sua\", \"ExamCode\": \"KT-POSTMAN\"}"
+    }
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 200', () => pm.response.to.have.status(200));"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM10 Bo de tu tao khi them cau hoi co ma de moi",
+   "request": {
+    "method": "GET",
+    "url": "{{base}}/Exams/KT-POSTMAN",
+    "header": []
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 200', () => pm.response.to.have.status(200));",
+       "const e = pm.response.json();",
+       "pm.test('Bo de co 1 cau', () => pm.expect(e.QuestionCount).to.eql(1));",
+       "pm.collectionVariables.set('examId', e.Id);"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM11 Nop bai 1 cau dung",
+   "request": {
+    "method": "POST",
+    "url": "{{base}}/Exam/submit",
+    "header": [
+     {
+      "key": "Content-Type",
+      "value": "application/json"
+     }
+    ],
+    "body": {
+     "mode": "raw",
+     "raw": "{\"answers\": [{\"questionId\": {{cau1}}, \"selectedAnswer\": \"{{dapan1}}\"}]}"
+    }
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 200', () => pm.response.to.have.status(200));",
+       "pm.test('Cham dung 1 cau', () => pm.expect(pm.response.json().CorrectCount).to.eql(1));"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM12 Nop bai rong",
+   "request": {
+    "method": "POST",
+    "url": "{{base}}/Exam/submit",
+    "header": [
+     {
+      "key": "Content-Type",
+      "value": "application/json"
+     }
+    ],
+    "body": {
+     "mode": "raw",
+     "raw": "{\"answers\": []}"
+    }
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 400', () => pm.response.to.have.status(400));"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM13 On tap: kiem tra ngay mot cau",
+   "request": {
+    "method": "POST",
+    "url": "{{base}}/Exam/check",
+    "header": [
+     {
+      "key": "Content-Type",
+      "value": "application/json"
+     }
+    ],
+    "body": {
+     "mode": "raw",
+     "raw": "{\"questionId\": {{cau1}}, \"selectedAnswer\": \"{{dapan1}}\"}"
+    }
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 200', () => pm.response.to.have.status(200));",
+       "const r = pm.response.json();",
+       "pm.test('Chon dung dap an thi IsCorrect', () => pm.expect(r.IsCorrect).to.be.true);"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM14 Bang thanh tich tu CSDL",
+   "request": {
+    "method": "GET",
+    "url": "{{base}}/Exam/leaderboard?limit=10",
+    "header": []
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 200', () => pm.response.to.have.status(200));",
+       "const ds = pm.response.json();",
+       "pm.test('Diem giam dan', () => pm.expect(ds.every((x, i) => i === 0 || ds[i - 1].ScorePercentage >= x.ScorePercentage)).to.be.true);"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM15 Lich su lam bai khong token",
+   "request": {
+    "method": "GET",
+    "url": "{{base}}/Exam/history",
+    "header": []
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 401', () => pm.response.to.have.status(401));"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM16 Danh sach nguoi dung (admin)",
+   "request": {
+    "method": "GET",
+    "url": "{{base}}/Users",
+    "header": [
+     {
+      "key": "Authorization",
+      "value": "Bearer {{token}}"
+     }
+    ]
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 200', () => pm.response.to.have.status(200));",
+       "pm.test('Khong tra cot mat khau', () => pm.expect(pm.response.json().every(u => !('Password' in u))).to.be.true);"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM17 Trang thai Cloudinary",
+   "request": {
+    "method": "GET",
+    "url": "{{base}}/Upload/status",
+    "header": []
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 200', () => pm.response.to.have.status(200));",
+       "const c = pm.response.json();",
+       "pm.test('Co truong Configured va khong lo khoa', () => { pm.expect(c).to.have.property('Configured'); pm.expect(JSON.stringify(c)).to.not.include('secret'); });"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM18 Xoa cau hoi tam",
+   "request": {
+    "method": "DELETE",
+    "url": "{{base}}/Questions/{{qid}}",
+    "header": [
+     {
+      "key": "Authorization",
+      "value": "Bearer {{token}}"
+     }
+    ]
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 200', () => pm.response.to.have.status(200));"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "PM19 Xoa bo de tam",
+   "request": {
+    "method": "DELETE",
+    "url": "{{base}}/Exams/{{examId}}",
+    "header": [
+     {
+      "key": "Authorization",
+      "value": "Bearer {{token}}"
+     }
+    ]
+   },
+   "event": [
+    {
+     "listen": "test",
+     "script": {
+      "exec": [
+       "pm.test('Ma trang thai 200', () => pm.response.to.have.status(200));"
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

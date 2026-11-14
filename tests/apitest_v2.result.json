@@ -1,0 +1,388 @@
+{
+ "base": [
+  {
+   "id": "TC01",
+   "name": "Đăng ký thiếu mật khẩu",
+   "method": "POST",
+   "path": "/api/auth/register",
+   "expect": 400,
+   "status": 400,
+   "ok": true,
+   "body": "Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu."
+  },
+  {
+   "id": "TC02",
+   "name": "Đăng ký mật khẩu yếu (không có số/ký tự đặc biệt)",
+   "method": "POST",
+   "path": "/api/auth/register",
+   "expect": 400,
+   "status": 400,
+   "ok": true,
+   "body": "Mật khẩu bảo mật yếu: Phải chứa ít nhất một chữ số và một ký tự đặc biệt!"
+  },
+  {
+   "id": "TC03",
+   "name": "Đăng ký hợp lệ",
+   "method": "POST",
+   "path": "/api/auth/register",
+   "expect": 200,
+   "status": 200,
+   "ok": true,
+   "body": "{\"Message\":\"Đăng ký tài khoản thành công! Bạn có thể đăng nhập ngay bây giờ.\"}"
+  },
+  {
+   "id": "TC04",
+   "name": "Đăng ký trùng tên đăng nhập",
+   "method": "POST",
+   "path": "/api/auth/register",
+   "expect": 400,
+   "status": 400,
+   "ok": true,
+   "body": "Tên đăng nhập này đã có người đăng ký. Vui lòng chọn tên khác!"
+  },
+  {
+   "id": "TC05",
+   "name": "Đăng nhập đúng (trả về JWT)",
+   "method": "POST",
+   "path": "/api/auth/login",
+   "expect": 200,
+   "status": 200,
+   "ok": true,
+   "body": "{\"Message\":\"Đăng nhập thành công!\",\"UserId\":1,\"Username\":\"admin\",\"FullName\":\"Quản trị viên\",\"Role\":\"Admin\",\"AccessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e"
+  },
+  {
+   "id": "TC06",
+   "name": "Đăng nhập sai mật khẩu",
+   "method": "POST",
+   "path": "/api/auth/login",
+   "expect": 401,
+   "status": 401,
+   "ok": true,
+   "body": "Tài khoản hoặc mật khẩu không chính xác."
+  },
+  {
+   "id": "TC07",
+   "name": "Đăng nhập thiếu thông tin",
+   "method": "POST",
+   "path": "/api/auth/login",
+   "expect": 400,
+   "status": 400,
+   "ok": true,
+   "body": "Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu."
+  },
+  {
+   "id": "TC08",
+   "name": "Đổi mật khẩu thành công",
+   "method": "POST",
+   "path": "/api/auth/change-password",
+   "expect": 200,
+   "status": 200,
+   "ok": true,
+   "body": "{\"Message\":\"Đổi mật khẩu thành công!\"}"
+  },
+  {
+   "id": "TC09",
+   "name": "Đổi mật khẩu với mật khẩu cũ sai",
+   "method": "POST",
+   "path": "/api/auth/change-password",
+   "expect": 401,
+   "status": 401,
+   "ok": true,
+   "body": "Tài khoản hoặc mật khẩu cũ không chính xác."
+  },
+  {
+   "id": "TC10",
+   "name": "Đổi mật khẩu mới quá yếu",
+   "method": "POST",
+   "path": "/api/auth/change-password",
+   "expect": 400,
+   "status": 400,
+   "ok": true,
+   "body": "Mật khẩu mới bảo mật yếu: Phải chứa ít nhất một chữ số và một ký tự đặc biệt!"
+  },
+  {
+   "id": "TC11",
+   "name": "Lấy danh sách câu hỏi",
+   "method": "GET",
+   "path": "/api/questions",
+   "expect": 200,
+   "status": 200,
+   "ok": true,
+   "body": "[{\"Id\":1,\"Content\":\"Giá trị của biểu thức 2^3 + 3^2 bằng bao nhiêu?\",\"OptionA\":\"13\",\"OptionB\":\"15\",\"OptionC\":\"17\",\"OptionD\":\"19\",\"CorrectAnswer\":\"C\",\"SubjectCat"
+  },
+  {
+   "id": "TC12",
+   "name": "Thêm câu hỏi khi không có token",
+   "method": "POST",
+   "path": "/api/questions",
+   "expect": 401,
+   "status": 401,
+   "ok": true,
+   "body": "{\"detail\":\"Thiếu token xác thực.\"}"
+  },
+  {
+   "id": "TC13",
+   "name": "Thêm câu hỏi bằng tài khoản học sinh",
+   "method": "POST",
+   "path": "/api/questions",
+   "expect": 403,
+   "status": 403,
+   "ok": true,
+   "body": "{\"detail\":\"Bạn không có quyền admin.\"}"
+  },
+  {
+   "id": "TC14",
+   "name": "Thêm câu hỏi bằng tài khoản admin",
+   "method": "POST",
+   "path": "/api/questions",
+   "expect": 201,
+   "status": 201,
+   "ok": true,
+   "body": "{\"Id\":35,\"Content\":\"Câu hỏi kiểm thử\",\"OptionA\":\"a\",\"OptionB\":\"b\",\"OptionC\":\"c\",\"OptionD\":\"d\",\"CorrectAnswer\":\"A\",\"SubjectCategory\":\"Toán\",\"Explanation\":\"tmp\",\""
+  },
+  {
+   "id": "TC15",
+   "name": "Sửa câu hỏi (admin)",
+   "method": "PUT",
+   "path": "/api/questions/35",
+   "expect": 200,
+   "status": 200,
+   "ok": true,
+   "body": "{\"Id\":35,\"Content\":\"Câu hỏi kiểm thử (đã sửa)\",\"OptionA\":\"a\",\"OptionB\":\"b\",\"OptionC\":\"c\",\"OptionD\":\"d\",\"CorrectAnswer\":\"A\",\"SubjectCategory\":\"Toán\",\"Explanation"
+  },
+  {
+   "id": "TC16",
+   "name": "Sửa câu hỏi không tồn tại",
+   "method": "PUT",
+   "path": "/api/questions/999999",
+   "expect": 404,
+   "status": 404,
+   "ok": true,
+   "body": "Không tìm thấy câu hỏi để cập nhật."
+  },
+  {
+   "id": "TC17",
+   "name": "Xóa câu hỏi (admin)",
+   "method": "DELETE",
+   "path": "/api/questions/35",
+   "expect": 200,
+   "status": 200,
+   "ok": true,
+   "body": "{\"Message\":\"Đã xóa câu hỏi thành công.\"}"
+  },
+  {
+   "id": "TC18",
+   "name": "Xóa câu hỏi không tồn tại",
+   "method": "DELETE",
+   "path": "/api/questions/35",
+   "expect": 404,
+   "status": 404,
+   "ok": true,
+   "body": "Không tìm thấy câu hỏi để xóa."
+  },
+  {
+   "id": "TC19",
+   "name": "Nộp bài đúng toàn bộ (kỳ vọng 100%)",
+   "method": "POST",
+   "path": "/api/exam/submit",
+   "expect": 200,
+   "status": 200,
+   "ok": true,
+   "body": "{\"TotalQuestions\":4,\"CorrectCount\":4,\"ScorePercentage\":100.0,\"Details\":[{\"questionId\":1,\"content\":\"Giá trị của biểu thức 2^3 + 3^2 bằng bao nhiêu?\",\"selectedAns"
+  },
+  {
+   "id": "TC20",
+   "name": "Nộp bài sai 1 câu, bỏ trống 1 câu (kỳ vọng 50%)",
+   "method": "POST",
+   "path": "/api/exam/submit",
+   "expect": 200,
+   "status": 200,
+   "ok": true,
+   "body": "{\"TotalQuestions\":4,\"CorrectCount\":2,\"ScorePercentage\":50.0,\"Details\":[{\"questionId\":1,\"content\":\"Giá trị của biểu thức 2^3 + 3^2 bằng bao nhiêu?\",\"selectedAnsw"
+  },
+  {
+   "id": "TC21",
+   "name": "Nộp bài không có dữ liệu trả lời",
+   "method": "POST",
+   "path": "/api/exam/submit",
+   "expect": 400,
+   "status": 400,
+   "ok": true,
+   "body": "Bài làm không có dữ liệu trả lời."
+  },
+  {
+   "id": "TC22",
+   "name": "Truy cập đường dẫn viết hoa (/api/Questions)",
+   "method": "GET",
+   "path": "/api/Questions",
+   "expect": 200,
+   "status": 200,
+   "ok": true,
+   "body": "[{\"Id\":1,\"Content\":\"Giá trị của biểu thức 2^3 + 3^2 bằng bao nhiêu?\",\"OptionA\":\"13\",\"OptionB\":\"15\",\"OptionC\":\"17\",\"OptionD\":\"19\",\"CorrectAnswer\":\"C\",\"SubjectCat"
+  },
+  {
+   "id": "TC23",
+   "name": "Tấn công SQL injection ở ô tên đăng nhập (' OR '1'='1' --)",
+   "method": "POST",
+   "path": "/api/auth/login",
+   "expect": 401,
+   "status": 401,
+   "ok": true,
+   "body": "Tài khoản hoặc mật khẩu không chính xác."
+  },
+  {
+   "id": "TC24",
+   "name": "SQL injection ở ô mật khẩu (' OR 1=1 --)",
+   "method": "POST",
+   "path": "/api/auth/login",
+   "expect": 401,
+   "status": 401,
+   "ok": true,
+   "body": "Tài khoản hoặc mật khẩu không chính xác."
+  },
+  {
+   "id": "TC25",
+   "name": "Token sai định dạng khi thêm câu hỏi",
+   "method": "POST",
+   "path": "/api/questions",
+   "expect": 401,
+   "status": 401,
+   "ok": true,
+   "body": "{\"detail\":\"Token không hợp lệ hoặc đã hết hạn.\"}"
+  },
+  {
+   "id": "TC26",
+   "name": "Token bị sửa chữ ký khi thêm câu hỏi",
+   "method": "POST",
+   "path": "/api/questions",
+   "expect": 401,
+   "status": 401,
+   "ok": true,
+   "body": "{\"detail\":\"Token không hợp lệ hoặc đã hết hạn.\"}"
+  },
+  {
+   "id": "TC27",
+   "name": "Gửi JSON sai cú pháp khi đăng nhập",
+   "method": "POST",
+   "path": "/api/auth/login",
+   "expect": 422,
+   "status": 422,
+   "ok": true,
+   "body": "{\"detail\":[{\"type\":\"json_invalid\",\"loc\":[\"body\",1],\"msg\":\"JSON decode error\",\"input\":{},\"ctx\":{\"error\":\"Expecting property name enclosed in double quotes\"}}]}"
+  },
+  {
+   "id": "TC28",
+   "name": "Nộp bài với mã câu hỏi không tồn tại",
+   "method": "POST",
+   "path": "/api/exam/submit",
+   "expect": 200,
+   "status": 200,
+   "ok": true,
+   "body": "{\"TotalQuestions\":1,\"CorrectCount\":0,\"ScorePercentage\":0.0,\"Details\":[]}"
+  },
+  {
+   "id": "TC29",
+   "name": "Gửi tên trường dạng chữ thường (username/password) khi đăng nhập",
+   "method": "POST",
+   "path": "/api/auth/login",
+   "expect": 200,
+   "status": 200,
+   "ok": true,
+   "body": "{\"Message\":\"Đăng nhập thành công!\",\"UserId\":2,\"Username\":\"hocsinh\",\"FullName\":\"Nguyễn Văn An\",\"Role\":\"Student\",\"AccessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVC"
+  },
+  {
+   "id": "TC30",
+   "name": "Lưu câu hỏi chứa mã HTML/script (kiểm tra lưu trữ nguyên văn)",
+   "method": "POST",
+   "path": "/api/questions",
+   "expect": 201,
+   "status": 201,
+   "ok": true,
+   "body": "{\"Id\":36,\"Content\":\"<img src=x onerror=alert(1)> test\",\"OptionA\":\"a\",\"OptionB\":\"b\",\"OptionC\":\"c\",\"OptionD\":\"d\",\"CorrectAnswer\":\"A\",\"SubjectCategory\":\"Toán\",\"Exp"
+  },
+  {
+   "id": "TC31",
+   "name": "Đổi mật khẩu với tên đăng nhập không tồn tại",
+   "method": "POST",
+   "path": "/api/auth/change-password",
+   "expect": 401,
+   "status": 401,
+   "ok": true,
+   "body": "Tài khoản hoặc mật khẩu cũ không chính xác."
+  }
+ ],
+ "extra": [
+  {
+   "id": "TC32",
+   "name": "Chỉ nộp 1/4 câu của đề (đúng câu đó)",
+   "req": "POST /api/exam/submit",
+   "expect": "25% (mẫu số = 4 câu của đề)",
+   "actual": "100.0% (mẫu số = 1)",
+   "ok": false,
+   "severity": "S1"
+  },
+  {
+   "id": "TC33",
+   "name": "Nộp trùng 10 lần cùng một câu đúng",
+   "req": "POST /api/exam/submit",
+   "expect": "400 (từ chối mã câu hỏi trùng)",
+   "actual": "200, đúng 10/10 = 100.0%",
+   "ok": false,
+   "severity": "S2"
+  },
+  {
+   "id": "TC34",
+   "name": "Nộp lẫn câu thuộc hai môn/bộ đề khác nhau",
+   "req": "POST /api/exam/submit",
+   "expect": "400 (câu ngoài bộ đề)",
+   "actual": "200, chấm 2/2",
+   "ok": false,
+   "severity": "S2"
+  },
+  {
+   "id": "TC35",
+   "name": "Thêm câu hỏi rỗng, đáp án đúng = “Z” (admin)",
+   "req": "POST /api/questions",
+   "expect": "400/422 (dữ liệu không hợp lệ)",
+   "actual": "201",
+   "ok": false,
+   "severity": "S2"
+  },
+  {
+   "id": "TC36",
+   "name": "Giả mạo JWT Admin bằng khóa mặc định trong mã nguồn",
+   "req": "POST /api/questions",
+   "expect": "401",
+   "actual": "201",
+   "ok": false,
+   "severity": "S1"
+  },
+  {
+   "id": "TC37",
+   "name": "Đăng nhập sai 30 lần liên tiếp rồi đăng nhập đúng",
+   "req": "POST /api/auth/login",
+   "expect": "bị giới hạn/khóa tạm (429 hoặc 401 kéo dài)",
+   "actual": "30 lần đều 401; lần đúng: 200",
+   "ok": false,
+   "severity": "S3"
+  },
+  {
+   "id": "TC38",
+   "name": "API công khai không được chứa đáp án trước khi nộp bài",
+   "req": "GET /api/questions",
+   "expect": "không có CorrectAnswer/Explanation",
+   "actual": "có CorrectAnswer và Explanation",
+   "ok": false,
+   "severity": "S2"
+  },
+  {
+   "id": "TC39",
+   "name": "Mật khẩu trong bảng Users phải được băm",
+   "req": "Truy vấn SELECT Password FROM Users",
+   "expect": "chuỗi băm (có salt)",
+   "actual": "văn bản thuần (so khớp trực tiếp)",
+   "ok": false,
+   "severity": "S1"
+  }
+ ]
+}

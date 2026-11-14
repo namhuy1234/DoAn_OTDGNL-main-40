@@ -1,0 +1,222 @@
+[
+ {
+  "Content": "Thuốc thử nào sau đây được sử dụng để nhận biết glucose?",
+  "OptionA": "Dung dịch iodine",
+  "OptionB": "Thuốc thử Benedict",
+  "OptionC": "Thuốc thử Biuret",
+  "OptionD": "Dung dịch ethanol",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án B theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 1).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Thuốc thử Benedict ban đầu có màu gì?",
+  "OptionA": "Xanh lam",
+  "OptionB": "Đỏ gạch",
+  "OptionC": "Tím",
+  "OptionD": "Vàng",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án A theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 2).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Khi thực hiện phép thử Benedict để nhận biết glucose, cần thực hiện thao tác nào sau đây?",
+  "OptionA": "Làm lạnh hỗn hợp",
+  "OptionB": "Đặt hỗn hợp trong bóng tối",
+  "OptionC": "Đun nóng hỗn hợp trong bể nước nóng",
+  "OptionD": "Chiếu ánh sáng vào hỗn hợp",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 3).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Khi dung dịch chứa nhiều glucose phản ứng với thuốc thử Benedict và được đun nóng thích hợp, hiện tượng thường xuất hiện là",
+  "OptionA": "dung dịch chuyển sang màu tím",
+  "OptionB": "xuất hiện kết tủa xanh lam",
+  "OptionC": "xuất hiện kết tủa đỏ gạch",
+  "OptionD": "xuất hiện lớp nhũ tương trắng đục",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 4).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Glucose thuộc nhóm chất nào sau đây?",
+  "OptionA": "Đường không khử",
+  "OptionB": "Đường khử",
+  "OptionC": "Protein",
+  "OptionD": "Lipid",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án B theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 5).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Chất nào sau đây có thể cho kết quả dương tính với phép thử Benedict?",
+  "OptionA": "Tinh bột nguyên chất",
+  "OptionB": "Dầu ăn",
+  "OptionC": "Glucose",
+  "OptionD": "Albumin",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 6).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Nếu sau khi đun nóng với thuốc thử Benedict, hỗn hợp vẫn giữ màu xanh lam, điều này thường cho thấy",
+  "OptionA": "mẫu chứa nhiều glucose",
+  "OptionB": "mẫu chứa nhiều protein",
+  "OptionC": "không phát hiện đường khử trong mẫu",
+  "OptionD": "mẫu chứa nhiều lipid",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 7).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Trong phép thử nhũ tương để nhận biết lipid, dung môi thường được sử dụng là",
+  "OptionA": "ethanol",
+  "OptionB": "nước muối",
+  "OptionC": "dung dịch Benedict",
+  "OptionD": "dung dịch Biuret",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án A theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 8).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Khi thực hiện phép thử nhũ tương, sau khi hòa tan mẫu trong ethanol, cần thêm chất nào sau đây?",
+  "OptionA": "Dung dịch iodine",
+  "OptionB": "Nước",
+  "OptionC": "Dung dịch NaOH",
+  "OptionD": "Dung dịch CuSO₄",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án B theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 9).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Hiện tượng nào sau đây cho thấy mẫu có lipid trong phép thử nhũ tương?",
+  "OptionA": "Xuất hiện màu tím",
+  "OptionB": "Xuất hiện kết tủa đỏ gạch",
+  "OptionC": "Xuất hiện nhũ tương trắng đục",
+  "OptionD": "Dung dịch chuyển xanh lam",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 10).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Chất nào sau đây có thể được nhận biết bằng phép thử nhũ tương?",
+  "OptionA": "Glucose",
+  "OptionB": "Tinh bột",
+  "OptionC": "Albumin",
+  "OptionD": "Dầu thực vật",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án D theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 11).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Trong phép thử nhũ tương, lipid hòa tan tốt trong chất nào sau đây?",
+  "OptionA": "Nước",
+  "OptionB": "Ethanol",
+  "OptionC": "Dung dịch muối ăn",
+  "OptionD": "Dung dịch Benedict",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án B theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 12).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Nếu sau khi thực hiện đúng phép thử nhũ tương, hỗn hợp vẫn trong suốt và không xuất hiện màu trắng đục, kết luận phù hợp nhất là",
+  "OptionA": "mẫu chứa nhiều lipid",
+  "OptionB": "mẫu chứa nhiều glucose",
+  "OptionC": "không phát hiện lipid trong mẫu",
+  "OptionD": "mẫu chứa nhiều protein",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 13).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Thuốc thử nào sau đây được sử dụng để nhận biết protein?",
+  "OptionA": "Thuốc thử Benedict",
+  "OptionB": "Dung dịch iodine",
+  "OptionC": "Thuốc thử Biuret",
+  "OptionD": "Ethanol",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 14).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Thuốc thử Biuret được sử dụng để nhận biết thành phần nào trong protein?",
+  "OptionA": "Liên kết peptide",
+  "OptionB": "Liên kết glycosidic",
+  "OptionC": "Liên kết ester",
+  "OptionD": "Liên kết hydrogen",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án A theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 15).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Khi mẫu chứa protein phản ứng với thuốc thử Biuret, hiện tượng đặc trưng là",
+  "OptionA": "xuất hiện kết tủa đỏ gạch",
+  "OptionB": "dung dịch xuất hiện màu tím",
+  "OptionC": "xuất hiện nhũ tương trắng đục",
+  "OptionD": "dung dịch chuyển màu vàng nâu",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án B theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 16).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Thuốc thử Biuret thường được tạo thành từ dung dịch NaOH và dung dịch nào sau đây?",
+  "OptionA": "HCl",
+  "OptionB": "NaCl",
+  "OptionC": "CuSO₄",
+  "OptionD": "Iodine",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 17).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Chất nào sau đây cho phản ứng dương tính với thuốc thử Biuret?",
+  "OptionA": "Glucose",
+  "OptionB": "Dầu ăn",
+  "OptionC": "Albumin trong lòng trắng trứng",
+  "OptionD": "Tinh bột",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 18).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Khi thực hiện phép thử Biuret, mẫu có chứa protein sẽ xuất hiện màu nào sau đây?",
+  "OptionA": "Xanh lục",
+  "OptionB": "Tím",
+  "OptionC": "Đỏ gạch",
+  "OptionD": "Trắng đục",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án B theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 19).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ },
+ {
+  "Content": "Trong phép thử Biuret, nếu mẫu không chứa protein hoặc các peptide có đủ liên kết peptide để cho phản ứng dương tính, hỗn hợp thường",
+  "OptionA": "chuyển sang màu đỏ gạch",
+  "OptionB": "xuất hiện nhũ tương trắng đục",
+  "OptionC": "không xuất hiện màu tím đặc trưng",
+  "OptionD": "chuyển sang màu vàng cam",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Sinh học",
+  "Explanation": "Đáp án C theo hướng dẫn chấm của bộ 20 câu nhận biết glucose, lipid, protein (câu 20).",
+  "ExamCode": "SINH10-NHANBIET-20C"
+ }
+]

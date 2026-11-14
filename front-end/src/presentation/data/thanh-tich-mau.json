@@ -1,0 +1,402 @@
+[
+ {
+  "username": "hs_yba2",
+  "name": "Y ba 2",
+  "code": "TOAN-DE01",
+  "subject": "Toán",
+  "correct": 7,
+  "total": 12,
+  "score": 58.33,
+  "at": 1793635457686
+ },
+ {
+  "username": "hs_yba2",
+  "name": "Y ba 2",
+  "code": "NGUVAN-DE01",
+  "subject": "Ngữ văn",
+  "correct": 8,
+  "total": 12,
+  "score": 66.67,
+  "at": 1793635458506
+ },
+ {
+  "username": "hs_yba2",
+  "name": "Y ba 2",
+  "code": "TIENGANH-DE01",
+  "subject": "Tiếng Anh",
+  "correct": 8,
+  "total": 12,
+  "score": 66.67,
+  "at": 1793635459221
+ },
+ {
+  "username": "hs_yba2",
+  "name": "Y ba 2",
+  "code": "VATLY-DE01",
+  "subject": "Vật lý",
+  "correct": 10,
+  "total": 12,
+  "score": 83.33,
+  "at": 1793635460055
+ },
+ {
+  "username": "hs_yba2",
+  "name": "Y ba 2",
+  "code": "HOAHOC-DE01",
+  "subject": "Hóa học",
+  "correct": 7,
+  "total": 12,
+  "score": 58.33,
+  "at": 1793635460873
+ },
+ {
+  "username": "hs_yba2",
+  "name": "Y ba 2",
+  "code": "SINH10-GK1-MD01",
+  "subject": "Sinh học",
+  "correct": 10,
+  "total": 12,
+  "score": 83.33,
+  "at": 1793635461705
+ },
+ {
+  "username": "hs_yba2",
+  "name": "Y ba 2",
+  "code": "DIALY-DE01",
+  "subject": "Địa lý",
+  "correct": 11,
+  "total": 12,
+  "score": 91.67,
+  "at": 1793635462571
+ },
+ {
+  "username": "hs_yba2",
+  "name": "Y ba 2",
+  "code": "LICHSU-DE01",
+  "subject": "Lịch sử",
+  "correct": 10,
+  "total": 12,
+  "score": 83.33,
+  "at": 1793635463522
+ },
+ {
+  "username": "hs_lamdo",
+  "name": "Lâm Đỗ",
+  "code": "TOAN-DE01",
+  "subject": "Toán",
+  "correct": 10,
+  "total": 12,
+  "score": 83.33,
+  "at": 1793635467548
+ },
+ {
+  "username": "hs_lamdo",
+  "name": "Lâm Đỗ",
+  "code": "NGUVAN-DE01",
+  "subject": "Ngữ văn",
+  "correct": 8,
+  "total": 12,
+  "score": 66.67,
+  "at": 1793635468222
+ },
+ {
+  "username": "hs_lamdo",
+  "name": "Lâm Đỗ",
+  "code": "TIENGANH-DE01",
+  "subject": "Tiếng Anh",
+  "correct": 7,
+  "total": 12,
+  "score": 58.33,
+  "at": 1793635469021
+ },
+ {
+  "username": "hs_lamdo",
+  "name": "Lâm Đỗ",
+  "code": "VATLY-DE01",
+  "subject": "Vật lý",
+  "correct": 10,
+  "total": 12,
+  "score": 83.33,
+  "at": 1793635469705
+ },
+ {
+  "username": "hs_lamdo",
+  "name": "Lâm Đỗ",
+  "code": "HOAHOC-DE01",
+  "subject": "Hóa học",
+  "correct": 10,
+  "total": 12,
+  "score": 83.33,
+  "at": 1793635470404
+ },
+ {
+  "username": "hs_lamdo",
+  "name": "Lâm Đỗ",
+  "code": "SINH10-GK1-MD01",
+  "subject": "Sinh học",
+  "correct": 8,
+  "total": 12,
+  "score": 66.67,
+  "at": 1793635471103
+ },
+ {
+  "username": "hs_lamdo",
+  "name": "Lâm Đỗ",
+  "code": "DIALY-DE01",
+  "subject": "Địa lý",
+  "correct": 8,
+  "total": 12,
+  "score": 66.67,
+  "at": 1793635471836
+ },
+ {
+  "username": "hs_lamdo",
+  "name": "Lâm Đỗ",
+  "code": "LICHSU-DE01",
+  "subject": "Lịch sử",
+  "correct": 9,
+  "total": 12,
+  "score": 75,
+  "at": 1793635472622
+ },
+ {
+  "username": "hs_bien",
+  "name": "Biên",
+  "code": "TOAN-DE01",
+  "subject": "Toán",
+  "correct": 9,
+  "total": 12,
+  "score": 75,
+  "at": 1793635476480
+ },
+ {
+  "username": "hs_bien",
+  "name": "Biên",
+  "code": "NGUVAN-DE01",
+  "subject": "Ngữ văn",
+  "correct": 7,
+  "total": 12,
+  "score": 58.33,
+  "at": 1793635477271
+ },
+ {
+  "username": "hs_bien",
+  "name": "Biên",
+  "code": "TIENGANH-DE01",
+  "subject": "Tiếng Anh",
+  "correct": 3,
+  "total": 12,
+  "score": 25,
+  "at": 1793635478052
+ },
+ {
+  "username": "hs_bien",
+  "name": "Biên",
+  "code": "VATLY-DE01",
+  "subject": "Vật lý",
+  "correct": 9,
+  "total": 12,
+  "score": 75,
+  "at": 1793635478720
+ },
+ {
+  "username": "hs_bien",
+  "name": "Biên",
+  "code": "HOAHOC-DE01",
+  "subject": "Hóa học",
+  "correct": 7,
+  "total": 12,
+  "score": 58.33,
+  "at": 1793635479469
+ },
+ {
+  "username": "hs_bien",
+  "name": "Biên",
+  "code": "SINH10-GK1-MD01",
+  "subject": "Sinh học",
+  "correct": 8,
+  "total": 12,
+  "score": 66.67,
+  "at": 1793635480152
+ },
+ {
+  "username": "hs_bien",
+  "name": "Biên",
+  "code": "DIALY-DE01",
+  "subject": "Địa lý",
+  "correct": 6,
+  "total": 12,
+  "score": 50,
+  "at": 1793635480953
+ },
+ {
+  "username": "hs_bien",
+  "name": "Biên",
+  "code": "LICHSU-DE01",
+  "subject": "Lịch sử",
+  "correct": 7,
+  "total": 12,
+  "score": 58.33,
+  "at": 1793635481653
+ },
+ {
+  "username": "hs_linhkieu",
+  "name": "Linh Kiều",
+  "code": "TOAN-DE01",
+  "subject": "Toán",
+  "correct": 11,
+  "total": 12,
+  "score": 91.67,
+  "at": 1793635485552
+ },
+ {
+  "username": "hs_linhkieu",
+  "name": "Linh Kiều",
+  "code": "NGUVAN-DE01",
+  "subject": "Ngữ văn",
+  "correct": 10,
+  "total": 12,
+  "score": 83.33,
+  "at": 1793635486421
+ },
+ {
+  "username": "hs_linhkieu",
+  "name": "Linh Kiều",
+  "code": "TIENGANH-DE01",
+  "subject": "Tiếng Anh",
+  "correct": 11,
+  "total": 12,
+  "score": 91.67,
+  "at": 1793635487238
+ },
+ {
+  "username": "hs_linhkieu",
+  "name": "Linh Kiều",
+  "code": "VATLY-DE01",
+  "subject": "Vật lý",
+  "correct": 12,
+  "total": 12,
+  "score": 100,
+  "at": 1793635488030
+ },
+ {
+  "username": "hs_linhkieu",
+  "name": "Linh Kiều",
+  "code": "HOAHOC-DE01",
+  "subject": "Hóa học",
+  "correct": 12,
+  "total": 12,
+  "score": 100,
+  "at": 1793635488861
+ },
+ {
+  "username": "hs_linhkieu",
+  "name": "Linh Kiều",
+  "code": "SINH10-GK1-MD01",
+  "subject": "Sinh học",
+  "correct": 8,
+  "total": 12,
+  "score": 66.67,
+  "at": 1793635489605
+ },
+ {
+  "username": "hs_linhkieu",
+  "name": "Linh Kiều",
+  "code": "DIALY-DE01",
+  "subject": "Địa lý",
+  "correct": 9,
+  "total": 12,
+  "score": 75,
+  "at": 1793635490300
+ },
+ {
+  "username": "hs_linhkieu",
+  "name": "Linh Kiều",
+  "code": "LICHSU-DE01",
+  "subject": "Lịch sử",
+  "correct": 9,
+  "total": 12,
+  "score": 75,
+  "at": 1793635490985
+ },
+ {
+  "username": "hs_namhuy",
+  "name": "Nam Huy",
+  "code": "TOAN-DE01",
+  "subject": "Toán",
+  "correct": 10,
+  "total": 12,
+  "score": 83.33,
+  "at": 1793635789824
+ },
+ {
+  "username": "hs_namhuy",
+  "name": "Nam Huy",
+  "code": "NGUVAN-DE01",
+  "subject": "Ngữ văn",
+  "correct": 12,
+  "total": 12,
+  "score": 100,
+  "at": 1793635791183
+ },
+ {
+  "username": "hs_namhuy",
+  "name": "Nam Huy",
+  "code": "TIENGANH-DE01",
+  "subject": "Tiếng Anh",
+  "correct": 9,
+  "total": 12,
+  "score": 75,
+  "at": 1793635792331
+ },
+ {
+  "username": "hs_namhuy",
+  "name": "Nam Huy",
+  "code": "VATLY-DE01",
+  "subject": "Vật lý",
+  "correct": 7,
+  "total": 12,
+  "score": 58.33,
+  "at": 1793635793468
+ },
+ {
+  "username": "hs_namhuy",
+  "name": "Nam Huy",
+  "code": "HOAHOC-DE01",
+  "subject": "Hóa học",
+  "correct": 7,
+  "total": 12,
+  "score": 58.33,
+  "at": 1793635794398
+ },
+ {
+  "username": "hs_namhuy",
+  "name": "Nam Huy",
+  "code": "SINH10-GK1-MD01",
+  "subject": "Sinh học",
+  "correct": 12,
+  "total": 12,
+  "score": 100,
+  "at": 1793635795579
+ },
+ {
+  "username": "hs_namhuy",
+  "name": "Nam Huy",
+  "code": "DIALY-DE01",
+  "subject": "Địa lý",
+  "correct": 10,
+  "total": 12,
+  "score": 83.33,
+  "at": 1793635797845
+ },
+ {
+  "username": "hs_namhuy",
+  "name": "Nam Huy",
+  "code": "LICHSU-DE01",
+  "subject": "Lịch sử",
+  "correct": 8,
+  "total": 12,
+  "score": 66.67,
+  "at": 1793635799017
+ }
+]

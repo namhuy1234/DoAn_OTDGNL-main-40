@@ -1,0 +1,222 @@
+[
+ {
+  "Content": "The ___ of the bridge took two years. (CONSTRUCT)",
+  "OptionA": "constructive",
+  "OptionB": "construct",
+  "OptionC": "construction",
+  "OptionD": "constructed",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "After “the” we need a noun: construction.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "She sings ___. (BEAUTIFUL)",
+  "OptionA": "beauty",
+  "OptionB": "beautiful",
+  "OptionC": "beautifully",
+  "OptionD": "beautify",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "An adverb modifies the verb “sings”.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "He is a ___ driver; he never has accidents. (CARE)",
+  "OptionA": "carefully",
+  "OptionB": "care",
+  "OptionC": "careful",
+  "OptionD": "carelessness",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "An adjective goes before the noun “driver”.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "Choose the noun form of “happy”.",
+  "OptionA": "happily",
+  "OptionB": "happiness",
+  "OptionC": "unhappy",
+  "OptionD": "happier",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "The suffix -ness forms the noun: happiness.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "Choose the adjective form of “danger”.",
+  "OptionA": "dangers",
+  "OptionB": "dangerously",
+  "OptionC": "endanger",
+  "OptionD": "dangerous",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "The suffix -ous forms the adjective: dangerous.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "The opposite of “possible” is ___.",
+  "OptionA": "inpossible",
+  "OptionB": "impossible",
+  "OptionC": "unpossible",
+  "OptionD": "dispossible",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Prefix im- is used before p: impossible.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "The opposite of “agree” is ___.",
+  "OptionA": "unagree",
+  "OptionB": "inagree",
+  "OptionC": "disagree",
+  "OptionD": "imagree",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Prefix dis- with the verb agree: disagree.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "I was born ___ 2008.",
+  "OptionA": "in",
+  "OptionB": "since",
+  "OptionC": "on",
+  "OptionD": "at",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“In” is used with years.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "The meeting starts ___ 9 o'clock.",
+  "OptionA": "in",
+  "OptionB": "on",
+  "OptionC": "at",
+  "OptionD": "for",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“At” is used with clock times.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "We have English ___ Monday.",
+  "OptionA": "by",
+  "OptionB": "on",
+  "OptionC": "in",
+  "OptionD": "at",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“On” is used with days of the week.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "She is afraid ___ dogs.",
+  "OptionA": "of",
+  "OptionB": "with",
+  "OptionC": "from",
+  "OptionD": "about",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Collocation: afraid of.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "He apologized ___ being late.",
+  "OptionA": "of",
+  "OptionB": "to",
+  "OptionC": "with",
+  "OptionD": "for",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Collocation: apologize for something.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "The comparative form of “good” is ___.",
+  "OptionA": "more good",
+  "OptionB": "best",
+  "OptionC": "gooder",
+  "OptionD": "better",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Irregular: good – better – best.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "The superlative form of “big” is ___.",
+  "OptionA": "the most big",
+  "OptionB": "bigger",
+  "OptionC": "the bigest",
+  "OptionD": "the biggest",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Double the final consonant: big → the biggest.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "She is ___ than her sister. (TALL)",
+  "OptionA": "taller",
+  "OptionB": "the tallest",
+  "OptionC": "tallest",
+  "OptionD": "more tall",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "Comparative with “than”: taller.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "This is the most ___ film I have ever seen.",
+  "OptionA": "interesting",
+  "OptionB": "interestingly",
+  "OptionC": "interest",
+  "OptionD": "interested",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“-ing” adjectives describe things that cause the feeling.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "I am very ___ in history.",
+  "OptionA": "interesting",
+  "OptionB": "interested",
+  "OptionC": "interestingly",
+  "OptionD": "interest",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“-ed” adjectives describe how a person feels.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "He suggested ___ to the beach.",
+  "OptionA": "go",
+  "OptionB": "going",
+  "OptionC": "to go",
+  "OptionD": "went",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“Suggest” + V-ing.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "She decided ___ abroad.",
+  "OptionA": "to study",
+  "OptionB": "studying",
+  "OptionC": "study",
+  "OptionD": "studied",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“Decide” + to V.",
+  "ExamCode": "TIENGANH-CD20"
+ },
+ {
+  "Content": "He has lived in Hanoi ___ 2015.",
+  "OptionA": "from",
+  "OptionB": "since",
+  "OptionC": "in",
+  "OptionD": "for",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Tiếng Anh",
+  "Explanation": "“Since” + a point in time with the present perfect.",
+  "ExamCode": "TIENGANH-CD20"
+ }
+]

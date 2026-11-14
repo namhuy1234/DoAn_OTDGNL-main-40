@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Kim loại dẫn điện tốt nhất là:",
+  "OptionA": "Bạc (Ag)",
+  "OptionB": "Đồng (Cu)",
+  "OptionC": "Nhôm (Al)",
+  "OptionD": "Sắt (Fe)",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Thứ tự dẫn điện giảm dần: Ag > Cu > Au > Al > Fe.",
+  "ExamCode": "HOAHOC-DE03"
+ },
+ {
+  "Content": "Kim loại có nhiệt độ nóng chảy cao nhất là:",
+  "OptionA": "Đồng (Cu)",
+  "OptionB": "Chì (Pb)",
+  "OptionC": "Sắt (Fe)",
+  "OptionD": "Vonfram (W)",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Vonfram nóng chảy ở khoảng 3410 °C, dùng làm dây tóc bóng đèn.",
+  "ExamCode": "HOAHOC-DE03"
+ },
+ {
+  "Content": "Sắt bị gỉ trong không khí ẩm là do:",
+  "OptionA": "Sắt bị khử",
+  "OptionB": "Sắt tan vào không khí",
+  "OptionC": "Sắt bị oxi hóa",
+  "OptionD": "Sắt bay hơi",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Fe nhường electron cho oxi (có hơi nước) tạo gỉ sắt.",
+  "ExamCode": "HOAHOC-DE03"
+ },
+ {
+  "Content": "Kim loại không tác dụng với dung dịch HCl loãng là:",
+  "OptionA": "Kẽm (Zn)",
+  "OptionB": "Đồng (Cu)",
+  "OptionC": "Sắt (Fe)",
+  "OptionD": "Magie (Mg)",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Cu đứng sau H trong dãy hoạt động hóa học.",
+  "ExamCode": "HOAHOC-DE03"
+ },
+ {
+  "Content": "Khí chiếm khoảng 78% thể tích không khí là:",
+  "OptionA": "Argon",
+  "OptionB": "Cacbon đioxit",
+  "OptionC": "Oxi",
+  "OptionD": "Nitơ",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Không khí có khoảng 78% N₂, 21% O₂.",
+  "ExamCode": "HOAHOC-DE03"
+ },
+ {
+  "Content": "Khí gây hiệu ứng nhà kính chủ yếu do hoạt động của con người là:",
+  "OptionA": "N₂",
+  "OptionB": "CO₂",
+  "OptionC": "O₂",
+  "OptionD": "He",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Đốt nhiên liệu hóa thạch thải nhiều CO₂ gây hiệu ứng nhà kính.",
+  "ExamCode": "HOAHOC-DE03"
+ },
+ {
+  "Content": "Công thức phân tử của metan là:",
+  "OptionA": "C₂H₄",
+  "OptionB": "CH₃OH",
+  "OptionC": "CH₄",
+  "OptionD": "C₂H₆",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Metan là ankan đơn giản nhất CH₄.",
+  "ExamCode": "HOAHOC-DE03"
+ },
+ {
+  "Content": "Công thức của etanol (rượu etylic) là:",
+  "OptionA": "C₂H₅OH",
+  "OptionB": "CH₃OH",
+  "OptionC": "C₂H₆",
+  "OptionD": "CH₃COOH",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Etanol C₂H₅OH; CH₃OH là metanol; CH₃COOH là axit axetic.",
+  "ExamCode": "HOAHOC-DE03"
+ },
+ {
+  "Content": "Giấm ăn là dung dịch loãng của axit:",
+  "OptionA": "Axit nitric (HNO₃)",
+  "OptionB": "Axit clohiđric (HCl)",
+  "OptionC": "Axit axetic (CH₃COOH)",
+  "OptionD": "Axit sunfuric (H₂SO₄)",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Giấm ăn chứa khoảng 2–5% axit axetic.",
+  "ExamCode": "HOAHOC-DE03"
+ },
+ {
+  "Content": "Công thức phân tử của glucozơ là:",
+  "OptionA": "C₁₂H₂₂O₁₁",
+  "OptionB": "C₆H₁₂O₆",
+  "OptionC": "C₂H₅OH",
+  "OptionD": "(C₆H₁₀O₅)ₙ",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Glucozơ C₆H₁₂O₆; C₁₂H₂₂O₁₁ là saccarozơ; (C₆H₁₀O₅)ₙ là tinh bột, xenlulozơ.",
+  "ExamCode": "HOAHOC-DE03"
+ },
+ {
+  "Content": "Polime thường dùng sản xuất túi nilon là:",
+  "OptionA": "Tinh bột",
+  "OptionB": "Xenlulozơ",
+  "OptionC": "Polietilen (PE)",
+  "OptionD": "Protein",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Túi nilon phổ biến được làm từ polietilen.",
+  "ExamCode": "HOAHOC-DE03"
+ },
+ {
+  "Content": "Chất béo là:",
+  "OptionA": "Ancol đơn chức",
+  "OptionB": "Trieste của glixerol với axit béo",
+  "OptionC": "Hiđrocacbon no",
+  "OptionD": "Axit vô cơ",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Chất béo (triglixerit) là trieste của glixerol và axit béo.",
+  "ExamCode": "HOAHOC-DE03"
+ }
+]

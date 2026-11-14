@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xem lại bài làm - Ôn Thi ĐGNL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23dc2626'/%3E%3Cpath fill='%23fff' d='M12 4l7 4.700-7 4.700-7-4.700zm0 6.700l7 4.300-7 4.700-7-4.300z'/%3E%3C/svg%3E">
+</head>
+<body data-page="lich-su" class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+    <div id="siteHeader"></div>
+
+    <main class="flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <nav class="text-sm text-slate-500 mb-6" aria-label="Đường dẫn"><a href="index.html" class="hover:text-brand-600">Trang chủ</a> <span class="mx-1">›</span> <a href="lich-su.html" class="hover:text-brand-600">Lịch sử</a> <span class="mx-1">›</span> <span class="text-brand-600 font-medium">Xem lại bài làm</span></nav>
+        <div id="head" class="card p-5 mb-6"><p class="text-slate-500 text-sm">Đang tải bài làm...</p></div>
+        <div id="details" class="space-y-3"></div>
+    </main>
+
+    <div id="siteFooter"></div>
+    <script src="../js/layout.js"></script>
+    <script>
+        if (!OT.user()) window.location.href = 'login.html';
+        const id = Number(new URLSearchParams(location.search).get('id') || 0);
+
+        function imageHtml(url) {
+            if (!url || !/^https:\/\//i.test(url)) return '';
+            return `<img src="${OT.esc(url)}" alt="Hình minh họa câu hỏi" loading="lazy" class="mb-3 max-h-64 w-auto max-w-full rounded-xl border border-slate-200 bg-white">`;
+        }
+
+        async function init() {
+            try {
+                const r = await OT.api('/Exam/history/' + id);
+                document.getElementById('head').innerHTML = `
+                    <div class="flex flex-wrap items-center justify-between gap-4">
+                        <div>
+                            <h1 class="text-xl font-semibold">${OT.esc(r.ExamCode)} <span class="text-slate-500 font-normal">· ${OT.esc(r.SubjectCategory)}</span></h1>
+                            <p class="text-sm text-slate-500">${OT.esc(r.Name)} · nộp lúc ${OT.esc(OT.fmtTime(r.SubmittedAt))} · thời gian làm ${OT.esc(OT.fmtDuration(r.DurationSeconds))}</p>
+                            <div class="flex flex-wrap gap-2 mt-3 text-xs font-semibold">
+                                <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">Đúng: ${r.CorrectCount}</span>
+                                <span class="px-3 py-1 rounded-full bg-red-50 text-red-700">Sai: ${r.WrongCount}</span>
+                                <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-600">Bỏ trống: ${r.BlankCount}</span>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-3xl font-semibold text-brand-600">${r.ScorePercentage}%</p>
+                            <a href="exam.html?subject=${encodeURIComponent(r.SubjectCategory)}&examCode=${encodeURIComponent(r.ExamCode)}" class="inline-block mt-2 px-4 py-2 rounded-full text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 transition">Làm lại bộ đề</a>
+                        </div>
+                    </div>`;
+                if (!r.Details.length) {
+                    document.getElementById('details').innerHTML = '<div class="card p-5 text-sm text-slate-500">Lượt này được lưu trước khi hệ thống ghi bài làm chi tiết (hoặc là kết quả mẫu), nên chỉ có điểm tổng.</div>';
+                    return;
+                }
+                document.getElementById('details').innerHTML = r.Details.map((d, i) => {
+                    const state = d.isCorrect ? 'Đúng' : d.selectedAnswer ? 'Sai' : 'Bỏ trống';
+                    const opts = Object.entries(d.options || {}).map(([k, v]) => {
+                        const cls = k === d.correctAnswer ? 'border-emerald-300 bg-emerald-50' : k === d.selectedAnswer ? 'border-red-300 bg-red-50' : 'border-slate-200 bg-white';
+                        return `<li class="px-3 py-2 rounded-lg border ${cls}">${k}. ${OT.esc(v)}${k === d.selectedAnswer ? ' <b class="text-xs">(bạn chọn)</b>' : ''}</li>`;
+                    }).join('');
+                    return `<div class="card p-5">
+                        <div class="flex items-center justify-between mb-2"><b>Câu ${i + 1}</b><span class="text-xs font-bold ${d.isCorrect ? 'text-emerald-600' : d.selectedAnswer ? 'text-red-600' : 'text-slate-500'}">${state}</span></div>
+                        <p class="text-sm text-slate-800 mb-3">${OT.esc(d.content)}</p>
+                        ${imageHtml(d.imageUrl)}
+                        <ul class="space-y-1.5 text-sm mb-2">${opts}</ul>
+                        ${d.explanation ? `<p class="text-xs text-slate-600 mt-2"><b>Lời giải:</b> ${OT.esc(d.explanation)}</p>` : ''}
+                    </div>`;
+                }).join('');
+            } catch (err) {
+                document.getElementById('head').innerHTML = `<p class="text-red-600 text-sm">${OT.esc(err.message)}</p>`;
+            }
+        }
+        init();
+    </script>
+</body>
+</html>

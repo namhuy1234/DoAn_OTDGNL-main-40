@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Tập xác định của hàm số y = √(x − 2) là:",
+  "OptionA": "ℝ",
+  "OptionB": "(2; +∞)",
+  "OptionC": "(−∞; 2]",
+  "OptionD": "[2; +∞)",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Toán",
+  "Explanation": "Điều kiện x − 2 ≥ 0 ⇔ x ≥ 2.",
+  "ExamCode": "TOAN-DE01"
+ },
+ {
+  "Content": "Nghiệm của phương trình x² − 5x + 6 = 0 là:",
+  "OptionA": "x = −1; x = 6",
+  "OptionB": "x = 2; x = 3",
+  "OptionC": "x = −2; x = −3",
+  "OptionD": "x = 1; x = 6",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "Phân tích (x − 2)(x − 3) = 0.",
+  "ExamCode": "TOAN-DE01"
+ },
+ {
+  "Content": "Hoành độ đỉnh của parabol y = x² − 4x + 1 là:",
+  "OptionA": "2",
+  "OptionB": "−2",
+  "OptionC": "4",
+  "OptionD": "−4",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Toán",
+  "Explanation": "x = −b/(2a) = 4/2 = 2.",
+  "ExamCode": "TOAN-DE01"
+ },
+ {
+  "Content": "Hàm số y = 2x + 3:",
+  "OptionA": "Nghịch biến trên ℝ",
+  "OptionB": "Là hàm hằng",
+  "OptionC": "Đồng biến trên ℝ",
+  "OptionD": "Chỉ đồng biến trên (0; +∞)",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Toán",
+  "Explanation": "Hệ số a = 2 > 0 nên hàm bậc nhất đồng biến trên ℝ.",
+  "ExamCode": "TOAN-DE01"
+ },
+ {
+  "Content": "Tập nghiệm của bất phương trình 3x − 6 > 0 là:",
+  "OptionA": "x ≥ 2",
+  "OptionB": "x < 2",
+  "OptionC": "x > −2",
+  "OptionD": "x > 2",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Toán",
+  "Explanation": "3x > 6 ⇔ x > 2.",
+  "ExamCode": "TOAN-DE01"
+ },
+ {
+  "Content": "Giá trị của biểu thức |−7| + |3| bằng:",
+  "OptionA": "−4",
+  "OptionB": "−10",
+  "OptionC": "4",
+  "OptionD": "10",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Toán",
+  "Explanation": "|−7| = 7, |3| = 3 nên tổng bằng 10.",
+  "ExamCode": "TOAN-DE01"
+ },
+ {
+  "Content": "Hệ phương trình x + y = 5 và x − y = 1 có nghiệm (x; y) là:",
+  "OptionA": "(1; 4)",
+  "OptionB": "(2; 3)",
+  "OptionC": "(3; 2)",
+  "OptionD": "(4; 1)",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Toán",
+  "Explanation": "Cộng hai phương trình được 2x = 6 nên x = 3, y = 2.",
+  "ExamCode": "TOAN-DE01"
+ },
+ {
+  "Content": "Đạo hàm của hàm số y = x³ là:",
+  "OptionA": "y' = 3x²",
+  "OptionB": "y' = 3x",
+  "OptionC": "y' = x²",
+  "OptionD": "y' = 3x³",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Toán",
+  "Explanation": "Áp dụng (xⁿ)' = n·xⁿ⁻¹.",
+  "ExamCode": "TOAN-DE01"
+ },
+ {
+  "Content": "Hàm số y = x³ − 3x có bao nhiêu điểm cực trị?",
+  "OptionA": "1",
+  "OptionB": "0",
+  "OptionC": "2",
+  "OptionD": "3",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Toán",
+  "Explanation": "y' = 3x² − 3 = 0 ⇔ x = ±1, y' đổi dấu qua cả hai nghiệm.",
+  "ExamCode": "TOAN-DE01"
+ },
+ {
+  "Content": "Giá trị lớn nhất của hàm số y = −x² + 2x + 3 là:",
+  "OptionA": "2",
+  "OptionB": "5",
+  "OptionC": "3",
+  "OptionD": "4",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Toán",
+  "Explanation": "Đỉnh tại x = 1, y(1) = −1 + 2 + 3 = 4; a < 0 nên đây là giá trị lớn nhất.",
+  "ExamCode": "TOAN-DE01"
+ },
+ {
+  "Content": "Nghiệm của phương trình 2ˣ = 8 là:",
+  "OptionA": "x = 2",
+  "OptionB": "x = 3",
+  "OptionC": "x = 4",
+  "OptionD": "x = 8",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "8 = 2³ nên x = 3.",
+  "ExamCode": "TOAN-DE01"
+ },
+ {
+  "Content": "Giá trị của log₁₀ 1000 là:",
+  "OptionA": "2",
+  "OptionB": "3",
+  "OptionC": "100",
+  "OptionD": "10",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Toán",
+  "Explanation": "10³ = 1000 nên log₁₀ 1000 = 3.",
+  "ExamCode": "TOAN-DE01"
+ }
+]

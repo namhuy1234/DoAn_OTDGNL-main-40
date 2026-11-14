@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký - Ôn Thi ĐGNL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23dc2626'/%3E%3Cpath fill='%23fff' d='M12 4l7 4.700-7 4.700-7-4.700zm0 6.700l7 4.300-7 4.700-7-4.300z'/%3E%3C/svg%3E">
+</head>
+<body data-page="register" class="bg-brand-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <div id="siteHeader"></div>
+
+    <main class="flex-1 py-10 px-4 flex items-center justify-center">
+        <div class="w-full max-w-md bg-white rounded-3xl shadow-xl overflow-hidden">
+            <div class="p-6 sm:p-10">
+            <div class="text-center mb-6">
+                <h1 class="text-2xl font-semibold">Tạo tài khoản mới</h1>
+                <p class="text-slate-500 text-sm mt-1">Đăng ký để bắt đầu ôn thi ĐGNL.</p>
+            </div>
+
+            <form id="registerForm" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Họ và tên</label>
+                    <input id="regFullName" type="text" required placeholder="Nhập họ và tên..." class="field">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Tên đăng nhập</label>
+                    <input id="regUsername" type="text" required placeholder="Chọn username..." class="field">
+                </div>
+                <div>
+                    <label class="block text-sm font-semibold text-slate-700 mb-1">Mật khẩu (có số & ký tự đặc biệt)</label>
+                    <input id="regPassword" data-password type="password" required placeholder="Ví dụ: Abc@1234..." class="field">
+                    <ul id="pwRules" class="mt-2 text-xs space-y-1 text-slate-500">
+                        <li data-rule="so">○ Có ít nhất một chữ số</li>
+                        <li data-rule="dacbiet">○ Có ít nhất một ký tự đặc biệt</li>
+                    </ul>
+                </div>
+                <button type="submit" class="w-full py-3 rounded-full text-white font-semibold bg-brand-600 hover:bg-brand-700 shadow-md transition">Đăng Ký Tài Khoản</button>
+            </form>
+
+            <p id="message" class="mt-4 text-center text-sm font-medium min-h-[20px]"></p>
+
+            <div class="mt-6 text-center text-sm text-slate-500">
+                Đã có tài khoản?
+                <a href="login.html" class="text-brand-600 font-bold hover:underline">Đăng nhập</a>
+            </div>
+            </div>
+        </div>
+    </main>
+    <div id="siteFooter"></div>
+
+    <script src="../js/layout.js"></script>
+    <script>
+        const API_BASE_URL = "http://localhost:8000/api";
+
+        async function apiRequest(endpoint, method = "GET", data = null) {
+            const options = {
+                method,
+                headers: { "Content-Type": "application/json" }
+            };
+            if (data) options.body = JSON.stringify(data);
+            const response = await fetch(`${API_BASE_URL}/${endpoint}`, options);
+            if (!response.ok) {
+                const errorText = await response.text();
+                throw new Error(errorText || "Đã có lỗi xảy ra từ máy chủ.");
+            }
+            const contentType = response.headers.get("content-type");
+            if (contentType && contentType.includes("application/json")) return await response.json();
+            return await response.text();
+        }
+
+        // Báo ngay mật khẩu đã đúng luật chưa (cùng luật với máy chủ)
+        const RULES = { so: /[0-9]/, dacbiet: /[!@#$%^&*(),.?:{}|<>\-_+=~`\[\]\\/]/ };
+        document.getElementById('regPassword').addEventListener('input', e => {
+            document.querySelectorAll('#pwRules li').forEach(li => {
+                const ok = RULES[li.getAttribute('data-rule')].test(e.target.value);
+                li.textContent = (ok ? '✓ ' : '○ ') + li.textContent.slice(2);
+                li.className = ok ? 'text-emerald-600 font-medium' : 'text-slate-500';
+            });
+        });
+
+        const msg = document.getElementById('message');
+        document.getElementById('registerForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const fullName = document.getElementById('regFullName').value;
+            const username = document.getElementById('regUsername').value;
+            const password = document.getElementById('regPassword').value;
+
+            msg.textContent = "Đang xử lý đăng ký...";
+            msg.className = "text-center text-sm font-medium mt-4 text-brand-600";
+
+            try {
+                await apiRequest('Auth/register', 'POST', { fullName, username, password });
+                msg.textContent = "Đăng ký thành công! Đang chuyển sang Đăng nhập...";
+                msg.className = "text-center text-sm font-medium mt-4 text-emerald-600";
+                setTimeout(() => window.location.href = 'login.html', 1500);
+            } catch (err) {
+                msg.textContent = err.message || "Đăng ký thất bại. Kiểm tra lại mật khẩu!";
+                msg.className = "text-center text-sm font-medium mt-4 text-red-600";
+            }
+        });
+    </script>
+</body>
+</html>

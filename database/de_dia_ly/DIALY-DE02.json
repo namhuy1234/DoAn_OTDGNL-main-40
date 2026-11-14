@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Thành phố trực thuộc trung ương có số dân đông nhất nước ta là:",
+  "OptionA": "Đà Nẵng",
+  "OptionB": "TP. Hồ Chí Minh",
+  "OptionC": "Hà Nội",
+  "OptionD": "Hải Phòng",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "TP. Hồ Chí Minh là đô thị đông dân nhất cả nước.",
+  "ExamCode": "DIALY-DE02"
+ },
+ {
+  "Content": "Theo Tổng cục Thống kê, dân số trung bình của nước ta năm 2023 khoảng:",
+  "OptionA": "120 triệu người",
+  "OptionB": "100,3 triệu người",
+  "OptionC": "85 triệu người",
+  "OptionD": "70 triệu người",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Dân số trung bình năm 2023 ước tính 100,3 triệu người.",
+  "ExamCode": "DIALY-DE02"
+ },
+ {
+  "Content": "Dân tộc có số dân đông nhất ở nước ta là:",
+  "OptionA": "Thái",
+  "OptionB": "Mường",
+  "OptionC": "Kinh",
+  "OptionD": "Tày",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Người Kinh chiếm khoảng 85% dân số.",
+  "ExamCode": "DIALY-DE02"
+ },
+ {
+  "Content": "Vùng trọng điểm sản xuất lúa lớn nhất nước ta là:",
+  "OptionA": "Tây Nguyên",
+  "OptionB": "Đồng bằng sông Hồng",
+  "OptionC": "Bắc Trung Bộ",
+  "OptionD": "Đồng bằng sông Cửu Long",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đồng bằng sông Cửu Long đóng góp hơn một nửa sản lượng lúa cả nước.",
+  "ExamCode": "DIALY-DE02"
+ },
+ {
+  "Content": "Cây công nghiệp lâu năm quan trọng nhất ở Tây Nguyên là:",
+  "OptionA": "Chè",
+  "OptionB": "Lúa",
+  "OptionC": "Cà phê",
+  "OptionD": "Mía",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đất badan và khí hậu cận xích đạo thích hợp cho cây cà phê.",
+  "ExamCode": "DIALY-DE02"
+ },
+ {
+  "Content": "Vùng trồng chè lớn nhất nước ta là:",
+  "OptionA": "Đông Nam Bộ",
+  "OptionB": "Trung du và miền núi Bắc Bộ",
+  "OptionC": "Đồng bằng sông Hồng",
+  "OptionD": "Đồng bằng sông Cửu Long",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Khí hậu có mùa đông lạnh, địa hình đồi thích hợp cây chè.",
+  "ExamCode": "DIALY-DE02"
+ },
+ {
+  "Content": "Than đá ở nước ta được khai thác nhiều nhất tại:",
+  "OptionA": "Bình Định",
+  "OptionB": "Lạng Sơn",
+  "OptionC": "Quảng Ninh",
+  "OptionD": "Thái Nguyên",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Bể than Quảng Ninh có trữ lượng lớn nhất cả nước.",
+  "ExamCode": "DIALY-DE02"
+ },
+ {
+  "Content": "Dầu mỏ ở nước ta được khai thác chủ yếu ở:",
+  "OptionA": "Quảng Ninh",
+  "OptionB": "Thềm lục địa phía Nam",
+  "OptionC": "Tây Nguyên",
+  "OptionD": "Đồng bằng sông Hồng",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Các mỏ Bạch Hổ, Rồng… nằm ở thềm lục địa phía Nam.",
+  "ExamCode": "DIALY-DE02"
+ },
+ {
+  "Content": "Cảng biển lớn nhất miền Bắc nước ta là:",
+  "OptionA": "Quy Nhơn",
+  "OptionB": "Hải Phòng",
+  "OptionC": "Cần Thơ",
+  "OptionD": "Cam Ranh",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Cảng Hải Phòng là cửa ngõ biển quan trọng của miền Bắc.",
+  "ExamCode": "DIALY-DE02"
+ },
+ {
+  "Content": "Tuyến quốc lộ chạy dọc từ Lạng Sơn đến Cà Mau, quan trọng nhất nước ta là:",
+  "OptionA": "Quốc lộ 51",
+  "OptionB": "Quốc lộ 6",
+  "OptionC": "Quốc lộ 5",
+  "OptionD": "Quốc lộ 1",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Quốc lộ 1 nối hầu hết các vùng kinh tế từ Bắc vào Nam.",
+  "ExamCode": "DIALY-DE02"
+ },
+ {
+  "Content": "Chăn nuôi gia cầm phát triển mạnh ở các đồng bằng chủ yếu nhờ:",
+  "OptionA": "Nhiều đồng cỏ rộng lớn",
+  "OptionB": "Khí hậu lạnh quanh năm",
+  "OptionC": "Dân cư thưa thớt",
+  "OptionD": "Nguồn thức ăn dồi dào và thị trường tiêu thụ lớn",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Đồng bằng có nhiều lương thực, dân cư đông.",
+  "ExamCode": "DIALY-DE02"
+ },
+ {
+  "Content": "Di sản thiên nhiên thế giới nổi tiếng với hệ thống hang động, trong đó có hang Sơn Đoòng, là:",
+  "OptionA": "Vườn quốc gia Cúc Phương",
+  "OptionB": "Vịnh Hạ Long",
+  "OptionC": "Vườn quốc gia Phong Nha – Kẻ Bàng",
+  "OptionD": "Quần thể danh thắng Tràng An",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Địa lý",
+  "Explanation": "Hang Sơn Đoòng thuộc Vườn quốc gia Phong Nha – Kẻ Bàng.",
+  "ExamCode": "DIALY-DE02"
+ }
+]

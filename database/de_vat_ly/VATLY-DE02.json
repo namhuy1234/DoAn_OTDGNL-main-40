@@ -1,0 +1,134 @@
+[
+ {
+  "Content": "Nhiệt độ sôi của nước nguyên chất ở áp suất tiêu chuẩn là:",
+  "OptionA": "50 °C",
+  "OptionB": "0 °C",
+  "OptionC": "100 °C",
+  "OptionD": "273 °C",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Ở áp suất 1 atm, nước nguyên chất sôi ở 100 °C.",
+  "ExamCode": "VATLY-DE02"
+ },
+ {
+  "Content": "Nhiệt độ 0 °C tương ứng với nhiệt độ tuyệt đối khoảng:",
+  "OptionA": "273 K",
+  "OptionB": "100 K",
+  "OptionC": "−273 K",
+  "OptionD": "0 K",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "T(K) = t(°C) + 273 (chính xác là 273,15).",
+  "ExamCode": "VATLY-DE02"
+ },
+ {
+  "Content": "Âm thanh không truyền được trong môi trường nào?",
+  "OptionA": "Thép",
+  "OptionB": "Nước",
+  "OptionC": "Chân không",
+  "OptionD": "Không khí",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Sóng âm là sóng cơ, cần môi trường vật chất để truyền.",
+  "ExamCode": "VATLY-DE02"
+ },
+ {
+  "Content": "Tốc độ ánh sáng trong chân không xấp xỉ:",
+  "OptionA": "3·10⁸ m/s",
+  "OptionB": "3·10⁶ km/s",
+  "OptionC": "3·10⁵ m/s",
+  "OptionD": "340 m/s",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "c ≈ 3·10⁸ m/s = 3·10⁵ km/s; 340 m/s là tốc độ âm trong không khí.",
+  "ExamCode": "VATLY-DE02"
+ },
+ {
+  "Content": "Một sóng có tần số 50 Hz, bước sóng 2 m. Tốc độ truyền sóng là:",
+  "OptionA": "52 m/s",
+  "OptionB": "25 m/s",
+  "OptionC": "0,04 m/s",
+  "OptionD": "100 m/s",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "v = λ · f = 2 · 50 = 100 m/s.",
+  "ExamCode": "VATLY-DE02"
+ },
+ {
+  "Content": "Đơn vị của tần số là:",
+  "OptionA": "Giây (s)",
+  "OptionB": "Mét (m)",
+  "OptionC": "Oát (W)",
+  "OptionD": "Héc (Hz)",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Tần số là số dao động trong một giây, đo bằng héc.",
+  "ExamCode": "VATLY-DE02"
+ },
+ {
+  "Content": "Hiện tượng tia sáng bị gãy khúc khi truyền xiên góc qua mặt phân cách giữa hai môi trường trong suốt gọi là:",
+  "OptionA": "Khúc xạ ánh sáng",
+  "OptionB": "Nhiễu xạ ánh sáng",
+  "OptionC": "Phản xạ ánh sáng",
+  "OptionD": "Giao thoa ánh sáng",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Đó là định nghĩa hiện tượng khúc xạ ánh sáng.",
+  "ExamCode": "VATLY-DE02"
+ },
+ {
+  "Content": "Theo định luật phản xạ ánh sáng, góc phản xạ:",
+  "OptionA": "Bằng góc tới",
+  "OptionB": "Lớn hơn góc tới",
+  "OptionC": "Gấp đôi góc tới",
+  "OptionD": "Nhỏ hơn góc tới",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Định luật phản xạ: góc phản xạ bằng góc tới.",
+  "ExamCode": "VATLY-DE02"
+ },
+ {
+  "Content": "Thấu kính hội tụ có đặc điểm:",
+  "OptionA": "Phần rìa mỏng hơn phần giữa",
+  "OptionB": "Phần rìa dày hơn phần giữa",
+  "OptionC": "Luôn cho ảnh ảo nhỏ hơn vật",
+  "OptionD": "Không có tiêu điểm",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Thấu kính hội tụ (thấu kính rìa mỏng) làm chùm sáng song song hội tụ tại tiêu điểm.",
+  "ExamCode": "VATLY-DE02"
+ },
+ {
+  "Content": "Nhiệt lượng cần cung cấp để 1 kg nước tăng thêm 1 °C (c = 4200 J/kg·K) là:",
+  "OptionA": "42 000 J",
+  "OptionB": "420 J",
+  "OptionC": "4200 J",
+  "OptionD": "1 J",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Q = m·c·Δt = 1 · 4200 · 1 = 4200 J.",
+  "ExamCode": "VATLY-DE02"
+ },
+ {
+  "Content": "Sự chuyển từ thể lỏng sang thể khí gọi là:",
+  "OptionA": "Sự ngưng tụ",
+  "OptionB": "Sự đông đặc",
+  "OptionC": "Sự nóng chảy",
+  "OptionD": "Sự hóa hơi",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Hóa hơi (bay hơi, sôi) là chuyển từ lỏng sang khí; ngưng tụ là quá trình ngược lại.",
+  "ExamCode": "VATLY-DE02"
+ },
+ {
+  "Content": "Liên hệ giữa chu kì T và tần số f của dao động là:",
+  "OptionA": "T = f",
+  "OptionB": "T = 1/f",
+  "OptionC": "T = 2f",
+  "OptionD": "T = f²",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Vật lý",
+  "Explanation": "Chu kì là nghịch đảo của tần số.",
+  "ExamCode": "VATLY-DE02"
+ }
+]

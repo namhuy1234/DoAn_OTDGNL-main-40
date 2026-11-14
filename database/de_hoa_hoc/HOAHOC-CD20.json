@@ -1,0 +1,222 @@
+[
+ {
+  "Content": "Nước cứng là nước chứa nhiều ion:",
+  "OptionA": "Na⁺ và K⁺",
+  "OptionB": "Ca²⁺ và Mg²⁺",
+  "OptionC": "NH₄⁺ và NO₃⁻",
+  "OptionD": "H⁺ và OH⁻",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Nước cứng chứa nhiều ion Ca²⁺, Mg²⁺.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Chất thường dùng để khử trùng nước sinh hoạt là:",
+  "OptionA": "Giấm",
+  "OptionB": "Đường",
+  "OptionC": "Muối ăn",
+  "OptionD": "Clo",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Clo (hoặc hợp chất của clo) có tính oxi hóa mạnh, diệt khuẩn.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Mưa axit chủ yếu do các khí nào gây ra?",
+  "OptionA": "O₂ và N₂",
+  "OptionB": "H₂ và He",
+  "OptionC": "CH₄ và O₂",
+  "OptionD": "SO₂ và NOₓ",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "SO₂, NOₓ tác dụng với hơi nước tạo axit H₂SO₄, HNO₃.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Khí CO độc vì:",
+  "OptionA": "Gây nổ khi gặp nước",
+  "OptionB": "Kết hợp với hemoglobin, làm máu giảm khả năng vận chuyển oxi",
+  "OptionC": "Làm quỳ tím hóa đỏ",
+  "OptionD": "Có màu vàng gây kích ứng mắt",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "CO tạo phức bền với hemoglobin, gây ngạt.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Công thức của muối ăn là:",
+  "OptionA": "KCl",
+  "OptionB": "NaHCO₃",
+  "OptionC": "Na₂CO₃",
+  "OptionD": "NaCl",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Muối ăn là natri clorua.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Thuốc muối (baking soda) dùng làm bột nở và giảm đau dạ dày có công thức:",
+  "OptionA": "CaCO₃",
+  "OptionB": "NaHCO₃",
+  "OptionC": "Na₂SO₄",
+  "OptionD": "NaCl",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Natri hiđrocacbonat NaHCO₃ trung hòa bớt axit dạ dày và sinh khí CO₂.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Thành phần chính của đá vôi là:",
+  "OptionA": "Ca(OH)₂",
+  "OptionB": "CaO",
+  "OptionC": "CaSO₄",
+  "OptionD": "CaCO₃",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Đá vôi chủ yếu là canxi cacbonat.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Vôi sống có công thức hóa học là:",
+  "OptionA": "CaCO₃",
+  "OptionB": "CaO",
+  "OptionC": "Ca(OH)₂",
+  "OptionD": "CaCl₂",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Nung đá vôi CaCO₃ → CaO + CO₂; CaO là vôi sống, Ca(OH)₂ là vôi tôi.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Khi bị kiến đốt (có axit fomic), nên bôi vào vết đốt:",
+  "OptionA": "Nước chanh",
+  "OptionB": "Giấm ăn",
+  "OptionC": "Dung dịch muối ăn đặc",
+  "OptionD": "Nước vôi loãng",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Chất có tính kiềm nhẹ trung hòa axit fomic.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Phân đạm cung cấp cho cây trồng nguyên tố dinh dưỡng:",
+  "OptionA": "Photpho",
+  "OptionB": "Kali",
+  "OptionC": "Canxi",
+  "OptionD": "Nitơ",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Phân đạm cung cấp nitơ dưới dạng NO₃⁻, NH₄⁺.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Phân lân cung cấp cho cây trồng nguyên tố dinh dưỡng:",
+  "OptionA": "Photpho",
+  "OptionB": "Kali",
+  "OptionC": "Lưu huỳnh",
+  "OptionD": "Nitơ",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Phân lân cung cấp photpho.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Tầng ozon bị suy giảm chủ yếu do:",
+  "OptionA": "Khí nitơ",
+  "OptionB": "Các hợp chất CFC (freon)",
+  "OptionC": "Hơi nước",
+  "OptionD": "Khí oxi",
+  "CorrectAnswer": "B",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "CFC giải phóng clo phá hủy O₃ ở tầng bình lưu.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Vật liệu nào khó phân hủy, gây ô nhiễm môi trường lâu dài?",
+  "OptionA": "Túi nilon",
+  "OptionB": "Giấy",
+  "OptionC": "Lá chuối",
+  "OptionD": "Bã mía",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Túi nilon làm từ polime tổng hợp, phân hủy rất chậm.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Chất bị cấm dùng để bảo quản, chế biến thực phẩm là:",
+  "OptionA": "Đường",
+  "OptionB": "Muối ăn",
+  "OptionC": "Hàn the",
+  "OptionD": "Giấm ăn",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Hàn the (borax) gây hại cho sức khỏe và bị cấm dùng trong thực phẩm.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Cồn 70° trong y tế được dùng để:",
+  "OptionA": "Uống hạ sốt",
+  "OptionB": "Pha nước giải khát",
+  "OptionC": "Tẩy gỉ sắt",
+  "OptionD": "Sát khuẩn",
+  "CorrectAnswer": "D",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Cồn 70° làm biến tính protein của vi khuẩn.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Kim loại nặng rất độc thường gặp trong nước thải công nghiệp là:",
+  "OptionA": "Kali (K)",
+  "OptionB": "Natri (Na)",
+  "OptionC": "Thủy ngân (Hg)",
+  "OptionD": "Magie (Mg)",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Thủy ngân, chì, cađimi… là kim loại nặng gây độc.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Bình chữa cháy CO₂ dập được đám cháy vì:",
+  "OptionA": "CO₂ nặng hơn không khí và không duy trì sự cháy",
+  "OptionB": "CO₂ tác dụng với lửa tạo ra nước",
+  "OptionC": "CO₂ nhẹ hơn không khí",
+  "OptionD": "CO₂ là chất cháy được",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "CO₂ phủ lên đám cháy, ngăn cách với oxi.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Khí hóa lỏng (LPG) dùng đun nấu có thành phần chính là:",
+  "OptionA": "Propan và butan",
+  "OptionB": "Cacbon monooxit",
+  "OptionC": "Oxi và nitơ",
+  "OptionD": "Hiđro",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "LPG là hỗn hợp propan C₃H₈ và butan C₄H₁₀.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "Xà phòng được sản xuất bằng cách đun chất béo với:",
+  "OptionA": "Dung dịch kiềm (NaOH)",
+  "OptionB": "Axit HCl",
+  "OptionC": "Khí CO₂",
+  "OptionD": "Nước muối",
+  "CorrectAnswer": "A",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Phản ứng xà phòng hóa: chất béo + NaOH → muối của axit béo + glixerol.",
+  "ExamCode": "HOAHOC-CD20"
+ },
+ {
+  "Content": "pH của nước nguyên chất ở 25 °C bằng:",
+  "OptionA": "14",
+  "OptionB": "0",
+  "OptionC": "7",
+  "OptionD": "1",
+  "CorrectAnswer": "C",
+  "SubjectCategory": "Hóa học",
+  "Explanation": "Nước nguyên chất trung tính, [H⁺] = 10⁻⁷ M.",
+  "ExamCode": "HOAHOC-CD20"
+ }
+]
